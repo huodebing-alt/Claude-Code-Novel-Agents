@@ -1,0 +1,42 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run verify.sh
+        run: |
+          chmod +x scripts/verify.sh
+          ./scripts/verify.sh
+
+      - name: Count agents
+        run: |
+          count=$(find agents -name "*.md" | wc -l)
+          echo "agents=$count" >> $GITHUB_STEP_SUMMARY
+          test "$count" -ge 30
+
+      - name: Count skills
+        run: |
+          count=$(find skills -name "SKILL.md" | wc -l)
+          echo "skills=$count" >> $GITHUB_STEP_SUMMARY
+          test "$count" -ge 60
+
+      - name: Check .claude mirror
+        run: |
+          test -d .claude/agents
+          test -d .claude/skills
+          test -f .claude/skills/start/SKILL.md
+          echo ".claude/ mirror = OK" >> $GITHUB_STEP_SUMMARY

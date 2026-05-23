@@ -1,0 +1,56 @@
+name: short-story-pipeline
+description: Phase 1 → minimal 2 → single-act 3 → 4 → 5 → 6. Target 3k-15k words.
+mode_default: semi
+config_overrides:
+  outline.grammar: three_act_compact
+  chapters_target: 5
+steps:
+  - id: ideation_logline
+    skill: write-logline
+  - id: ideation_dq
+    skill: draft-dramatic-question
+    depends_on: [ideation_logline]
+  - id: ideation_style
+    skill: set-stylistic-direction
+    depends_on: [ideation_dq]
+
+  - id: world_minimal
+    skill: build-world-bible
+    params: {scope: minimal}
+    depends_on: [ideation_style]
+  - id: char_protagonist
+    skill: design-protagonist
+    depends_on: [ideation_style]
+  - id: char_voice
+    skill: calibrate-voice
+    fan_out: per_speaking_character
+    depends_on: [char_protagonist]
+
+  - id: outline
+    skill: draft-outline
+    params: {grammar: three_act_compact}
+    depends_on: [world_minimal, char_voice]
+  - id: beats
+    skill: plan-chapter-beats
+    fan_out: per_chapter
+    depends_on: [outline]
+  - id: chapters
+    skill: write-chapter
+    fan_out: per_chapter
+    parallelism: 3
+    depends_on: [beats]
+
+  - id: q_pass
+    skill: quality-pass
+    depends_on: [chapters]
+  - id: revise
+    skill: revise-from-notes
+    fan_out: per_chapter
+    depends_on: [q_pass]
+
+  - id: format
+    skill: format-manuscript
+    depends_on: [revise]
+  - id: pdf
+    skill: compile-pdf
+    depends_on: [format]

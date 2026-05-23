@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Glob(**)",
+      "Grep(**)",
+      "Bash(python3 orchestrator/runner.py:*)",
+      "Bash(python3 output/pdf_compositor.py:*)",
+      "Bash(python3 sandbox/mock_runtime.py)",
+      "Bash(./scripts/verify.sh)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(python3 output/outline_reviewer.py:*)",
+      "Bash(python3 orchestrator/runner.py review-outline:*)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(config/llm_config.yaml)",
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)"
+    ]
+  }
+}

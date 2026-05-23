@@ -1,0 +1,8 @@
+name: blurb-and-cover
+description: Marketing collateral
+mode_default: full
+steps:
+  - id: blurb
+    skill: write-blurb
+  - id: cover
+    skill: write-cover-brief

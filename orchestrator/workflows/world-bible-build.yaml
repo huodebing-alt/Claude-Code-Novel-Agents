@@ -1,0 +1,23 @@
+name: world-bible-build
+description: Phase 2a only
+mode_default: semi
+steps:
+  - id: triage
+    skill: build-world-bible
+    params: {scope: triage_only}
+  - id: geo
+    skill: design-geography
+    depends_on: [triage]
+  - id: politics
+    skill: design-political-system
+    depends_on: [geo]
+  - id: magic
+    skill: design-magic-system
+    depends_on: [politics]
+    condition: "novel.metadata.genre in [sci-fi, fantasy]"
+  - id: culture
+    skill: design-culture
+    depends_on: [politics]
+  - id: timeline
+    skill: build-timeline
+    depends_on: [politics, culture]

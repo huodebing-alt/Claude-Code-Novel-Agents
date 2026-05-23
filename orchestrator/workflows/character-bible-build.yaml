@@ -1,0 +1,24 @@
+name: character-bible-build
+description: Phase 2b only
+mode_default: semi
+steps:
+  - id: protagonist
+    skill: design-protagonist
+  - id: antagonist
+    skill: design-antagonist
+    depends_on: [protagonist]
+  - id: supporting
+    skill: design-supporting-cast
+    depends_on: [protagonist, antagonist]
+  - id: backstories
+    skill: write-backstory
+    fan_out: per_character
+    depends_on: [supporting]
+  - id: psych
+    skill: profile-psychology
+    fan_out: per_principal_character
+    depends_on: [backstories]
+  - id: voice
+    skill: calibrate-voice
+    fan_out: per_speaking_character
+    depends_on: [psych]

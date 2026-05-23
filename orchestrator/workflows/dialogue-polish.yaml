@@ -1,0 +1,10 @@
+name: dialogue-polish
+description: dialogue-specialist on a passage
+mode_default: semi
+steps:
+  - id: polish
+    skill: write-dialogue
+  - id: audit
+    skill: audit-character-voice
+    params: {scope: passage}
+    depends_on: [polish]

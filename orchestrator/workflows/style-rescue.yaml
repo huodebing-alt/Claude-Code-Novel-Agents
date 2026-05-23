@@ -1,0 +1,14 @@
+name: style-rescue
+description: Loop until AI-voice and style clean
+mode_default: semi
+max_iterations: 3
+steps:
+  - id: critique
+    skill: critique-style
+  - id: detect_ai
+    skill: detect-ai-voice
+  - id: revise
+    skill: revise-from-notes
+    depends_on: [critique, detect_ai]
+    loop_back_to: critique
+    loop_condition: "ai_voice_score > 20 or style_score < 70"

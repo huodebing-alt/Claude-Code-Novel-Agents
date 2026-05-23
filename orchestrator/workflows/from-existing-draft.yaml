@@ -1,0 +1,26 @@
+name: from-existing-draft
+description: User pastes a manuscript; skip Phase 1-4, run 5-6
+mode_default: semi
+steps:
+  - id: import
+    skill: setup-novel
+    params: {source: paste}
+  - id: diagnose
+    skill: manuscript-doctor
+    depends_on: [import]
+  - id: q_pass
+    skill: quality-pass
+    depends_on: [diagnose]
+  - id: edit_letter
+    skill: developmental-edit
+    depends_on: [q_pass]
+  - id: revise
+    skill: revise-from-notes
+    fan_out: per_chapter
+    depends_on: [edit_letter]
+  - id: format
+    skill: format-manuscript
+    depends_on: [revise]
+  - id: pdf
+    skill: compile-pdf
+    depends_on: [format]

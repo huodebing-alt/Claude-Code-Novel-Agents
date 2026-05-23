@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local config (may contain API keys)
+config/novel_meta.yaml
+config/llm_config.yaml
+.env
+.env.local
+
+# Build / output artifacts (keep fixtures, ignore user output)
+output/_generated/
+*.pdf
+!sandbox/fixtures/*.pdf
+!docs/**/*.pdf
+
+# Logs
+*.log
+logs/
+
+# Manuscript work-in-progress
+manuscripts/
+my-novel/

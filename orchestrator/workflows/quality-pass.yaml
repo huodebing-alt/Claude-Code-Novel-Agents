@@ -1,0 +1,23 @@
+name: quality-pass
+description: All quality agents in parallel; no revision applied
+mode_default: full
+steps:
+  - id: style
+    skill: critique-style
+  - id: consistency
+    skill: check-consistency
+  - id: continuity
+    skill: audit-continuity
+    depends_on: [consistency]
+  - id: ai_voice
+    skill: detect-ai-voice
+  - id: voice_drift
+    skill: audit-character-voice
+  - id: plot_holes
+    skill: hunt-plot-holes
+    depends_on: [consistency]
+  - id: pacing
+    skill: review-pacing
+  - id: synthesis
+    skill: developmental-edit
+    depends_on: [style, continuity, ai_voice, voice_drift, plot_holes, pacing]

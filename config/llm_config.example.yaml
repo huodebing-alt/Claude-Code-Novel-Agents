@@ -1,0 +1,62 @@
+# LLM configuration — copy to config/llm_config.yaml and edit
+api:
+  provider: anthropic
+  base_url: "https://api.anthropic.com"
+  api_key: "${ANTHROPIC_API_KEY}"       # reads from env; can hardcode (don't commit!)
+
+# ----- MODEL PRESET -----
+# Default preset is "all_opus" — every agent runs on claude-opus-4-7.
+# Other presets: "balanced" (Opus for directors + climax chapters, Sonnet for
+# everything else, Haiku for onboarding) or "budget" (Sonnet for everything).
+# The api-config-agent during /start onboarding lets the user pick one of these
+# presets, or "custom" to set models per tier directly below.
+preset: all_opus
+
+# Per-tier model assignment (used unless an agent_model_override below applies).
+# Each agent's `tier:` frontmatter (1-4) maps to one of these slots.
+models:
+  director: "claude-opus-4-7"
+  lead: "claude-opus-4-7"
+  specialist: "claude-opus-4-7"
+  onboarding: "claude-opus-4-7"
+
+# Per-agent overrides. Keys can be a plain agent name (e.g. "blurb-writer")
+# or a contextual override like "chapter-writer-climax", "chapter-writer-midpoint",
+# "chapter-writer-opener", "chapter-writer-final" — the engine picks the matching
+# override when dispatching chapter-writer on a chapter flagged as that role.
+agent_model_overrides: {}
+
+# Generation parameters
+parameters:
+  default_max_tokens: 4096
+  chapter_writer_max_tokens: 8192
+  outline_architect_max_tokens: 6144
+  temperature: 0.7                              # 0.4 for quality agents, 0.8 for creative
+  temperature_overrides:
+    style-critic: 0.3
+    consistency-checker: 0.2
+    ai-voice-detector: 0.2
+    chapter-writer: 0.8
+    theme-brainstorm: 0.9
+
+# Budget caps — orchestrator halts if exceeded
+budget:
+  max_total_tokens: 400000        # all-opus runs use more tokens; cap accordingly
+  max_total_dollars: 50.0         # all-opus on an 80k-word novel: $30-50
+  warn_at_dollars: 30.0
+
+# Sandbox mode override
+sandbox:
+  enabled: false                                # set to true OR run with --sandbox
+  fixtures_path: "sandbox/fixtures"
+  llm_cache: "sandbox/fixtures/llm_cache.json"
+
+# Retry / timeout
+retry:
+  max_attempts: 3
+  initial_delay_seconds: 2
+  backoff_multiplier: 2
+
+timeout:
+  request_seconds: 120
+  chapter_writer_seconds: 300

@@ -1,0 +1,10 @@
+name: scene-only
+description: scene-builder for one scene
+mode_default: semi
+steps:
+  - id: write
+    skill: write-scene
+  - id: verify
+    skill: detect-ai-voice
+    params: {scope: passage}
+    depends_on: [write]

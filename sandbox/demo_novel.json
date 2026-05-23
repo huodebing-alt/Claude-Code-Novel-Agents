@@ -1,0 +1,2561 @@
+{
+  "metadata": {
+    "title": "The Trial of Memory",
+    "author": "Claude Code Novel Agents (sandbox demo)",
+    "genre": "literary science fiction",
+    "target_wordcount": 10000,
+    "target_pages": 42,
+    "trim_size": "5.5x8.5",
+    "chapters_target": 12,
+    "title_zh": "记忆的审判",
+    "subgenre": "speculative legal",
+    "target_audience": "adult literary",
+    "actual_wordcount": 13123,
+    "style": {
+      "pov": "close third",
+      "tense": "past",
+      "register": "literary, clinical, with synesthete lapses into sensory inventory",
+      "sentence_rhythm": "short to medium; bursts of color/texture/sound when the protagonist's sensorium spikes",
+      "density": "medium",
+      "voice_anchors": {
+        "primary": "Han Kang",
+        "secondary": [
+          "Kazuo Ishiguro",
+          "Anne Carson",
+          "Yoko Ogawa"
+        ]
+      },
+      "genre_conventions_honored": [
+        "near-future tech is shown, not explained",
+        "courtroom procedure is real, not made up",
+        "the speculative element constrains every plot beat"
+      ],
+      "genre_conventions_broken": [
+        "first-person interior allowed during testimony scenes",
+        "no chapter from antagonist's POV — held entirely in protagonist's frame"
+      ],
+      "banned": [
+        "she felt that",
+        "she knew that",
+        "in conclusion",
+        "rhetorical questions",
+        "delve",
+        "tapestry",
+        "navigate (figurative)"
+      ],
+      "encouraged": [
+        "sensory inventory in lieu of explanation",
+        "period over comma",
+        "one unusual word per paragraph",
+        "color/texture/sound as proxy for emotion"
+      ]
+    },
+    "author_profile": {},
+    "mode_overrides": {
+      "ideation": "full",
+      "worldbuilding": "full",
+      "characters": "full",
+      "structure": "full",
+      "chapters_ch01": "full",
+      "chapters_ch02_to_05": "full",
+      "chapters_ch06": "full",
+      "chapters_ch07_to_10": "full",
+      "chapters_ch11": "full",
+      "chapters_ch12": "full",
+      "quality": "full",
+      "revision": "semi (user-approved 4 of 9 suggested revisions)",
+      "output": "full"
+    },
+    "sandbox": true,
+    "sandbox_demo_name": "The Trial of Memory",
+    "model_preset": "all_opus",
+    "default_model": "claude-opus-4-7"
+  },
+  "ideation": {
+    "theme": {
+      "primary": "memory and complicity",
+      "secondary": [
+        "the law as a substitute for self-knowledge",
+        "inheritance of silence between mothers and daughters"
+      ],
+      "tension_statement": "To remember is to become responsible for what you remembered."
+    },
+    "logline": "In a republic where memory is admissible evidence, a synesthete prosecutor discovers her own missing year is the key to the case she's prosecuting.",
+    "dramatic_question": "Will Lin Wei choose to remember — knowing the cost of remembering?",
+    "stylistic_direction": {
+      "pov": "close third",
+      "tense": "past",
+      "register": "literary, clinical, with synesthete lapses into sensory inventory",
+      "sentence_rhythm": "short to medium; bursts of color/texture/sound when the protagonist's sensorium spikes",
+      "density": "medium",
+      "voice_anchors": {
+        "primary": "Han Kang",
+        "secondary": [
+          "Kazuo Ishiguro",
+          "Anne Carson",
+          "Yoko Ogawa"
+        ]
+      },
+      "genre_conventions_honored": [
+        "near-future tech is shown, not explained",
+        "courtroom procedure is real, not made up",
+        "the speculative element constrains every plot beat"
+      ],
+      "genre_conventions_broken": [
+        "first-person interior allowed during testimony scenes",
+        "no chapter from antagonist's POV — held entirely in protagonist's frame"
+      ],
+      "banned": [
+        "she felt that",
+        "she knew that",
+        "in conclusion",
+        "rhetorical questions",
+        "delve",
+        "tapestry",
+        "navigate (figurative)"
+      ],
+      "encouraged": [
+        "sensory inventory in lieu of explanation",
+        "period over comma",
+        "one unusual word per paragraph",
+        "color/texture/sound as proxy for emotion"
+      ]
+    },
+    "creative_brief": {
+      "premise_sentence": "A prosecutor who reads memory as color discovers she is the missing year in her own case.",
+      "central_promise": "The reader is being asked to sit with a woman who learned not to remember, and to watch the law she trusted reach back into her.",
+      "audience": "literary readers who liked The Memory Police, The Vegetarian, Klara and the Sun",
+      "comp_titles": [
+        "The Memory Police — Yoko Ogawa",
+        "Klara and the Sun — Kazuo Ishiguro"
+      ],
+      "what_to_protect": "Lin Wei's interiority. The reader stays in her head; she is not narrated from outside.",
+      "what_to_avoid": "The neuro-thriller cliché — chase scenes, conspiracies, evil neuroscientists. This is a domestic novel that happens in a courtroom."
+    }
+  },
+  "world_bible": {
+    "_format": "markdown",
+    "compiled_md": "# World Bible — *The Trial of Memory*\n\n## Scope brief\n\nA near-future Earth (year 2061), single republic referenced only as \"the Republic.\" The world bible is intentionally minimal — the speculative element is one law, one institution, and its consequences for the few hundred people who serve it. Geography is a city; politics is a court; the magic system is a memory-extraction protocol called Mneme.\n\n## Geography\n\nThe novel takes place entirely in one unnamed coastal capital, in three places:\n\n- **The Reader College.** A walled compound in the old quarter, formerly a Carthusian monastery. Cloisters, a garden, a library of glass-cased memory records. Readers live here from their induction at seventeen until their forced retirement at forty-five.\n- **The Court of Mneme.** A circular hall, no public seating, no press. A central well of dim water (the *speculum*) into which Readers descend the extracted records and re-render them as testimony.\n- **The Eastern Quarter.** Working-class district across the canal. Used to be served by tram; the line was decommissioned twenty years ago after the Mneme inquiries. This is where Lin Wei's mother lived; this is where Lin Wei was born.\n\nClimate: cold, damp, the gulls audible from the College garden in winter.\n\n## Politics\n\nSingle republic, parliamentary. The Court of Mneme is constitutionally independent of the legislature. The Reader Council (a body of nine) appoints and disciplines all sitting Readers. Council seats are coveted — they confer immunity from the cross-case contamination inquiry that ends most Readers' careers in disgrace.\n\nTensions:\n\n- Reformers in the legislature have introduced three bills in five years to abolish Mneme evidence; all have failed.\n- An underground memory-trade exists. Unauthorized extractions for grief, for closure, for confession. Punishable by twenty years.\n- Public mistrust of Readers (\"mind-eaters\") grows after each scandal; the College has stopped recruiting in the eastern quarter.\n\n## Magic / Tech: The Mneme Protocol\n\n### One-line\n\nMemory rendered admissible by neural extraction. Trained Reader-jurists, born synesthete, translate the extracted record from sensory shorthand (color, texture, sound) into legal testimony.\n\n### Rules\n\n1. **Window.** Memory can be extracted from any consenting adult within 72 hours of the event with high fidelity. Older memory degrades; >72 hours yields ~30% fidelity and is inadmissible.\n2. **Chain of custody.** Extraction must be witnessed by two parties: a recording technician and a court officer. Self-extraction is illegal — no chain.\n3. **Reader access.** Only certified Readers (synesthete jurists) may interpret the record. Records cannot be transcribed into text without a Reader; the data is not natively linguistic.\n4. **Court submission.** A Reader renders the memory in open court, before the *speculum*. Their interpretation is the testimony.\n\n### Costs\n\n- **For donors:** The extracted window leaves the donor amnesiac for that window. Most donate fragments; a few — usually those confessing — donate hours or days.\n- **For Readers:** Reading another person's memory leaves a faint contamination trace. Over a career, Readers accumulate cross-case memory bleed — fragments of other people's lives surface in their own. Forced retirement at forty-five exists to prevent the bleed from compounding.\n- **For the law:** Mneme convictions are nearly impossible to overturn. The reformers argue this is the cost.\n\n### Limits\n\n- Memory of a person who has died cannot be extracted (their tissue degrades within minutes; the technical reason is unimportant to the novel).\n- Memory of a memory (someone remembering a previous extraction) is unreliable and rejected.\n- A Reader cannot read their own memory.\n- A Reader cannot read the memory of a blood relative — conflict of interest, but also, the contamination is too strong.\n\n### Cultural impact\n\n- Synesthete children are flagged at age seven by the standard education panel; flagged children are eligible for Reader training, with consent of guardian. Many guardians refuse; many cannot.\n- Readers are cloistered. They do not marry, do not have civilian friendships, do not appear on entertainment programs.\n- Outside the College, public physical contact with a sitting Reader is avoided. Their gloves are not law but custom.\n\n## Culture\n\n### Defining taboo: Reader-touch\n\nA civilian does not initiate physical contact with a sitting Reader. A Reader's bare hand is gloved in public. Touch during an active case can be argued in court as memory tampering and has, twice, overturned convictions. Lin Wei brushes her father's hand in chapter 3; the gesture is itself a question.\n\n### Defining ceremony: Retirement gowning\n\nAt a Reader's forty-fifth birthday, their robes are ceremonially burned at dawn in the College garden. The retiring Reader is led, barefoot, from the cloister by her named successor — usually the Reader she once mentored. The novel opens with Lin Wei in the garden, watching her mentor walk.\n\n### Other notes\n\n- **Food:** the College serves a single rotating menu of broths, root vegetables, and a sweet rice porridge. Readers do not eat strongly flavored food during active cases; sensory load.\n- **Dress:** Readers wear unbleached linen under their robes. The robes are a deep oxblood, fading to rust at the cuffs over a career.\n- **Religion:** the Republic is secular; the College has retained pre-secular monastic forms (vigils, the dawn bell, vespers without theology). Most Readers do not call them religious; some quietly do.\n- **Calendar:** standard solar. Court does not sit on the four equinox/solstice days.\n\n## Timeline (selected events)\n\n| Year | Event | Consequence today |\n| --- | --- | --- |\n| 2018 | First Mneme prototype, university research | The protocol is sixty years old by 2061 — fully institutionalized |\n| 2032 | Mneme Act passes; first Reader cohort certified | The constitutional regime of the novel |\n| 2034 | First Reader inquiry; three Readers stripped of office for cross-case bleed | Forced retirement at 45 established the next year |\n| 2041 | The Eastern Quarter tram-line cases — a series of convictions from extracted commuter memories; widespread protest | The line is decommissioned; the quarter mistrusts the Court |\n| 2043 | Lin Wei's mother (Lin Yan) testifies in a closed-record Reader trial; outcome sealed | Lin Yan is publicly discredited; she stops Reading two years later, dies in 2048 |\n| 2048 | Lin Wei, age 12, enters the College on scholarship | Her career is built as the opposite of her mother's |\n| 2053 | The first organized memory-trade ring is prosecuted; defendants serve seven of twenty years | The current case (Han Bo's) is the third such prosecution |\n| 2060 | A second reformist bill fails by one vote | The political climate of the novel — Mneme is entrenched but contested |\n| 2061 | Year of the novel | — |\n\n## What is *not* in this bible\n\nNo technology beyond Mneme. No global politics. No economic system distinct from a recognizable contemporary mixed economy. No religion with theology. No alien anything. The world is unobtrusive because the *interior* is the planet we are visiting.\n",
+    "scope_brief": "near-future Earth; minimal save for the Mneme law",
+    "locations": [
+      {
+        "id": "L001",
+        "name": "Reader College, dawn garden",
+        "description": "A walled garden in the College compound, formerly the cloister of a Carthusian monastery. Used for the retirement gowning of jurists. Wet brick paths, an old fountain, ash on the flagstones from the brazier.",
+        "sensory_anchors": {
+          "sight": "oxblood robe taking the fire; sun sitting on the College wall",
+          "sound": "gulls beyond the wall; the small wet sound of candle wax",
+          "smell": "wool smoke; rain-on-stone; thin green tea from the refectory",
+          "touch": "wet grass through thin sandals; cold flagstones at the brazier",
+          "taste": "the green tea, allowed to grow cold"
+        },
+        "parent_region": "the old quarter",
+        "first_appearance_chapter": "ch01"
+      },
+      {
+        "id": "L002",
+        "name": "Reader College, refectory",
+        "description": "Long oak table, a row of small white bowls, the morning routine. Mei sits across from Lin Wei.",
+        "sensory_anchors": {
+          "sight": "Mei's pushed-back hair; the small tin of dried plums",
+          "sound": "spoons against bowls; the radiator behind",
+          "smell": "sweet rice porridge; the iron of green tea",
+          "touch": "the lacquered table edge; the warm bowl",
+          "taste": "porridge that tastes of nothing on a vigil morning"
+        },
+        "parent_region": "Reader College",
+        "first_appearance_chapter": "ch01"
+      },
+      {
+        "id": "L003",
+        "name": "Lin Wei's apartment in the College",
+        "description": "A spare room above the College garden: oak desk, small grey mirror, a porcelain sink in the corner, a radiator that ticks. The garden window faces east.",
+        "sensory_anchors": {
+          "sight": "the grey mirror; the desk lamp; the envelope square with the corner",
+          "sound": "the radiator's tick; the distant tram bell (decommissioned line)",
+          "smell": "linen towels; the lamp's warm tungsten",
+          "touch": "the desk's grain; the bone-china teacup; the file's oxblood ribbon",
+          "taste": "third tea of the night, gone cold"
+        },
+        "parent_region": "Reader College",
+        "first_appearance_chapter": "ch01"
+      },
+      {
+        "id": "L004",
+        "name": "Court of Mneme, intake chamber",
+        "description": "Small windowless square. Lit from above. Two oak chairs across a narrow table. Pale grey acoustic felt on the walls. The recording bead in the center of the table.",
+        "sensory_anchors": {
+          "sight": "the soft white panel overhead; Han Bo's spread fingers",
+          "sound": "the silence the felt makes against the door; the single click of the bead",
+          "smell": "the cool absence of smell, kept that way on purpose",
+          "touch": "the unbleached linen of new gloves drawn over the knuckles",
+          "taste": "—"
+        },
+        "parent_region": "the Court complex",
+        "first_appearance_chapter": "ch02"
+      },
+      {
+        "id": "L005",
+        "name": "Court of Mneme, depositions chamber",
+        "description": "Long oval, paneled in pale oak. Two facing benches; the witness chair at one curved end under a single low light. No public gallery.",
+        "sensory_anchors": {
+          "sight": "brown-gold field of the wood paneling at the periphery",
+          "sound": "the low ringing of a struck wineglass, persistent",
+          "smell": "old oak; the iron under the cold tea on the deposition tray",
+          "touch": "the pad of the pen against the page",
+          "taste": "cold green tea at the back of the mouth"
+        },
+        "parent_region": "the Court complex",
+        "first_appearance_chapter": "ch04"
+      },
+      {
+        "id": "L006",
+        "name": "College chapel (vigil)",
+        "description": "Norman vaulting, narrow windows, black slate floor worn shallow in two long lines. The grey-faced clock at the back stops ticking at vigil and starts again to end it.",
+        "sensory_anchors": {
+          "sight": "candle wax shifting in the iron holder; Tao's hood up across the aisle",
+          "sound": "the chapel clock stopping; the wax's small wet sound; her own pulse in her ears",
+          "smell": "old stone; melted wax; the trace smell of incense never used in this century",
+          "touch": "the worn slate underfoot; the wood of the second-row bench",
+          "taste": "—"
+        },
+        "parent_region": "Reader College",
+        "first_appearance_chapter": "ch05"
+      },
+      {
+        "id": "L007",
+        "name": "Court of Mneme, central hall (with the speculum)",
+        "description": "A perfectly circular oak-paneled hall. The pale stone floor spirals down six gentle steps into the speculum: a basin of still dim water colored by the day's extract. A dark drape hangs above.",
+        "sensory_anchors": {
+          "sight": "the dim water; the drape shifting in the small air",
+          "sound": "forty Readers breathing in the ring; the thin door at the south",
+          "smell": "wax, old oak, the trace of the extract in the water",
+          "touch": "the cold of the speculum step under bare feet",
+          "taste": "the cup of clear water Reader Ji drinks before rendering"
+        },
+        "parent_region": "the Court complex",
+        "first_appearance_chapter": "ch06"
+      },
+      {
+        "id": "L008",
+        "name": "The Eastern Quarter — old tram line + Pao Street",
+        "description": "Working-class district across the canal. The tram line was decommissioned in 2041; the pale brick of the old roadbed remains. Pao Street: a row of yellowed brick houses; the third from the canal end has a green-painted door and a small black iron balcony.",
+        "sensory_anchors": {
+          "sight": "the pale brick of the old tram roadbed; the gull on the warehouse eaves; pale teal of the door",
+          "sound": "gulls; the tram bell that is not a tram bell anymore",
+          "smell": "the canal's flat green smell; bread from a pao shop; cement of the fish market",
+          "touch": "the cobble's slight unevenness; the cold brass of the bell-plate",
+          "taste": "the salt the gulls carry inland"
+        },
+        "parent_region": "the eastern quarter",
+        "first_appearance_chapter": "ch07"
+      },
+      {
+        "id": "L009",
+        "name": "Judge Tao's office on retirement morning",
+        "description": "Third floor of the College's east wing. Long oak table at the window, a small bone-handled letter knife being packed into a flat box. The room mostly empty.",
+        "sensory_anchors": {
+          "sight": "the bone-handled letter knife; Tao's silver hair down to her collarbone; the box on the table",
+          "sound": "rain making uneven runs across the window; the door's well-oiled click",
+          "smell": "old paper; the dust of an emptied office",
+          "touch": "the table edge as a wall",
+          "taste": "—"
+        },
+        "parent_region": "Reader College, east wing",
+        "first_appearance_chapter": "ch10"
+      },
+      {
+        "id": "L010",
+        "name": "Court of Mneme, antechamber + corridor",
+        "description": "Small antechamber off the central hall, two chairs, one window facing the College garden. Connected by the corridor for the Court (not the public).",
+        "sensory_anchors": {
+          "sight": "the late-afternoon light on the garden; the senior judge framed in the doorway",
+          "sound": "the door's click; the corridor's silence",
+          "smell": "the trace of speculum extract carried out of the central hall",
+          "touch": "the chair's wooden arm under her palm",
+          "taste": "—"
+        },
+        "parent_region": "the Court complex",
+        "first_appearance_chapter": "ch11"
+      }
+    ]
+  },
+  "characters": [
+    {
+      "id": "lin-wei",
+      "name": "Lin Wei",
+      "name_zh": "林薇",
+      "role": "protagonist",
+      "age": 38,
+      "appearance": "small, narrow shoulders, grey-eyed in cold light and grey-green in warm; close-cropped hair gone early grey; long hands she keeps gloved out of habit",
+      "occupation": "Reader-Prosecutor of the Court of Mneme; candidate for the Reader Council seat vacated by her retiring mentor",
+      "want": "to prosecute Han Bo successfully and secure the Reader Council seat — the seat that protects her from the cross-case inquiry that ends most Reader careers",
+      "need": "to recover the year of her own memory (her ninth year) that she has been suppressing — the year of her mother's testimony",
+      "lie": "the law is a more reliable witness than the self; she is the rational one in the room",
+      "ghost": "she sat in the public gallery of her mother's closed-record trial at age nine; she does not remember sitting there; she has built her entire professional life around being the daughter who became the law her mother failed",
+      "arc": {
+        "start": "She prosecutes by the book. She does not consult her own memory in any case, ever.",
+        "first_reckoning": "A witness's synesthetic palette matches her own — she registers it but does not act.",
+        "midpoint_reversal": "The case record contains a memory she recognizes as her own, rendered from another extracted donor.",
+        "climax_choice": "Submit her memory to the court (illegally — she is the Reader and cannot read herself; she would need to consent to extraction by another Reader, mid-trial) or destroy the record and win.",
+        "end": "She submits. She loses the case. She walks out of the College. She begins, slowly, to remember her mother."
+      },
+      "arc_beat_anchors": {
+        "start": "ch01.b01",
+        "first_reckoning": "ch04.b03",
+        "midpoint_reversal": "ch06.b04",
+        "climax_choice": "ch11.b03",
+        "end": "ch12.b04"
+      },
+      "voice_card": {
+        "sentence_length": "short to medium; bursts of sensory inventory under stress",
+        "register": "legal clinical with synesthete lapses",
+        "verbal_tics": [
+          "says 'I am persuaded that' instead of 'I think'",
+          "converts emotions into colors: 'I felt a flat blue'",
+          "uses present tense for past memory: 'she comes down the stairs'",
+          "ends rebuttals with 'Strike the metaphor. Strike it.'"
+        ],
+        "will_not_say": [
+          "I love you (until ch.12)",
+          "Mother (until ch.10)",
+          "lonely",
+          "afraid"
+        ],
+        "example_lines": [
+          "The defendant's testimony tastes of tin.",
+          "I am persuaded that the record is incomplete.",
+          "She comes down the stairs. The bannister is the color of unanswered.",
+          "Procedurally improper. Move on."
+        ]
+      },
+      "psychology": {
+        "attachment": "avoidant",
+        "trauma_response": "freeze",
+        "defenses_in_order": [
+          "intellectualization",
+          "displacement onto procedure",
+          "synesthetic distancing"
+        ],
+        "loop": "interpersonal closeness with women her mother's age → becomes clinical, schedules a filing to escape"
+      },
+      "backstory_ref": "backstories/lin-wei.md"
+    },
+    {
+      "id": "han-bo",
+      "name": "Han Bo",
+      "name_zh": "韩博",
+      "role": "antagonist",
+      "age": 51,
+      "appearance": "broad, soft-shouldered, hands the size of a workman's; speaks slowly and only when needed; one of his eyes does not track properly — a side-effect of an unauthorized extraction performed on himself, illegally",
+      "occupation": "former senior Reader, retired in disgrace at thirty-nine; now organizer of the unauthorized memory-trade ring being prosecuted",
+      "wound": "his older sister, also a Reader, retired in disgrace at thirty-nine after cross-case contamination; he watched her lose two years of her own memory in the inquiry hearings",
+      "justification": "the Mneme law steals from Readers and gives to a state that scapegoats them; his ring restores agency by allowing Readers to extract for their own use and for the grief of civilians the state cannot serve",
+      "collision_with_protagonist": "if Lin Wei remembers her ninth year, she will discover that Han Bo was the Reader who once tried to protect her mother in the closed-record trial — that he has known who Lin Wei is the whole time and has, in his way, been waiting for her",
+      "strongest_argument": "You are prosecuting me for the only crime your system permits — being correct in the wrong order.",
+      "scene_anchors": {
+        "first_appearance": "ch02.b01",
+        "midpoint_collision": "ch07.b03",
+        "final_confrontation": "ch11.b02"
+      }
+    },
+    {
+      "id": "mei",
+      "name": "Co-Prosecutor Mei",
+      "role": "ally / complicator / mirror",
+      "age": 34,
+      "voice_card": {
+        "register": "more colloquial than Lin Wei; uses contractions; lapses into humor under pressure",
+        "verbal_tics": [
+          "says 'look' as a softener",
+          "asks questions instead of making statements"
+        ]
+      },
+      "function_in_story": "Mei is what Lin Wei would have been if her mother had not been Lin Yan. Younger, less wounded, less brilliant. She is the only person at the College who treats Lin Wei as a person.",
+      "subplot": "Mei is being recruited by the reform movement. She resigns the day before Lin Wei's choice in ch.11; Lin Wei learns of it from the staff bulletin."
+    },
+    {
+      "id": "judge-tao",
+      "name": "Judge Tao",
+      "role": "mentor / moral counterweight",
+      "age": 63,
+      "function_in_story": "Lin Wei's mentor. The retiring Reader whose gowning opens the novel. She is the one who selected Lin Wei from the College's induction cohort at twelve, who knew Lin Yan as a colleague, who has been Lin Wei's wall against the past. She knows what Lin Yan's closed-record trial was about. She has never said.",
+      "voice_card": {
+        "register": "formal, ceremonial; speaks in the cadences of court even off the bench",
+        "verbal_tics": [
+          "addresses Lin Wei as 'Reader Lin' at work, 'child' once, in ch.10"
+        ]
+      }
+    },
+    {
+      "id": "lin-yan",
+      "name": "Lin Yan (the ghost)",
+      "name_zh": "林雁",
+      "role": "ghost / backstory anchor",
+      "age_at_death": 49,
+      "function_in_story": "Lin Wei's mother. Dead since Lin Wei was thirteen. A Reader; a public scandal; subject of a closed-record trial in 2043 whose details were sealed. Appears in the novel only as fragments — a hand, a voice, the smell of a particular soup — surfacing through Mneme record bleed.",
+      "what_the_reader_learns": "By ch.12 the reader has gathered (without exposition) that Lin Yan refused to testify against another Reader in her trial, that the refusal cost her the right to read, and that the other Reader was Han Bo."
+    }
+  ],
+  "outline": {
+    "grammar": "three_act_with_stc_beats",
+    "acts": [
+      {
+        "id": "act1",
+        "name": "Setup",
+        "summary": "Lin Wei accepts the Han Bo case. Old life established; first hairline crack appears.",
+        "central_image": "the mentor's burning robe at dawn",
+        "stc_beats": [
+          "opening_image",
+          "theme_stated",
+          "setup",
+          "catalyst",
+          "debate",
+          "break_into_2"
+        ],
+        "wordcount_target": 2400,
+        "chapters": [
+          {
+            "id": "ch01",
+            "title": "The Gowning",
+            "POV": "lin-wei",
+            "location_id": "L001",
+            "time": "spring 2061, day 1, dawn",
+            "opening_image": "the mentor's burning robe",
+            "summary": "Lin Wei watches Judge Tao's retirement gowning at dawn. Receives the Han Bo case file at breakfast. Notices, but does not register, that the case is older than she has been told.",
+            "length_target": 850,
+            "stc_beats_in_chapter": [
+              "opening_image",
+              "theme_stated"
+            ],
+            "beats": [
+              {
+                "id": "ch01.b01",
+                "emotion": "ceremony",
+                "function": "opening_image",
+                "length_target": 220,
+                "opening_trigger": "Lin Wei stands at the brazier in the dawn garden.",
+                "closing_image": "the sleeve rises into smoke; the shoulder drops.",
+                "facts": [
+                  {
+                    "actor": "judge-tao",
+                    "action": "stands_at_brazier",
+                    "detail": "barefoot, does not flinch"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "watches",
+                    "object": "judge-tao",
+                    "detail": "hood pulled up for an hour"
+                  }
+                ],
+                "location_id": "L001",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "ceremonial restraint"
+                  },
+                  {
+                    "character": "judge-tao",
+                    "emotion": "discipline"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "judge-tao",
+                    "before": "in office",
+                    "after": "retired (the robe is fire)"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch01.b02",
+                "emotion": "anticipation",
+                "function": "introduces protagonist's want",
+                "length_target": 200,
+                "opening_trigger": "Tao crosses the wet grass; brief embrace.",
+                "closing_image": "Lin Wei steps inside the College, carrying Tao's last in-office words.",
+                "facts": [
+                  {
+                    "actor": "judge-tao",
+                    "action": "embraces",
+                    "object": "lin-wei",
+                    "detail": "ritual palms-flat at shoulder-blades"
+                  },
+                  {
+                    "actor": "judge-tao",
+                    "action": "warns",
+                    "object": "lin-wei",
+                    "detail": "'Carry it carefully. It is older than you have been told.'"
+                  }
+                ],
+                "location_id": "L001",
+                "emotions": [
+                  {
+                    "character": "judge-tao",
+                    "emotion": "warning kindness"
+                  },
+                  {
+                    "character": "lin-wei",
+                    "emotion": "duty"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "expects an ordinary case",
+                    "after": "carries an unread warning"
+                  }
+                ],
+                "hooks_opened": [
+                  "H006"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch01.b03",
+                "emotion": "duty",
+                "function": "delivers the case",
+                "length_target": 220,
+                "opening_trigger": "Refectory. Mei across the table; the case file on her own desk later.",
+                "closing_image": "the black sleeve untied, the contents slid flat.",
+                "facts": [
+                  {
+                    "actor": "mei",
+                    "action": "informs",
+                    "object": "lin-wei",
+                    "detail": "Han Bo moved to intake at 11"
+                  },
+                  {
+                    "actor": "mei",
+                    "action": "offers_out",
+                    "object": "lin-wei",
+                    "detail": "'The Council would let it go to Park.'"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "declines",
+                    "detail": "'I am persuaded that I should take this one.'"
+                  }
+                ],
+                "location_id": "L002",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "claimed responsibility"
+                  },
+                  {
+                    "character": "mei",
+                    "emotion": "unembarrassed concern"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "could decline",
+                    "after": "has chosen the case"
+                  }
+                ],
+                "hooks_opened": [
+                  "H007"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch01.b04",
+                "emotion": "unease",
+                "function": "first crack",
+                "length_target": 210,
+                "opening_trigger": "Lin Wei reads the file cover page.",
+                "closing_image": "she lifts her hand from the page and turns to the next.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "reads",
+                    "object": "case-cover",
+                    "detail": "date of incident: August 14, 2042"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "registers_age",
+                    "detail": "she had been nine"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "private vertigo, not yet felt"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "Han Bo is a defendant",
+                    "after": "Han Bo is from her ninth year — but she does not yet let herself know"
+                  }
+                ],
+                "hooks_opened": [
+                  "H001",
+                  "H012"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 1 — The Gowning\n\nThe robe took the fire the way old wool takes it — slowly, then all at once. The cuff went first. The cuff had been oxblood thirty years ago and was now the color of brick set into a riverbank. The sleeve rose into smoke. The shoulder dropped. Judge Tao stood barefoot beside the brazier and did not flinch.\n\nLin Wei had been told, in her first week at the College, that a Reader who flinched at her own gowning had never truly read. Tao had also been told this; Tao had told her.\n\nThe garden was still wet. Last night's rain had collected in the lip of the old fountain and lay there like a film of mercury. Six Readers stood in a loose semicircle around the brazier, hoods up. Lin Wei's was up too. She had pulled it up an hour ago in the apartment, in front of the small grey mirror, and had not lowered it since.\n\n## §\n\nAfterwards, when the linen at the bottom of the brazier was a black mat and the sun was sitting on the College wall, Tao crossed the wet grass to her. They embraced briefly, the way the ritual permitted — palms flat against each other's shoulder-blades, no breath against the cheek.\n\n\"You will eat?\" Tao said.\n\n\"I will eat.\"\n\n\"And then the file.\"\n\n\"Then the file.\"\n\nTao stepped back. Her bare feet were grey with cold. \"Reader Lin,\" she said. The two words were the last she would speak to Lin Wei in office. \"Carry it carefully. It is older than you have been told.\"\n\nLin Wei did not ask what she meant. To ask would have been to begin the year wrong. She bowed, by a degree, and went inside.\n\n## §\n\nThe refectory served what it always served on a gowning morning — sweet rice porridge, dried plum, a thin green tea that tasted of iron. Mei was already at the long table, her hood down, her short hair pushed back behind one ear. She lifted a hand.\n\nLin Wei sat. She drew the bowl to her without looking at it. The porridge tasted, today, of nothing she could name. This had happened before, after vigils. The sensorium emptied; the colors went grey; the food was only food. By lunch she would be inside her body again.\n\n\"They've moved Han Bo to the intake chamber,\" Mei said.\n\n\"Today?\"\n\n\"Eleven.\"\n\n\"Then I will read after lunch.\"\n\nMei watched her with the unembarrassed attention Mei always paid her — the attention Lin Wei had not yet learned how to receive. \"You don't have to take this one, Wei. The Council would let it go to Park.\"\n\n\"I am persuaded that I should take this one.\"\n\nMei did not press. She rarely pressed. She passed Lin Wei the small tin of plums and let the silence do what silence did at this table on this morning.\n\n## §\n\nThe file was thick. It came in a black sleeve bound with a single oxblood ribbon, the way all Council files came. Lin Wei sat at the apartment desk and untied the ribbon and slid the contents flat with the heel of her hand.\n\nThe cover page was standard. *People of the Republic v. Han Bo, count one, unauthorized extraction in concert with others, sixteen instances.* The date of filing was three weeks ago. The date of incident was, by court convention, the date of the first proven instance.\n\nShe read the date of incident twice.\n\nThe date of incident was August fourteen, 2042.\n\nShe set the page down. She set the page very carefully down. She put her right palm flat over the date and looked at her hand. Her hand was a hand. The pulse in her wrist was the small steady pulse it always was. She listened to it. She listened to the gulls outside, audible because the garden window was open. She listened to the radiator behind her tick, twice, three times, into the rhythm of the building's pressure.\n\nAugust fourteen, 2042. She had been nine.\n\nThe file said the case was ongoing in the sense that the most recent proven extraction had occurred this March. But the date of incident — the first proven instance — was nineteen years ago. The bureaucracy of Mneme moved slowly when it moved against itself. The case was older than her career. The case was older than her grief.\n\nShe lifted her hand from the page. She set the page in the stack. She turned to the next page.\n\nShe did not allow herself to feel anything yet. There would be time for that. There would not, in fact, be time for that, but she did not know that yet.\n\nShe picked up her pen.\n"
+          },
+          {
+            "id": "ch02",
+            "title": "The Defendant",
+            "POV": "lin-wei",
+            "location_id": "L004",
+            "time": "day 2, late morning",
+            "opening_image": "Han Bo seated, hands palm-down on the bare table.",
+            "summary": "Lin Wei meets Han Bo for the formal intake. He says almost nothing. He has one tic — he watches her hands.",
+            "length_target": 820,
+            "beats": [
+              {
+                "id": "ch02.b01",
+                "emotion": "wariness",
+                "function": "antagonist's first appearance",
+                "length_target": 280,
+                "opening_trigger": "Lin Wei enters the intake chamber.",
+                "closing_image": "she sits across from him; draws gloves on.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "enters",
+                    "object": "intake-chamber"
+                  },
+                  {
+                    "actor": "han-bo",
+                    "action": "waits",
+                    "detail": "already seated"
+                  }
+                ],
+                "location_id": "L004",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "professional cool"
+                  },
+                  {
+                    "character": "han-bo",
+                    "emotion": "patient waiting"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch02.b02",
+                "emotion": "procedure",
+                "function": "intake ritual",
+                "length_target": 280,
+                "opening_trigger": "Lin Wei reads the rights script; depresses the bead.",
+                "closing_image": "she sets her pen down and asks for a statement.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "performs_intake",
+                    "detail": "two-party recording; standard sheets"
+                  },
+                  {
+                    "actor": "han-bo",
+                    "action": "confirms_park",
+                    "detail": "defense Reader nominated"
+                  },
+                  {
+                    "actor": "han-bo",
+                    "action": "refuses_extraction",
+                    "detail": "stands on right"
+                  }
+                ],
+                "location_id": "L004",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "controlled focus"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "case",
+                    "before": "filed",
+                    "after": "intake closed"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch02.b03",
+                "emotion": "puzzle",
+                "function": "Han Bo's one watch",
+                "length_target": 260,
+                "opening_trigger": "Long silence. Han Bo's eyes settle on her hands.",
+                "closing_image": "the small nod that ends the silence without filling it; she walks the blue corridor.",
+                "facts": [
+                  {
+                    "actor": "han-bo",
+                    "action": "looks_at",
+                    "object": "lin-wei.hands",
+                    "detail": "the way one looks at something long awaited"
+                  },
+                  {
+                    "actor": "han-bo",
+                    "action": "gives_no_statement",
+                    "detail": "'No statement, Reader Lin.'"
+                  }
+                ],
+                "location_id": "L004",
+                "emotions": [
+                  {
+                    "character": "han-bo",
+                    "emotion": "recognition he will not name"
+                  },
+                  {
+                    "character": "lin-wei",
+                    "emotion": "discounted unease"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "treats him as defendant",
+                    "after": "trained-not-to-think about why he watched her hands"
+                  }
+                ],
+                "hooks_opened": [
+                  "H002"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 2 — The Defendant\n\nThe intake chamber at the Court of Mneme was a small square room without windows. It was lit, by custom, from above — a single panel of soft white that gave no shadows. The chairs were two: the Reader's chair, oak, on one side of a table the width of an opened book; the defendant's chair, also oak, on the other. The table was bare.\n\nHan Bo was already seated when Lin Wei came in. He was a broad man going to softness in the shoulders, the way men in their fifties go who used to lift things and now do not. His hands were on the table, palms down, fingers spread. They were a workman's hands; they were too large for the rest of him.\n\nShe had read his file. She knew he had been a Reader once. She knew he had retired in disgrace at thirty-nine, that he had been one of the early bleeders, that his sister — also a Reader, also a bleeder — had died by her own hand in the year of his retirement. She knew that his left eye did not track properly, the way the eyes of those who had attempted self-extraction did not track properly, and she knew that he had never been charged for the self-extraction because the same condition had been understood as injury.\n\nShe had read all of this. She had brought none of it into the room.\n\nShe sat. She drew her gloves on, the way she always did when entering a defendant's presence, even now, even with him — the gloves were custom, not law, but she had not gone gloveless before a defendant in fourteen years.\n\n\"Reader Lin,\" he said. His voice was low. \"Good morning.\"\n\n\"Mr Han.\"\n\nShe opened the small leather folio she had brought. She set out the four sheets the intake required, in their correct order. She set the recording bead in the center of the table and depressed it once. The bead pulsed; a small green ring lit; the chamber's two-party witnesses, on the other side of the door, would now be recording.\n\n\"Mr Han, I am the prosecuting Reader for the People v. Han Bo. Today is an intake. I will not ask you any question to which a truthful answer would compromise your defense. Do you understand the scope of an intake?\"\n\n\"I do.\"\n\n\"You have the right to a defense Reader of your choosing. You have nominated Reader Park. Do you confirm?\"\n\n\"I confirm.\"\n\n\"You have the right to refuse extraction in your own case. You have refused. Do you confirm?\"\n\n\"I do.\"\n\nShe made the small mark in the corner of the second sheet. She set down her pen.\n\n\"Mr Han, before we close intake, do you wish to make a statement for the record?\"\n\nHe did not answer for a long time. The intake chamber, being lit from above and being lined in pale grey acoustic felt, had no register for time; the silence accumulated against the table like water. Lin Wei did not refill it. The silence at intake was the defendant's; she had been trained to leave it.\n\nThen his eyes — the good one and the one that did not track — settled on her hands.\n\nThe gloves were unbleached linen. They had been hers for nine years. She had had them shortened at the wrist twice. They did not show the inside of her wrist; they did not show the small pale scar on her left thumb she had carried since she was a child; they did not show that her hands were small.\n\nHe looked at her hands the way one looks at something one has been waiting a long time to see.\n\nHe did not say anything.\n\nAfter a moment, he lowered his eyes back to the table. He spread his fingers wider. He nodded, once, a small nod that ended the silence on his side of the table without filling it.\n\n\"No statement, Reader Lin.\"\n\n\"Thank you, Mr Han. Intake is closed.\"\n\nShe depressed the bead. The green ring went out. She gathered her four sheets, in their correct order, into the folio, and she stood. She bowed to him, the bow custom required, neither deep nor shallow.\n\n\"Mr Han,\" she said.\n\n\"Reader Lin.\"\n\nShe turned. She went to the door. She did not look back at him.\n\n## §\n\nIn the corridor outside the chamber, the court officer — a thin woman she had worked with for years — handed her the day's calendar without looking at her face. Lin Wei took it. She walked the long blue-tiled corridor to the registry. The blue tiles were the color, today, of an unfinished sentence. She did not think about why he had looked at her hands. She had been trained not to.\n\nShe thought about it anyway, for the length of three tiles, and then she did not.\n"
+          },
+          {
+            "id": "ch03",
+            "title": "The Letter",
+            "POV": "lin-wei",
+            "location_id": "L003",
+            "time": "day 2, evening",
+            "opening_image": "the manila envelope arrives in the second post.",
+            "summary": "A sealed letter arrives from her father, whom she has not seen in three years. He has been moved into hospice. She does not open the letter.",
+            "length_target": 720,
+            "beats": [
+              {
+                "id": "ch03.b01",
+                "emotion": "interruption",
+                "function": "subplot enters (the father)",
+                "length_target": 240,
+                "opening_trigger": "The envelope is set on the desk, square with the corner.",
+                "closing_image": "the composition — envelope, teacup, oak — is very nearly beautiful.",
+                "facts": [
+                  {
+                    "actor": "post",
+                    "action": "delivers",
+                    "object": "father-letter",
+                    "detail": "manila, single sheet, her father's hand"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "places",
+                    "object": "envelope",
+                    "detail": "square with desk corner"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "controlled deferral"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "the past is sealed",
+                    "after": "the past is sealed and on the desk"
+                  }
+                ],
+                "hooks_opened": [
+                  "H003"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch03.b02",
+                "emotion": "suppression",
+                "function": "she chooses not to read",
+                "length_target": 240,
+                "opening_trigger": "She tries to work the file; the envelope moves a quarter inch from each page-turn.",
+                "closing_image": "she lifts the envelope; sets it down; the bell that is not a bell rings.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "works",
+                    "object": "case-file"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "refrains_from",
+                    "object": "envelope"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "displacement onto procedure"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch03.b03",
+                "emotion": "displacement",
+                "function": "Mei calls",
+                "length_target": 240,
+                "opening_trigger": "Console chimes; Mei.",
+                "closing_image": "Mei: 'Friday.' Lin Wei: 'Friday.' The console pip.",
+                "facts": [
+                  {
+                    "actor": "mei",
+                    "action": "calls"
+                  },
+                  {
+                    "actor": "mei",
+                    "action": "withholds",
+                    "detail": "'I want to tell you something. In person. Friday.'"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "mei",
+                    "emotion": "careful gathering"
+                  },
+                  {
+                    "character": "lin-wei",
+                    "emotion": "muted concern"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "mei",
+                    "before": "co-prosecutor",
+                    "after": "co-prosecutor with a thing to say"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 3 — The Letter\n\nThe letter came in the second post. It came in a thin manila envelope, the kind one used to buy at the stationers across the canal, that had no internal lining and gave away the texture of its contents — a single folded sheet, perhaps two, no card. It was addressed in her father's hand. She knew her father's hand the way one knows the gait of a relative one has not seen — by absence, by the shape of what no longer crosses the room.\n\nShe set the envelope on the apartment desk. She set it square with the corner. She set her teacup on the other corner. She washed her hands at the small sink in the corner, dried them on the linen towel, and turned, and stood, and looked at the desk.\n\nThe envelope was the color of unbleached linen. The desk was oak. The teacup was the green-white of new bone. The composition was very nearly beautiful. She sat down on the chair that was not at the desk — the smaller chair, the one she used for reading — and she did not open the envelope.\n\n## §\n\nShe tried to read the file. The file lay open on the desk under the lamp. She had got as far, this morning, as the index of confirmed extractions. The names of the donors were redacted with a small black square — not the heavy redactions of a closed-record case but the soft, ordinary redactions of an open one. She had been working through the index slowly, by initials, since 4 PM. It was 8 PM. She had moved through three letters.\n\nShe could not read past the envelope. The envelope was three inches from her elbow. Whenever her hand turned a page, the envelope moved a quarter inch on the desk from the small air the page made. She watched it move. She did not move it back.\n\nAfter the fourth time, she closed the file. She went to the small kitchen. She made another tea. She came back. She sat. She lifted the envelope. She held it in her hand.\n\nIt was light. It would be one sheet. He had never been a man for paragraphs. His handwriting, when he wrote at all, was small and even and disinclined to commit; he closed sentences with a comma where another man would put a period, as though to suggest that the matter, on his part, was not closed.\n\nShe set the envelope down. She did not open it.\n\nIn the apartment, the radiator ticked twice. The window over the College garden was a square of nothing — the garden lay below the window's sill, invisible. Beyond the garden wall a tram bell rang, far off, on a line that had not been a tram line for twenty years. She had heard this bell, intermittently, since she was a girl. Sometimes it was a real bell — the temple, the freight yard. Sometimes it was a colour in the side of her mind, surfacing the way colours surfaced when her sensorium had been overworked: a flat amber bell that was not a bell.\n\nTonight she could not tell. She lifted her tea. She sat in the smaller chair with the cup in her two hands and waited for the bell to either keep ringing or stop.\n\n## §\n\nThe console on the desk chimed. She set the cup down. It was Mei.\n\n\"You're up late.\"\n\n\"I'm reading.\"\n\n\"You're not reading.\"\n\nShe gave Mei the small breath that, in the language they had been speaking for ten years, served as a laugh.\n\n\"How was intake?\" Mei said.\n\n\"He looked at my hands.\"\n\nA pause on the other end. \"Your gloves?\"\n\n\"My gloves.\"\n\n\"Anything else?\"\n\n\"No statement.\"\n\nMei was quiet for the time it took to take a sip of something. The console picked up the small swallow.\n\n\"Wei,\" she said. \"There's something I want to tell you. Not tonight. Later this week. I don't want to do it on the console.\"\n\n\"Mei, are you all right?\"\n\n\"I'm fine. Look, it isn't about me. It's about the case. Or — it's about us, and the case is in there. I want to do it in person. Are you free Friday?\"\n\n\"I am free Friday.\"\n\n\"Friday.\"\n\nThe console went quiet, and then the small pip that meant the connection had closed. Lin Wei held the dead console for a moment as though it were still warm, and then she set it back in its dock. She turned to the envelope.\n\nThe envelope was still on the desk. The tea was cooling. The bell in the side of her mind — the bell that was not a bell — had stopped ringing without her noticing.\n\nShe picked up the file again. She found the index of confirmed extractions. She found the letter she had stopped at, which was *L*. She made herself read past *L*. She made it as far as *M*. The redactions were soft. The donors' initials were not given. She closed her eyes for a beat and opened them and looked at the envelope and did not open it. She went to bed at half-past eleven and lay in the dark and listened, for a long time, to the radiator.\n"
+          }
+        ]
+      },
+      {
+        "id": "act2",
+        "name": "Confrontation",
+        "summary": "The trial begins. A witness's testimony arrives in a palette Lin Wei recognizes. The midpoint reversal: the case record contains her own memory.",
+        "central_image": "the dim water of the speculum, full of someone's last hour",
+        "stc_beats": [
+          "b_story",
+          "fun_and_games",
+          "midpoint",
+          "bad_guys_close_in",
+          "all_is_lost",
+          "dark_night"
+        ],
+        "wordcount_target": 2700,
+        "chapters": [
+          {
+            "id": "ch04",
+            "title": "The Witness's Palette",
+            "POV": "lin-wei",
+            "location_id": "L005",
+            "time": "day 4, morning",
+            "opening_image": "the witness's gloved hand on the deposition table.",
+            "summary": "Lin Wei deposes the prosecution's third witness. The witness's extracted memory, read by Park, comes in colors Lin Wei has tasted before.",
+            "length_target": 880,
+            "beats": [
+              {
+                "id": "ch04.b01",
+                "emotion": "procedure",
+                "function": "deposition opens",
+                "length_target": 200,
+                "opening_trigger": "Du Yan in the witness chair; Park at the lectern; recording bead on.",
+                "closing_image": "Park rises to render.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "opens_deposition",
+                    "object": "du-yan"
+                  },
+                  {
+                    "actor": "reader-park",
+                    "action": "prepares_render",
+                    "detail": "rendered in private 3 days prior"
+                  }
+                ],
+                "location_id": "L005",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "professional warmth toward Park"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch04.b02",
+                "emotion": "recognition",
+                "function": "the palette match",
+                "length_target": 360,
+                "opening_trigger": "Park renders the donor's sensory palette.",
+                "closing_image": "Lin Wei stops her pen against the page; the page tilts; she does not look up.",
+                "facts": [
+                  {
+                    "actor": "reader-park",
+                    "action": "renders_palette",
+                    "detail": "struck wineglass register; cold green tea; brown-gold field"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "writes_then_stops",
+                    "detail": "shorthand: struck wineglass; green tea cold; brown-gold field"
+                  }
+                ],
+                "location_id": "L005",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "private vertigo without movement"
+                  },
+                  {
+                    "character": "reader-park",
+                    "emotion": "professional concentration"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "trusts the cross-index that disqualified palette-twins from her cases",
+                    "after": "knows the system has missed something — but does not yet act"
+                  }
+                ],
+                "hooks_opened": [
+                  "H004"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch04.b03",
+                "emotion": "freeze",
+                "function": "first reckoning — Lin Wei registers and does not act",
+                "length_target": 320,
+                "opening_trigger": "Park finishes; expects her examination.",
+                "closing_image": "she writes, in her private shorthand: 'The same palette. Not possible. Possible.'",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "closes_deposition",
+                    "detail": "without conducting examination beyond pro forma"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "records_private_note",
+                    "detail": "'The same palette. Not possible. Possible.'"
+                  }
+                ],
+                "location_id": "L005",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "freeze + intellectualization"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "rational gatekeeper",
+                    "after": "rational gatekeeper who has registered an irrationality and is still holding the line"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 4 — The Witness's Palette\n\nThe depositions chamber was the largest of the Court's working rooms. It was a long oval, paneled in pale oak, with two facing benches at the long sides and the witness chair set at one of the curved ends, a single low light above it. There was no public gallery; the Court of Mneme did not permit one at deposition. There were, today, four people in the room: the witness, the witness's own counsel, the rendering Reader (Park, soft-spoken, in his thirties), and Lin Wei.\n\nThe witness was a small woman in her forties, named Du Yan. She was not herself a Reader; she had been a clerical employee of one of Han Bo's intermediate shell companies for three years and had volunteered, after the indictment, to be extracted for a single afternoon — the afternoon of an unauthorized transaction she had witnessed in a corridor of an office building. The extracted record had been rendered for the first time, in private, by Park three days ago. Today it would be rendered formally, in deposition, on the record.\n\nPark rose. He bowed. He went to the small lectern at the foot of the witness chair and set out his notes. He was a careful Reader; Lin Wei had read him three times in her career and trusted his hand.\n\n\"Reader Park, you may begin,\" she said.\n\nHe began.\n\n## §\n\nThe rendering of an extracted memory was, in deposition, more constrained than in court. There was no *speculum*; there was no descent into water; Park did not render the memory live. He read his notes — the rendering he had done in private — and spoke the testimony into the chamber's recording bead. The testimony was the rendering. The rendering was the testimony. The witness, beside him, did not speak; she had agreed at extraction that her extracted self had said everything she would say in court.\n\n\"At approximately fifteen-twenty hours,\" Park said, \"the donor was descending the east stairwell of 47 Lin Mu Way. The stairwell was lit from a window at the half-landing. The light came in across the donor's left shoulder. The donor's sensory palette at this moment was — \"\n\nHe paused. He looked at his notes. He continued.\n\n\" — a low ringing in the auditory channel, in the register of a struck wineglass; a taste in the back of the donor's mouth of green tea allowed to grow cold; in the visual channel, a brown-gold field at the periphery that the donor's eye read as the wood paneling of the stairwell. In the affective channel the donor registered, faintly, the small alertness one feels in a familiar place not quite recognized.\"\n\nLin Wei wrote on the pad in front of her. The pad was for the prosecution's notes; she wrote, by habit, what mattered to her in shorthand. She wrote: *struck wineglass; green tea cold; brown-gold field.* She wrote it without thinking.\n\nThen, in the second second, she stopped writing.\n\nShe did not look up. She did not move her pen. She held the pen against the page and looked at what she had written, in her own hand, and the page tilted a fraction in front of her eyes — not because the page had moved but because something inside her had.\n\nShe knew that palette. She had it. She had had it, intermittently, since she was nine. The brown-gold field at the periphery was familiar to her. The struck-wineglass auditory register, in the low end, was familiar to her. The cold green tea was hers; it had been hers in the porridge yesterday morning at the gowning. It had been hers, intermittently, all her adult life.\n\nPark went on speaking. Park's voice was very far away.\n\nThe donor's palette was Lin Wei's palette.\n\n## §\n\nThis was not, in itself, impossible. Synesthetes of the same neurological type produced overlapping renderings; that was the basis of the Reader system. Two Readers reading the same memory often produced similar palettes. Two donors of similar neurology, undergoing similar events, could produce similar palettes.\n\nBut two donors. Two donors did not happen.\n\nLin Wei had been certified at twelve. Her palette was on file with the College, current and updated; she had refreshed it for the last time, by the protocol, two years ago. The College kept a synesthete cross-index. The cross-index was used to disqualify Readers from cases involving their own kind of perception — to prevent contamination. Du Yan's palette, by definition, could not be Lin Wei's palette. If it were, the case would not have been assigned to her.\n\nDu Yan's palette was Lin Wei's palette.\n\nThe page in front of her was still tilted a fraction in front of her eyes. She set the pen down. She lifted her own gloved hand. She let it rest on the page. The hand was a hand. It had a small steady weight. She put her attention into the weight of the hand, into the page beneath the hand, into the table beneath the page; she put her attention down into the floor, into the foundations of the chamber, into the wet ground under the foundations; and she kept it there. She did not move.\n\nPark finished the rendering. He bowed to the witness and to Lin Wei and to the recording bead, in that order. He stepped back from the lectern.\n\n\"Reader Lin?\"\n\nShe raised her head. She had not noticed she had been looking down. Park's small open face was waiting for her to speak.\n\nShe did not have, at that moment, any one of her sentences. She had no *I am persuaded* and no *strike the metaphor* and no *procedurally improper*. She had a row of pieces of furniture inside her head and no one was sitting at any of them.\n\n\"Reader Lin,\" Park said, more gently. \"The deposition is concluded. The witness is awaiting your dismissal.\"\n\n\"Thank you, Reader Park.\"\n\nShe drew the breath she had been keeping in. She turned to the witness. She bowed.\n\n\"Madam Du, the deposition is closed. You are excused with the Court's thanks.\"\n\nDu Yan rose and bowed. Du Yan's counsel rose and bowed. They left, with Park, by the small side door. Lin Wei did not stand. She sat in the depositions chamber, with the recording bead now dark, looking at the page in front of her, and she let herself, for a length of time she would later not be able to recall, not be a prosecutor and not be a Reader and not be anything other than a person inside a body that had recognized something it did not want to recognize.\n\nShe wrote on the page, in the small clean shorthand she used for her own private notes:\n\n*The same palette. Not possible. Possible.*\n\nThen she closed the pad. She put the pad in the leather folio. She tied the folio shut. She stood. She went out.\n"
+          },
+          {
+            "id": "ch05",
+            "title": "Vigil",
+            "POV": "lin-wei",
+            "location_id": "L006",
+            "time": "day 4, night",
+            "opening_image": "the chapel clock stops; silence accumulates.",
+            "summary": "Lin Wei attends the College's evening vigil for the first time in nine years. Tao is there. They do not speak. She remembers a hymn she had forgotten.",
+            "length_target": 700,
+            "beats": [
+              {
+                "id": "ch05.b01",
+                "emotion": "stillness",
+                "function": "interior pacing breath",
+                "length_target": 240,
+                "opening_trigger": "She walks across the wet grass to the chapel at the third bell.",
+                "closing_image": "she lets her sensorium empty into the slate and stone.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "attends_vigil",
+                    "detail": "for the first time in nine years"
+                  }
+                ],
+                "location_id": "L006",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "permitted stillness"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "tightly held",
+                    "after": "porous to her own sensorium"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch05.b02",
+                "emotion": "recovered memory (small)",
+                "function": "the hymn — a foreshadow",
+                "length_target": 240,
+                "opening_trigger": "A fragment of a hymn surfaces. A woman's voice. Two notes, then stops.",
+                "closing_image": "the woman's voice sings two notes and stops.",
+                "facts": [
+                  {
+                    "actor": "lin-wei.sensorium",
+                    "action": "surfaces",
+                    "object": "hymn-fragment",
+                    "detail": "a voice not Tao's; lower, warmer, slower"
+                  }
+                ],
+                "location_id": "L006",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "involuntary remembering"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "ninth year is silence",
+                    "after": "ninth year has a voice in it"
+                  }
+                ],
+                "hooks_opened": [
+                  "H005",
+                  "H010"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch05.b03",
+                "emotion": "near-confession",
+                "function": "Tao gives an opening; Lin Wei doesn't take it",
+                "length_target": 220,
+                "opening_trigger": "Tao crosses, sits beside her.",
+                "closing_image": "Tao stands; lays her hand briefly on Lin Wei's shoulder; leaves.",
+                "facts": [
+                  {
+                    "actor": "judge-tao",
+                    "action": "offers_audience",
+                    "object": "lin-wei",
+                    "detail": "'If there is a thing you would like to ask me before tomorrow, you may ask it tonight.'"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "stays_silent"
+                  }
+                ],
+                "location_id": "L006",
+                "emotions": [
+                  {
+                    "character": "judge-tao",
+                    "emotion": "patient invitation"
+                  },
+                  {
+                    "character": "lin-wei",
+                    "emotion": "refusal in the body"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "could have asked",
+                    "after": "did not ask — but knows she could have"
+                  }
+                ],
+                "hooks_opened": [
+                  "H006"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 5 — Vigil\n\nShe went to vigil for the first time in nine years.\n\nShe did not decide to go. She left the chamber, she walked the blue corridor, she crossed the bridge to the College, she ate her supper alone in the small kitchen and washed the bowl, and at the third bell she put on her outer robe and pulled the hood up and walked across the wet grass to the chapel.\n\nThe chapel had been a chapel before the College had been the College. The vaulting was Norman; the windows were narrow; the floor was made of black slate worn shallow in two long lines from the centuries of feet. The College used it now, with no theology, for the evening silence. Readers attended it as inclination took them. There were nights, Lin Wei knew, on which only one Reader sat. There were nights on which the chapel was full.\n\nTonight there were four. Tao was one of them. Tao sat in the second row on the right with her hood pulled up and her hands folded. Lin Wei went to the second row on the left. She did not look across the aisle.\n\nThe silence began at the half-hour, when the small grey-faced clock at the back of the chapel stopped ticking, the way the chapel clock always stopped at vigil. Silence did not require a bell at this hour; the absence of the tick was the cue.\n\nShe had forgotten how the silence accumulated.\n\n## §\n\nIn her childhood she had been brought to chapel by an aunt who was not religious and had not understood why one went, but who had understood, perhaps, that there were rooms in which a child like Lin Wei could empty her sensorium for an hour. Lin Wei had emptied hers. She had sat on the black slate and felt the colors run out of her like water through a sieve. She had come out of those evenings light-headed, hungry, almost weightless.\n\nShe had stopped going to chapel, here, in her late twenties. There had not been a reason. The reason had been that the silence permitted her to know more than she had use for.\n\nShe sat now on the wooden bench in the second row on the left and let the silence accumulate. It accumulated very quickly. After a few minutes, she could hear her own pulse in her ears. After ten, she could hear the building's pressure. After fifteen, she could hear the small wet sound of the candle wax in the iron holder at the front of the chapel, the wax shifting in its own weight as the wick burned through it.\n\nShe listened to the wax. She listened to her pulse. She let the brown-gold field around the inside of her eyelids rise where it wanted to rise and fall where it wanted to fall.\n\nSomewhere in her — she did not know if it was the twentieth minute or the twenty-fifth — a fragment of a hymn surfaced. It came up the way things came up after vigils: not as memory but as the print left by memory, a few bars of melody and then the syllable, in a voice she did not recognize but had once known, of a single word that meant nothing on its own.\n\nThe voice was a woman's. The voice was not Tao's. The voice was lower than Tao's and warmer than Tao's and slower than Tao's.\n\nThe voice sang two notes and stopped.\n\n## §\n\nThe silence ended, by the same custom as it began, when the grey clock at the back of the chapel started its tick again. Lin Wei did not move for a long moment. The four Readers around her began, with the small soft sounds of cloth, to stand and to leave. They left without looking at one another.\n\nTao stood. Tao did not leave. Tao walked across the aisle and sat down beside Lin Wei.\n\nFor perhaps a minute Tao sat with her hood up and her hands folded. Lin Wei did not turn her head.\n\n\"Reader Lin,\" Tao said. Her voice was almost a whisper. \"If there is a thing you would like to ask me before tomorrow, you may ask it tonight. I am not in office; I will answer as a private person.\"\n\nLin Wei did not answer.\n\nTao waited. The grey clock ticked. The candle shifted in its iron holder.\n\nAfter a length of time Lin Wei did not measure, Tao stood and laid her hand, briefly and lightly, on Lin Wei's shoulder — the small permitted touch, the touch the ritual allowed only at gowning. She left. The door of the chapel closed behind her with the soft well-oiled click that the College kept its doors oiled to make.\n\nLin Wei sat for another while in the empty chapel. The candle had burned down to the iron. The grey clock ticked. She thought of the woman's voice that had sung two notes and stopped. She did not call after it. She did not name it.\n\nShe thought of her gloved hand on the depositions page. She thought of the brown-gold field at the periphery. She thought of the date of incident: August fourteen, 2042.\n\nShe had been nine. She had been small. She had had a mother. She had had a particular soup she had liked, that her mother had made, that had a particular smell — anise, maybe, or fennel, something with a green astringency. She could not now remember which.\n\nShe stood. She left. She walked back across the wet grass to her apartment. She did not open the envelope.\n\nShe slept badly. In the bad sleep, the voice sang two notes and then a third — and then she woke, with the third note still in her ear, and lay in the dark and tried, and failed, to hold onto the third note. By morning it was gone.\n"
+          },
+          {
+            "id": "ch06",
+            "title": "The Speculum",
+            "POV": "lin-wei",
+            "location_id": "L007",
+            "time": "day 6",
+            "opening_image": "the dim water of the speculum.",
+            "summary": "The midpoint. Reader Ji renders Du Yan's record in open court. Within the rendered memory: a corridor, a soup smell, a child watching from the gallery. Lin Wei recognizes the child as herself.",
+            "length_target": 950,
+            "beats": [
+              {
+                "id": "ch06.b01",
+                "emotion": "anticipation",
+                "function": "the central courtroom scene begins",
+                "length_target": 220,
+                "opening_trigger": "Lin Wei takes the prosecution chair; Mei beside her; Park across the well.",
+                "closing_image": "Reader Ji begins the descent.",
+                "facts": [
+                  {
+                    "actor": "reader-ji",
+                    "action": "descends",
+                    "object": "speculum",
+                    "detail": "barefoot, by protocol"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "held breath"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch06.b02",
+                "emotion": "attention",
+                "function": "the Reader begins the rendering",
+                "length_target": 240,
+                "opening_trigger": "Ji rises, walks to the lectern, drinks the cup of clear water.",
+                "closing_image": "the donor's mind, the rendering says, was 'elsewhere — partially in the building of childhood.'",
+                "facts": [
+                  {
+                    "actor": "reader-ji",
+                    "action": "renders",
+                    "object": "du-yan.memory"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "professional concentration over private alarm"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch06.b03",
+                "emotion": "vertigo",
+                "function": "the child in the gallery",
+                "length_target": 240,
+                "opening_trigger": "Ji renders: 'the donor's left hand held the wrist of a child.'",
+                "closing_image": "Lin Wei lifts her gloved hand to the level of her jaw; holds it there.",
+                "facts": [
+                  {
+                    "actor": "reader-ji",
+                    "action": "renders_detail",
+                    "detail": "'the donor's left hand held the wrist of a child'"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "registers",
+                    "detail": "the corridor is the corridor she stood in at nine"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "interior collapse held flat"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [
+                  "H004"
+                ],
+                "text": ""
+              },
+              {
+                "id": "ch06.b04",
+                "emotion": "shock_freeze",
+                "function": "midpoint reversal — Lin Wei recognizes herself",
+                "length_target": 250,
+                "opening_trigger": "Ji concludes. He bows.",
+                "closing_image": "she says, in the voice of the rebuttal: 'I am persuaded that the rendering is complete.' The third note holds in the back of her mind.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "registers_self_as_child",
+                    "detail": "the wrist scar; the man's hand; her aunt's tea cup"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "speaks_publicly",
+                    "detail": "'I am persuaded that the rendering is complete.'"
+                  },
+                  {
+                    "actor": "court",
+                    "action": "adjourns",
+                    "detail": "for one hour"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "midpoint break held inside professional containment"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "knows the rendering matches her sensorium",
+                    "after": "knows the rendering IS her sensorium — and the child is her"
+                  }
+                ],
+                "hooks_opened": [
+                  "H008"
+                ],
+                "hooks_resolved": [
+                  "H010"
+                ],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 6 — The Speculum\n\nThe central hall of the Court of Mneme was perfectly circular. The wall was unbroken oak from floor to ceiling, save for the two narrow doors — one for the Court, one for the public — set opposite each other. The ceiling was hung with a single dark drape. The floor was paved in a slow spiral of pale stone that descended six gentle steps into the well at the center, in which sat the *speculum*: a basin, perhaps four meters across, of still dim water. The water was, today as it was every day, colored by the particular extract that had been added to it the night before — the day's extract, which was Du Yan's.\n\nLin Wei sat in the prosecution's chair on the upper ring. Mei sat beside her. Across the well, in the defense's chair, Reader Park sat alone — defense Readers, in the absence of the defendant, sat alone; Han Bo had refused, again, to attend. Three judges sat on the high bench at the south of the ring. The Council member appointed to read the day's record, Reader Ji, was a thin man in his late forties whom Lin Wei had worked across from twice. He was not synesthete with her; the College cross-index had confirmed it.\n\nThe chamber was, at the opening of the rendering, almost silent — only the small sound of the water under the dark drape, the small sound of forty-some Readers' breathing in the ring, the small thinness of the wooden door that had just closed behind the last person to enter.\n\n\"Reader Ji,\" the senior judge said. \"You may descend.\"\n\nReader Ji rose. He walked to the head of the six steps. He took off his sandals at the top of the steps, as the protocol required. He descended barefoot. At the second step from the bottom he stopped, knelt, and lowered his right hand into the dim water.\n\nThe water rose, very slightly, around his wrist. The drape above the well swayed in the small air the movement made.\n\n\"I am Reader Ji,\" he said into the water, the way the protocol required. \"I take the record into my reading.\"\n\nHis head bowed. His eyes closed.\n\nThe Court of Mneme settled into the long quiet of the descent.\n\n## §\n\nThe descent of a Reader into a record was the part of the Mneme protocol that, even by the year 2061, no one outside the Court understood in any but the most ceremonial way. The Reader read; the Reader rendered; the Reader spoke. Between the reading and the rendering there was, in any given Reader, a length of time that ranged from three minutes to fifteen. The Court permitted it. The Court was patient. The water sat in the well and the drape shifted overhead in the small air and the people in the ring breathed.\n\nLin Wei, in the prosecution's chair, did not breathe in the small even rhythm she had trained herself to. She did not breathe in any rhythm at all. She had drawn one long breath at the descent and had not let it go.\n\nMei, beside her, did not look at her.\n\nAfter what Lin Wei measured later as eight minutes — she had been counting the small sound of the water under the drape — Ji opened his eyes.\n\nHe stood. He climbed the six steps. He walked, dripping, to the rendering lectern, which had been set out for him at the north of the ring opposite the bench. He lifted, from the lectern, the small light cup of clear water set there to clear the palate of the previous record. He drank it. He set the cup down. He began to render.\n\n## §\n\n\"At approximately fifteen-twenty-three hours,\" he said, \"the donor was descending the east stairwell of 47 Lin Mu Way. The donor met a man at the half-landing. The man was approximately forty years of age, broadly built, with a hand the size of a workman's. The man took, from the donor, an unmarked envelope. The man placed the envelope in the inner pocket of his coat. The man did not speak. The donor's sensory palette at this moment — \"\n\nHe paused. He turned, slightly, toward the bench. Then he continued.\n\n\" — was as follows. In the auditory channel, the ringing of a struck wineglass in the low register, persistent for the duration. In the gustatory channel, cold green tea at the back of the mouth. In the visual channel, a brown-gold field at the periphery — the wood paneling of the stairwell. In the affective channel, alertness. In the spatial channel, the donor registered the corner of the half-landing as the floor of a corridor in a building the donor associated with childhood. The donor's mind, during the transaction, was elsewhere — partially in the building of childhood. The donor's left hand, throughout, held the wrist of a child.\"\n\nThe drape above the speculum shifted. The water moved.\n\nLin Wei did not move.\n\n## §\n\nThe donor's left hand held the wrist of a child.\n\nThe donor's mind was in a building from childhood, on a half-landing of a wood-paneled stairwell, with a brown-gold field at the periphery and the small persistent ringing in the auditory channel of a struck wineglass and the taste of cold green tea at the back of the mouth.\n\nLin Wei was a child holding a man's wrist on a half-landing of a wood-paneled stairwell.\n\nShe was, also, herself in the prosecution's chair on the upper ring of the central hall of the Court of Mneme, in the year 2061, in her thirty-eighth year.\n\nThe two were not — she registered this with the small distinct registration of one of her own footnotes — the same set of coordinates. The deposition had said the donor was Du Yan, descending the east stairwell of 47 Lin Mu Way, at approximately fifteen-twenty-three hours, on the date of incident. The donor's mind, the rendering said, had been *elsewhere — partially in the building of childhood*. The building of childhood was not 47 Lin Mu Way. The building of childhood was a different building. The brown-gold field, the wineglass register, the cold green tea — these were not the donor's sensorium during the transaction at 47 Lin Mu Way. These were the sensorium of the *place the donor was remembering*, dragged into the present perception by association.\n\nThe donor had been remembering a corridor.\n\nThe corridor was a corridor Lin Wei had stood in. She knew, without being able to say how she knew it, that she had stood in the corridor. She knew that the man whose wrist she had held had been a man whose hand was the size of a workman's. She knew that the cold green tea had been in the small white cup an aunt had filled for her, every morning that summer, before her aunt walked her to the court. She knew that her aunt had walked her to the court because her mother could not, because her mother was — for the duration of that summer — sitting in a closed chamber on an upper floor of a building that smelled, from the half-landing of its east stairwell, of cold green tea and old wood and the faint distant ring of a struck wineglass.\n\nThe man's wrist.\n\nLin Wei lifted her gloved hand, very slowly, to the level of her own jaw, and she set the back of the hand against the bone of her jaw and held it there. She did not breathe out. She did not breathe in. She was, for the length of one moment, somewhere outside the ring.\n\nReader Ji, at the lectern, finished the rendering.\n\n\"The donor saw the man place the envelope into the inner pocket of his coat. The donor turned. The donor descended the lower flight of the stairwell. The record ends at fifteen-twenty-seven hours.\"\n\nHe stepped back from the lectern. He bowed to the bench. He sat down on the small bench beside the lectern, which had been set out for him to rest on, as the protocol required.\n\nMei, beside Lin Wei, touched the back of her wrist. The smallest, briefest touch, through the linen of her glove. Mei's voice in her ear was very low.\n\n\"Wei.\"\n\nLin Wei did not turn her head.\n\nShe breathed out.\n\nShe set the back of her gloved hand down, very gently, on her own knee.\n\nShe said, in the voice that she had taught herself, over the long course of her career, was the voice for the rebuttal — for the small clean rebuttal one offered before the bench in the moment the rebuttal was due:\n\n\"I am persuaded that the rendering is complete.\"\n\nThe senior judge nodded. The senior judge thanked Reader Ji. The Court adjourned the session for one hour, for the bench's deliberations and for the prosecution's preparation of its examination.\n\nLin Wei rose. She walked, with her gloved hand still set on her knee, out of the central hall, through the small door for the Court, into the corridor, and to the registry, which was empty. She closed the door of the registry behind her. She leaned against the door. She closed her eyes. She let the brown-gold field rise.\n\nThe voice from the chapel, last night, sang one note. Then another. Then a third.\n\nThe third note held.\n"
+          }
+        ]
+      },
+      {
+        "id": "act3",
+        "name": "Resolution",
+        "summary": "Lin Wei retrieves enough of her ninth year to understand what the record means. She makes the choice. She loses. The novel ends with her opening her father's letter.",
+        "central_image": "the speculum refilled, dimmer than before; the climax look across the well",
+        "stc_beats": [
+          "break_into_3",
+          "finale",
+          "final_image"
+        ],
+        "wordcount_target": 4700,
+        "chapters": [
+          {
+            "id": "ch07",
+            "title": "The Eastern Quarter",
+            "POV": "lin-wei",
+            "location_id": "L008",
+            "time": "day 7",
+            "opening_image": "the pale brick of the old tram roadbed.",
+            "summary": "Lin Wei takes a half-day leave. She walks the disused tram route. She reaches to push a door she does not consciously remember.",
+            "length_target": 780,
+            "beats": [
+              {
+                "id": "ch07.b01",
+                "emotion": "permission",
+                "function": "she allows herself a deviation",
+                "length_target": 240,
+                "opening_trigger": "She crosses the bridge over the canal and walks east.",
+                "closing_image": "her shoes register the give of the old tram-bed brick.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "takes_leave",
+                    "detail": "half-day"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "walks",
+                    "object": "eastern-quarter"
+                  }
+                ],
+                "location_id": "L008",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "permitted curiosity"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "treats the quarter as forbidden",
+                    "after": "allows herself the route"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch07.b02",
+                "emotion": "subplot (Mei)",
+                "function": "Mei's resignation surfaces",
+                "length_target": 240,
+                "opening_trigger": "Console chime: Mei.",
+                "closing_image": "the gull lifts and is gone; Lin Wei walks on.",
+                "facts": [
+                  {
+                    "actor": "mei",
+                    "action": "calls"
+                  },
+                  {
+                    "actor": "mei",
+                    "action": "announces_resignation",
+                    "detail": "bulletin at 4 PM; for the reform office"
+                  },
+                  {
+                    "actor": "mei",
+                    "action": "warns",
+                    "object": "lin-wei",
+                    "detail": "'Don't go through this alone. Take Park's offer.'"
+                  }
+                ],
+                "location_id": "L008",
+                "emotions": [
+                  {
+                    "character": "mei",
+                    "emotion": "regret without revision"
+                  },
+                  {
+                    "character": "lin-wei",
+                    "emotion": "non-response"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "mei",
+                    "before": "co-prosecutor",
+                    "after": "resigned (to be discovered offscreen by ch.11)"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [
+                  "H007"
+                ],
+                "text": ""
+              },
+              {
+                "id": "ch07.b03",
+                "emotion": "bodily memory",
+                "function": "midpoint collision via place — Han Bo's old apartment door",
+                "length_target": 300,
+                "opening_trigger": "She arrives at Pao Street; her hand rises toward the unnamed button.",
+                "closing_image": "the man's name had been Han. She lowers her hand. She walks back.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "arrives",
+                    "object": "pao-street-3",
+                    "detail": "she did not know how she had come"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "remembers",
+                    "detail": "a man with a workman's hand carried her up; gave her cold green tea in a white cup; the man's name was Han"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "lowers_hand",
+                    "detail": "does not press the button"
+                  }
+                ],
+                "location_id": "L008",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "bodily-knowing without naming"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "Han Bo is the defendant",
+                    "after": "Han Bo is the man who once carried her — but she has only the body's knowing"
+                  }
+                ],
+                "hooks_opened": [
+                  "H009"
+                ],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 7 — The Eastern Quarter\n\nShe took the morning. She told the registry she would be back at one. She crossed the bridge over the canal and walked east.\n\nThe eastern quarter had been, when she was a child, an active half-city — workshops, a small fish market, two shoe factories, a row of pawnshops behind the old temple. It was still those things, in a thinner version. The pawnshops had become one pawnshop. The fish market was now a cement square with a long galvanized counter and a tarpaulin overhead. The shoe factories were warehouses for the parcel network. The temple was a temple.\n\nThe tram line that had run down the spine of the quarter, from the canal bridge to the freight yard at the eastern wall, had been decommissioned in 2041. The rails had been taken up the following year. The bricks of the old roadbed remained — paler than the surrounding cobbles, paler by the kind of pale that meant the bricks had once been laid under tracks. She walked along them. Her shoes registered the small difference in the give of the brick.\n\n## §\n\nThe console in her pocket chimed. It was Mei.\n\n\"Wei. Where are you?\"\n\n\"East quarter.\"\n\nA pause. \"Wei.\"\n\n\"Mei, what.\"\n\n\"There's a bulletin going up at four. I want you to hear it from me first.\"\n\n\"You're resigning.\"\n\nA longer pause. \"I am.\"\n\n\"For the reform office.\"\n\n\"Yes.\"\n\nLin Wei stopped walking. She stood, looking at the pale brick. A gull had settled on the eaves of the warehouse opposite and was watching her with the steady single-eyed attention of gulls.\n\n\"Mei. The case.\"\n\n\"I know.\"\n\n\"You can't.\"\n\n\"I know. The bulletin goes up at four. I wanted you to know.\"\n\nShe did not answer. The console made the small soft sound of Mei waiting and then the smaller sound of Mei deciding not to wait.\n\n\"Wei. Look. You should take Park's offer if it comes. Don't go through this alone.\"\n\n\"What offer.\"\n\n\"He'll offer. After the rendering. He's a careful Reader. He saw what you saw.\"\n\nShe did not answer that either.\n\n\"Wei.\"\n\n\"Mei.\"\n\n\"I am — I'm sorry.\"\n\n\"All right.\"\n\nThe console clicked off in her hand. The gull on the eaves opposite turned its head, the way a gull's head turns, in one click of attention, away from her and toward something further down the street. The gull lifted. The gull was gone.\n\nShe put the console in her pocket. She walked on.\n\n## §\n\nThe building was on Pao Street. It was the third building from the canal end. It was three stories of yellowed brick, with a narrow door set back two steps from the pavement, and a second door above the first that gave onto a small black iron balcony she did not remember. The lower door was painted, today, a slightly different green than she remembered. The lower door had, she remembered now, been a slightly different green every few years; a tenant had repainted it; another tenant had repainted it; the green had drifted from a kingfisher green in the year of the closed-record trial to the current pale teal she stood in front of.\n\nShe did not know how she had come to Pao Street.\n\nShe had walked east, along the pale brick of the old tram roadbed. She had turned south at the second crossing. She had turned east again at the temple. She had crossed the fish market. She had turned south again at the warehouse with the gull on its eaves. She had not been thinking. She had not been making decisions. She had been walking the way one walks toward a smell, in the dark, in a familiar kitchen.\n\nThe lower door, of the third building on Pao Street, had a brass bell-plate beside it. The brass had not been polished in years. There were five buttons on the plate, three with names, two with no names. She did not read the names. She did not need to read the names. Her hand had risen, while she stood looking at the door, and her hand was a small distance from the second-from-the-top button — the one with no name — and her hand was about to press it.\n\nShe let her hand stop.\n\nShe held her hand where it was, an inch from the brass.\n\nShe let herself, for the length of a long breath, look at her own hand against the brass.\n\nShe remembered — and the remembering was not large; it was a single small remembering, the kind that surfaces, after a vigil, like a print left by a missing thing — that a man with a hand the size of a workman's had once lifted her, by her shoulder, up the two steps of this door, and had not pressed the second-from-the-top button but had instead taken a key out of his coat pocket and let himself in, and had carried her up two flights, and had set her on a chair in the kitchen of the small apartment above the iron balcony she did not remember, and had given her cold green tea in a small white cup.\n\nShe remembered that the man had not spoken. She remembered that she had not been afraid. She remembered that the man had then left her in the chair and had gone out of the apartment and had come back, perhaps an hour later, with her aunt, and the aunt had taken her home.\n\nShe remembered that the man's name had been Han.\n\nShe remembered that her mother had not been there.\n\nShe lowered her hand. She stepped back from the door. The pale teal of the door was a flat color, today, without resonance — the way colors went when the sensorium had been over-told. She turned. She walked back to the canal. She crossed the bridge. She did not look back at the building.\n\nShe was at the registry at twelve fifty-seven. She washed her hands at the small sink. She drew her gloves on. She went into the afternoon's session and prosecuted the cross-examination, which she had prepared the night before, with the small clean precision the cross-examination required. She did not raise the matter of the rendering. She did not look across the well at the empty chair where the defendant was not sitting. She did, twice, see the brown-gold field at the edge of her vision and did not blink it back.\n\nAt five she went home. The Mei bulletin had gone up at four; the College mess had it pinned on the corkboard by the door. Lin Wei read it once. She did not stop. She went upstairs. She sat at her desk. She drew the file open. She closed it again.\n\nShe lifted the envelope.\n\nShe did not open it.\n\nShe set it back, square with the corner of the desk, and she went to bed.\n"
+          },
+          {
+            "id": "ch08",
+            "title": "A Reader Reads Herself",
+            "POV": "lin-wei",
+            "location_id": "L003",
+            "time": "day 7, night",
+            "opening_image": "the desk lamp at three in the morning.",
+            "summary": "Lin Wei reads the rendered transcript alone — looking for the parts a Reader doesn't render because they aren't admissible. Through the gaps she reconstructs.",
+            "length_target": 820,
+            "beats": [
+              {
+                "id": "ch08.b01",
+                "emotion": "preparation",
+                "function": "the room, the gloves off, the record on the table",
+                "length_target": 240,
+                "opening_trigger": "She breaks the Council seal at 3:12 AM.",
+                "closing_image": "she begins to read for the gaps, not the rendering.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "breaks_seal",
+                    "object": "transcript-folder"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "removes_gloves"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "controlled transgression"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "Reader bound by chain-of-custody",
+                    "after": "Reader reading her own case in private — a soft transgression"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch08.b02",
+                "emotion": "reading",
+                "function": "the unrendered gaps; the second sound under the wineglass",
+                "length_target": 320,
+                "opening_trigger": "She finds the gap on the second page.",
+                "closing_image": "the third note holds; she does not name the voice; she lets the brown-gold field stand.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "identifies_associative_bleed",
+                    "detail": "beneath the wineglass tone: a woman singing two notes"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "matches_song_to_chapel"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "naming refused, knowing accumulated"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch08.b03",
+                "emotion": "knowing",
+                "function": "the name 'Han' attached to the hand",
+                "length_target": 260,
+                "opening_trigger": "She finds the second gap: the donor's thumb on a child's wrist scar.",
+                "closing_image": "she looks at the inside of her own left wrist; the ringed scar is there.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "confirms_wrist_scar",
+                    "detail": "the small ringed scar she has had since three"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "names",
+                    "object": "han-bo",
+                    "detail": "the man on the stairwell — Han"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "private certainty"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "body-knew",
+                    "after": "knows in language: Han = Han Bo, the defendant"
+                  }
+                ],
+                "hooks_opened": [
+                  "H011"
+                ],
+                "hooks_resolved": [
+                  "H002",
+                  "H009"
+                ],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 8 — A Reader Reads Herself\n\nShe did not sleep.\n\nBy two in the morning she was up. By three she was at the desk with the lamp on. The rendered transcript from the central hall — the one Reader Ji had spoken into the recording bead — had been couriered to the prosecution by eleven the previous night, in the standard oxblood folder, with the standard Council seal across the flap.\n\nShe had not opened it.\n\nShe broke the seal at three twelve in the morning. She removed her gloves. She set them on the desk. She lifted the transcript out of the folder, smoothed the first page flat under her two bare hands, and began to read.\n\n## §\n\nIt is illegal in the Republic for a Reader to extract her own memory. It is illegal for a Reader to consent to extraction in a case in which she is the prosecution. It is illegal for a Reader to read, on her own time, in private, the rendered transcript of an extracted memory from her own active case — the prohibition is more diffuse, but it is there in the protocol, as a side-clause of the prohibition on private rehearsal of testimony.\n\nLin Wei read the transcript anyway. She read it slowly. She read it the way one reads a thing one has agreed, in advance, not to remember.\n\nThe transcript was Reader Ji's rendering, word for word. She had it in her ear already from the afternoon. She read it not for what it contained but for what it did not contain — for the small textures of the donor's extracted record that Ji, by training, had not rendered into testimony, because they were not admissible.\n\nA Reader's training was, in part, a training in what to leave out. Sensations that were too associative, that arrived too freighted, that the rendering Reader could not be sure had been *in* the original perception rather than in their own — these were left out. Most of a donor's sensorium did not make it to court. The court received the part that could be testified to.\n\nThe part that did not get rendered was, often, the part that mattered most to the donor.\n\n## §\n\nShe found the gap on the second page.\n\nIn the second page, in the auditory channel, Ji had rendered: *the ringing of a struck wineglass in the low register, persistent for the duration.* Lin Wei knew this register. It was a tone, as best she could describe it, of a wineglass of fairly thin walls struck quietly with the side of a knife — a tone that hung in the air and did not, quite, dampen. She had heard the tone, intermittently, all her adult life.\n\nWhat Ji had not rendered, because it was an association rather than a perception, was that beneath the tone of the struck wineglass there was a second sound. Not a sound the donor had heard at the half-landing of 47 Lin Mu Way. A sound the donor's sensorium had pulled, by association, out of the donor's own past — and pulled, because it was associative, into the texture of the perception itself.\n\nThe second sound was a woman's voice. Singing.\n\nThe voice was singing two notes, and then a third. The third note held.\n\nLin Wei set the transcript down on the desk. She pressed the heels of her bare hands into her eye sockets. She held them there. She let the brown-gold field rise to its full strength behind her eyelids and let it stand and let it stand and let it stand. She did not name the voice. She did not name the song. She let it be what it was — a piece of the rendered record, by way of the donor's associative bleed, that she happened to have heard the night before in a chapel, in a vigil, in the cup of her own head, where it had no right to be unless.\n\nUnless she and Du Yan, the donor, shared more than a synesthetic palette.\n\nUnless they shared a memory.\n\nTwo donors did not happen. Two donors sharing a memory was, by the protocols of the College and by the constitution of the Court, not a category.\n\nShe lowered her hands. She looked at the transcript. She read the next page.\n\nOn the next page she found the second gap.\n\nThe donor's left hand had held the wrist of a child. Ji had rendered the perception. Ji had not rendered the texture of the wrist — the small ringed scar at the inside of the wrist, the kind of scar a child gets at three years old from a fall against the metal edge of an open window. The donor had felt the scar under the donor's thumb. The donor had registered the scar as familiar. The donor had felt, under the donor's thumb, that the child was a child the donor had touched before.\n\nThe donor's hand was Du Yan's hand. Du Yan was forty-something. Du Yan, twenty-nine years ago, would have been a teenager. Du Yan would not have had cause, twenty-nine years ago, to hold the wrist of a nine-year-old child.\n\nThe man at the half-landing had a hand the size of a workman's. The man had not spoken. The man's name, in the small remembering Lin Wei had let through at the door on Pao Street, had been Han.\n\nThe child the donor had held by the wrist was not, then, a child the donor herself had touched before. The donor's hand was registering — by Mneme bleed, by associative reach, by the kind of small chemical signature that the protocol pretended did not exist — the wrist of a child the donor's *partner* in the act had touched before. The man at the half-landing. Han.\n\nHan had held the wrist of a child in another corridor, on another half-landing, in 2042. The child had had a small ringed scar on the inside of her left wrist.\n\nLin Wei looked, for the first time in years, at the inside of her own left wrist.\n\nThe small ringed scar was there. It had always been there. She had had it since she was three. She did not remember the fall. She knew the story; her aunt had told it to her, once.\n\nShe placed her left wrist face up on the page.\n\nShe set her right index finger on the small ringed scar.\n\nShe held it there.\n\n## §\n\nIt was four twenty in the morning when she stood up from the desk. She poured herself a glass of water from the small sink. She drank it. She put the transcript back into the oxblood folder. She did not break the Council seal beyond the breaking she had already done; she let the broken seal sit where it lay.\n\nShe put the folder, the gloves, and the unopened envelope from her father into the inner pocket of her robe, in the order she would need them in. She did not yet know which she would need first.\n\nShe lay down on the bed for an hour and did not sleep. At five thirty the first bell rang from the cloister. She rose.\n\nShe had, by the dawn bell, the small clean thought she had been working toward without admitting it.\n\n*The defendant has not made a statement,* she thought, *because he is waiting for me to make mine.*\n"
+          },
+          {
+            "id": "ch09",
+            "title": "The Father's Letter",
+            "POV": "lin-wei",
+            "location_id": "L003",
+            "time": "day 8, dawn",
+            "opening_image": "the envelope in her hand at the apartment window.",
+            "summary": "She does not open the letter. She brings it to court instead. She knows what it says without opening it.",
+            "length_target": 700,
+            "beats": [
+              {
+                "id": "ch09.b01",
+                "emotion": "deferral",
+                "function": "she still does not open it",
+                "length_target": 230,
+                "opening_trigger": "She holds the envelope for eleven minutes.",
+                "closing_image": "she sets it back, square with the corner.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "holds",
+                    "object": "envelope",
+                    "detail": "11 minutes"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "does_not_open"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "principled withholding"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch09.b02",
+                "emotion": "decision_prelude",
+                "function": "she chooses what to carry into court",
+                "length_target": 230,
+                "opening_trigger": "She slides the envelope into the inner pocket of her robe.",
+                "closing_image": "she walks the long blue corridor with the file and the envelope.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "pockets",
+                    "object": "envelope",
+                    "detail": "left inner pocket of robe"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "carrying-without-using"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "letter is on the desk",
+                    "after": "letter is against her ribs"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch09.b03",
+                "emotion": "approach",
+                "function": "the walk to court; the city in dawn",
+                "length_target": 240,
+                "opening_trigger": "She crosses the bridge to the Court.",
+                "closing_image": "she steps into the central hall.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "approaches",
+                    "object": "court-of-mneme"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "internal alignment"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 9 — The Father's Letter\n\nThe dawn was thin and grey. The College garden was wet again, with the slow steady rain that had been falling since four. She stood in the apartment window with the envelope in her hand and the tea cooling on the desk behind her and she looked at the garden and did not open the envelope.\n\nShe had thought, lying in the dark, that she would open it before the bell. The first bell had been at five thirty. The second bell had been at six. The third bell, which marked the College's morning service and which she did not attend, had been at six forty-five. It was now seven ten. She had her robe on. She had her gloves on. She had the file ready in its black sleeve on the corner of the desk. She had a second cup of tea cooling. She had the envelope in her hand.\n\nShe had been holding it for, by the apartment clock, eleven minutes.\n\nShe knew what it would say.\n\nShe knew this in the same way she had known, at three in the morning, looking at her own wrist, that the small ringed scar would still be there. She had not had to look at the scar to know it was there. She had looked at it to confirm what she already knew. She had been confirming, on and off, all morning. She had confirmed the date of incident on the file three more times. She had confirmed the donor's age. She had confirmed her own age in the year of the incident. She had confirmed that the man's name, in the small remembering at the door on Pao Street, had been Han.\n\nShe knew what the letter would say. The letter would say:\n\n*Wei.*\n\n*I asked the doctor to send this when I knew it was the last thing. Forgive me. I should have said it a long time ago. The trial in 2042 was about Han. He had asked your mother to do a thing for him — a small thing, an extraction off the record, of a friend of his who had asked for the comfort of remembering, after a grief. He had been a good man. He had been a friend of ours. She would not. They asked her, then, in court, to say so, to put it on the record that she had not done it; and they asked her also to say who had asked her. She would not say who had asked her. She lost her license for the refusal. She lost her health. I told them, after, where to look. I have not been able to tell you, because to tell you I would have to begin with: she would not, and I would.*\n\n*I am sorry.*\n\n*Your father.*\n\nShe knew the letter would say something like that. The phrasings would not be right; the cadences would be wrong; her father would put commas where she would put periods. But the substance would be there. She knew her father.\n\nShe knew her father better than she had let herself know him for three years.\n\nShe did not open the envelope.\n\nShe did not open it because she did not need to open it; she did not need to open it because she had already done what the letter would ask of her, by knowing what the letter would say. The opening would be a courtesy. The opening would be a private act between her and her father. She wanted, this morning, the private act.\n\nBut she also did not want, this morning, to do anything that would weight her on her way to the central hall. She wanted to walk to the central hall without the small clean private letter from her father in any but the most provisional fold of her own attention. She wanted to do the thing she was about to do because she was, today, the woman who would do it, not because she had been licensed by a letter to do it.\n\nShe set the envelope on the desk. She set it square with the corner. She set her teacup on the other corner. The composition was, again, very nearly beautiful. She looked at it.\n\nThen she went to the desk and lifted the envelope and slid it into the inner pocket of her robe, on the left side, against her ribs.\n\nShe would carry it. She would not open it. She would have it with her in court.\n\nShe would open it after.\n\n## §\n\nShe walked the long blue corridor to the registry at seven thirty. The corridor was empty. The tiles were the color, today, of clear cold light through a cracked pane. She walked the length of the corridor and did not, by an act of small discipline, allow herself to count the tiles.\n\nIn the registry the night clerk was sleeping at the desk with his head on his hand. She let him sleep. She signed in on the standing sheet. She drew the day's file. She put the file in the leather folio. She put the folio under her right arm.\n\nAt the door of the registry, on the way out, she stopped.\n\nShe thought about the envelope in her left inner pocket. She thought about the file under her right arm. She thought about the gloves on her hands. She thought about the brown-gold field at the periphery of her vision, which had been quiet since the dawn bell. She thought about the third note of the woman's song from the chapel, which she could now hear, in the back of her mind, very clearly and very steadily — not as a memory but as a present tone. The tone was a particular tone. It was the tone of a wineglass struck quietly with the side of a knife.\n\nShe thought, with the small clean exactness of a Reader at the close of a deposition: *I am persuaded.*\n\nShe thought: *I am persuaded that this is what is to be done today.*\n\nShe left the registry. She crossed the bridge to the Court. The rain was lighter. The gulls were quiet. She walked the long path to the central hall and did not, by another act of small discipline, slow her pace.\n\nAt the door of the central hall, the court officer she had known for many years took the file from her with a small bow. The officer looked at her face, briefly, in the way the officer never did. The officer said nothing.\n\nLin Wei stepped into the central hall.\n"
+          },
+          {
+            "id": "ch10",
+            "title": "Tao",
+            "POV": "lin-wei",
+            "location_id": "L009",
+            "time": "day 8, morning",
+            "opening_image": "Tao's almost-empty office on the morning of the verdict day.",
+            "summary": "Lin Wei finds Tao packing. She asks the question she has never asked. Tao gives one short answer. Lin Wei says 'Mother' for the first time on the page.",
+            "length_target": 700,
+            "beats": [
+              {
+                "id": "ch10.b01",
+                "emotion": "approach",
+                "function": "the empty room",
+                "length_target": 230,
+                "opening_trigger": "Lin Wei knocks on the open door.",
+                "closing_image": "Tao turns; silver hair down; bare feet in sandals.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "enters",
+                    "object": "tao-office"
+                  },
+                  {
+                    "actor": "judge-tao",
+                    "action": "packs_letter_knife"
+                  }
+                ],
+                "location_id": "L009",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "permission asked at the door"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch10.b02",
+                "emotion": "question",
+                "function": "Lin Wei asks",
+                "length_target": 230,
+                "opening_trigger": "Tao: 'Ask me, child.'",
+                "closing_image": "'The trial in 2042. What was it about.'",
+                "facts": [
+                  {
+                    "actor": "judge-tao",
+                    "action": "calls",
+                    "object": "lin-wei",
+                    "detail": "'child' — first use"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "asks",
+                    "detail": "'What was the 2042 trial about.'"
+                  }
+                ],
+                "location_id": "L009",
+                "emotions": [
+                  {
+                    "character": "judge-tao",
+                    "emotion": "open release"
+                  },
+                  {
+                    "character": "lin-wei",
+                    "emotion": "asked-aloud"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "carried the question alone for 29 years",
+                    "after": "has asked it aloud"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [
+                  "H006"
+                ],
+                "text": ""
+              },
+              {
+                "id": "ch10.b03",
+                "emotion": "release",
+                "function": "Tao answers; Lin Wei says 'Mother' for the first time on the page",
+                "length_target": 240,
+                "opening_trigger": "Tao: 'It was about a man named Han.'",
+                "closing_image": "'Mother,' Lin Wei says — first use of the word on the page in 29 years.",
+                "facts": [
+                  {
+                    "actor": "judge-tao",
+                    "action": "answers",
+                    "detail": "Lin Yan refused to name Han at her trial; lost her license"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "says_mother",
+                    "detail": "first time on the page"
+                  }
+                ],
+                "location_id": "L009",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "permission to grieve"
+                  },
+                  {
+                    "character": "judge-tao",
+                    "emotion": "long-held sorrow released"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "Mother is forbidden word",
+                    "after": "Mother is named"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [
+                  "H008"
+                ],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 10 — Tao\n\nJudge Tao's office was on the third floor of the College's east wing. It had been Tao's office for twenty-eight years. It would not be Tao's office, by the end of the week, much longer; the College made you out by the end of the month of your gowning.\n\nThe door was open. Lin Wei knocked anyway, against the open door, the way Tao had always knocked against open doors in front of her seniors.\n\n\"Come in.\"\n\nTao was at the empty long table at the window, packing the small bone-handled letter knife she had used at her desk for many years into a flat box. She did not look up when Lin Wei came in. She did not look up when Lin Wei closed the door behind her. She did not look up when Lin Wei crossed the room and stood at the foot of the long table.\n\nTao set the letter knife into the box. She set the lid on the box. She turned, finally, and looked at Lin Wei.\n\nShe was not in robe. She was in the unbleached linen, with a grey wool wrap. Her bare feet were in plain leather sandals. Her hair, which she had always worn pinned up, was down — silver, longer than Lin Wei had ever seen it, falling past her collarbone.\n\n\"Reader Lin.\"\n\n\"Judge.\"\n\nTao inclined her head. \"I am not, any longer, Judge.\"\n\n\"Tao.\"\n\n\"Yes.\"\n\nLin Wei did not, at first, speak. She had come up the stairs with the question fully formed. She had had the question fully formed since the dawn bell. The question was a sentence she had been polishing, all the way up the stairs, in the same small clean way she polished a cross-examination question. The sentence was: *Tao, what was the closed-record trial of my mother in 2042 about.*\n\nShe did not ask it. She stood at the foot of the table and did not ask it.\n\nTao watched her. The room was very quiet. The rain on the window beside them was almost the only sound.\n\nAfter a while Tao said, very low: \"Ask me, child.\"\n\nLin Wei looked at her.\n\n\"You haven't called me that before.\"\n\n\"No.\"\n\n\"Why now.\"\n\n\"Because you have come. And because I will, today, answer.\"\n\nLin Wei drew a breath. She let it go.\n\n\"The trial in 2042. What was it about.\"\n\nTao looked at the box on the table. She looked at the letter knife inside the box. She looked, briefly, at the window, where the rain was making the small uneven runs across the glass that one watches in the absence of company.\n\nShe turned back.\n\n\"It was about a man named Han,\" she said. \"Your mother was asked to do a thing for him. An extraction. Of a friend. Off the record. For the comfort of the friend, who was grieving.\"\n\n\"She did not do it.\"\n\n\"She did not.\"\n\n\"They asked her to put it on the record that she had not done it.\"\n\n\"They did.\"\n\n\"They asked her to say who had asked.\"\n\n\"They did.\"\n\n\"She did not say.\"\n\n\"She did not.\"\n\nTao folded her hands in front of her. The hands were the hands of an old woman. The knuckles were swollen and the fingers were slightly curled. Lin Wei had not, in the years of her tutelage, looked at these hands. She looked at them now. She did not look away.\n\n\"She would not,\" Tao said. \"There were many reasons. Some of them were principle. Some of them were affection. Some of them — I think now, although I did not know at the time, and could not have asked — were that she had once asked a thing of Han herself, in a time before you and I knew her, and that she did not want to take from him the silence he had given her.\"\n\nLin Wei did not speak.\n\n\"She lost her license,\" Tao said. \"She lost — most of what she lost, she lost. She did not lose you. But she had agreed, at the trial, to remove herself from your daily life. The arrangement was supposed to be temporary. It became less temporary.\"\n\n\"My aunt.\"\n\n\"Your aunt was wonderful. Your aunt was not your mother.\"\n\n\"She died in 2048.\"\n\n\"She did.\"\n\n\"Han held my wrist on a stairwell.\"\n\nTao closed her eyes for a long beat. She opened them.\n\n\"I did not know that until yesterday,\" she said.\n\n\"Yesterday.\"\n\n\"I sat at the back of the central hall yesterday. I heard Reader Ji's rendering. I sat after the session in my office until dark. I have known, all night, that I would tell you this morning. I did not come to you. I waited. I thought — I am persuaded that the daughter, if she comes, has a right to ask in her own time.\"\n\nLin Wei nodded.\n\nTao said: \"Reader Lin, today you are going to do a thing. I do not know what it is. I am persuaded that I will not like it. I am also persuaded that I will not stand in your way.\"\n\nLin Wei nodded again.\n\nShe did not, for a moment, trust her voice.\n\nWhen her voice came it came in the small careful register she used for the small careful things.\n\n\"Mother,\" she said.\n\nShe had not said the word, on the page of the world, in twenty-nine years.\n\nTao watched her say it.\n\n\"Yes,\" Tao said. \"Yes. There she is.\"\n\nLin Wei put her gloved hand, for an instant, against the long table — the way one puts a hand against a wall, when one needs the wall, briefly, to be there. She straightened.\n\n\"Tao.\"\n\n\"Reader Lin.\"\n\n\"Thank you.\"\n\n\"Go.\"\n\nLin Wei turned. She crossed the room. At the door she stopped. She did not turn back. Behind her Tao said, very softly, in a voice that was almost not aloud:\n\n\"I am sorry, child. I am very sorry.\"\n\nLin Wei stepped into the corridor and closed the door.\n"
+          },
+          {
+            "id": "ch11",
+            "title": "The Choice",
+            "POV": "lin-wei",
+            "location_id": "L007",
+            "time": "day 8, afternoon",
+            "opening_image": "the speculum refilled, dimmer than before.",
+            "summary": "Climax. The case is going to win. Han Bo refuses a final statement. Lin Wei rises and asks the court to receive her own memory as a witness — procedurally illegal.",
+            "length_target": 1050,
+            "beats": [
+              {
+                "id": "ch11.b01",
+                "emotion": "containment",
+                "function": "she takes her position",
+                "length_target": 250,
+                "opening_trigger": "Han Bo present for the first time; civilian dress; hands on his knees.",
+                "closing_image": "she sets her right hand over the inner left pocket of her robe.",
+                "facts": [
+                  {
+                    "actor": "han-bo",
+                    "action": "attends",
+                    "detail": "first appearance in court"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "takes_position",
+                    "detail": "right hand over envelope-pocket"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "deliberate containment"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch11.b02",
+                "emotion": "final confrontation",
+                "function": "Han Bo's silence; their look across the well",
+                "length_target": 280,
+                "opening_trigger": "Their eyes meet across the speculum.",
+                "closing_image": "Han Bo inclines his head; he does not speak; she inclines hers back.",
+                "facts": [
+                  {
+                    "actor": "han-bo",
+                    "action": "looks_at",
+                    "object": "lin-wei.hands",
+                    "detail": "second time in the novel"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "looks_back",
+                    "detail": "first time in the novel"
+                  },
+                  {
+                    "actor": "han-bo",
+                    "action": "stays_silent",
+                    "detail": "the silence the law lets him keep"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "han-bo",
+                    "emotion": "long-awaited recognition"
+                  },
+                  {
+                    "character": "lin-wei",
+                    "emotion": "decided answer to his silence"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "would prosecute",
+                    "after": "will not prosecute"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch11.b03",
+                "emotion": "the choice",
+                "function": "Lin Wei makes the request",
+                "length_target": 280,
+                "opening_trigger": "She stands; addresses the senior judge.",
+                "closing_image": "'I am aware, senior judge.'",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "requests_self_extraction",
+                    "detail": "procedurally illegal; from the prosecution chair"
+                  },
+                  {
+                    "actor": "senior-judge",
+                    "action": "warns",
+                    "detail": "fitness to hold office now in question"
+                  }
+                ],
+                "location_id": "L007",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "calm submission to the consequence"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "still has career",
+                    "after": "has submitted her career to the Council"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [
+                  "H011"
+                ],
+                "text": ""
+              },
+              {
+                "id": "ch11.b04",
+                "emotion": "aftermath",
+                "function": "Council recesses; Lin Wei is asked to wait",
+                "length_target": 240,
+                "opening_trigger": "Han Bo bows to the bench, does not look at her, leaves.",
+                "closing_image": "she sits in the antechamber by the window; the rain has stopped.",
+                "facts": [
+                  {
+                    "actor": "court",
+                    "action": "recesses"
+                  },
+                  {
+                    "actor": "han-bo",
+                    "action": "departs"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "waits",
+                    "object": "antechamber"
+                  }
+                ],
+                "location_id": "L010",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "stilled"
+                  }
+                ],
+                "state_changes": [],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 11 — The Choice\n\nThe central hall, at the afternoon session, was full.\n\nWord had moved. The Mei resignation had moved with it. Park, at the defense's chair, looked across the well at her once when she came in and did not look again. The three judges were in their robes at the high bench. The Council member designated for the verdict — not Reader Ji this time but Reader Wen, the Council's senior — sat at the lectern with her hands folded. The drape over the speculum was still. The water had been refreshed; the well was full.\n\nIn the defendant's chair, for the first time in the trial, sat Han Bo.\n\nHe was in plain civilian dress — a dark grey coat over an unmarked shirt, the kind of clothes a man who had been a Reader and was no longer wore when he had given up. His large hands were on his knees, palms down. His left eye, the eye that did not track, was steady today; the right looked at no one in particular. He had not, on coming in, looked at Lin Wei. He looked at her now.\n\nShe did not look back. She took her chair. She set the leather folio on the small table beside her. She drew her gloves tighter on her hands.\n\nShe placed her right hand over the inner left pocket of her robe. She held it there.\n\n## §\n\nThe senior judge opened the session. The senior judge invited the prosecution to make its closing statement. The senior judge invited Reader Wen to render, at the speculum, the final extracted record — the last witness, the small confirming witness, whose memory would finish the case.\n\nLin Wei rose.\n\n\"Senior judge.\"\n\n\"Reader Lin.\"\n\n\"Senior judge, I request an exception under the Court's adjournment rule. Before Reader Wen descends, I ask permission to enter into the record a witness statement that is not on the docket.\"\n\nA small motion went through the ring of Readers. The senior judge looked at her over her glasses.\n\n\"The prosecution has rested. The case has been submitted for the rendering. What witness.\"\n\n\"Myself, senior judge.\"\n\nThe motion in the ring stopped. The drape over the speculum lifted, briefly, in a small air, and settled.\n\n\"Reader Lin. You are the prosecution. You cannot be a witness in your own case.\"\n\n\"Senior judge. I am aware of the prohibition. I am requesting an exception.\"\n\n\"On what ground.\"\n\n\"On the ground that material in the record before this court — material rendered, by Reader Ji, on the previous day, from the extracted memory of the witness Du Yan — contains, in its associative bleed, an event of which I was, as a child of nine, a participant. The event is not, as such, an event of the present case. The event is a precondition for understanding the present case. I am persuaded that the court has a right to hear it. I am also persuaded that to enter it on the record I must consent to an extraction by another Reader, in open court, before the verdict is rendered.\"\n\nShe stopped. The ring of Readers had stopped breathing.\n\nThe senior judge looked at her for a long moment.\n\n\"Reader Lin. Are you asking to be extracted in open court.\"\n\n\"I am, senior judge.\"\n\n\"You are aware that this is procedurally improper. You are aware that the chain of custody on such an extraction would, in the prevailing view, be irrecoverably compromised. You are aware that, were the request granted, the rendering would in all likelihood be ruled inadmissible. You are aware, finally, that to make this request from the prosecution's chair is itself a ground for the Council to consider your fitness to hold office.\"\n\n\"I am aware, senior judge.\"\n\n\"You are aware.\"\n\n\"I am aware.\"\n\n## §\n\nAcross the well, in the defendant's chair, Han Bo did not move.\n\nShe let herself, for the first time in the trial, look at him.\n\nHe was looking at her hands.\n\nThe look on his face was the look of a man who had been waiting, for a very long time, for a thing he had not been able to ask for. It was not, on the face of it, the look of a man who had been about to be acquitted by the silence of the prosecution. It was the look, rather, of a man who had been about to be acquitted by his own silence and had now, in the small clean way that the small clean events of one's life happen, been given back the part of himself that the silence had been protecting.\n\nHe inclined his head, by perhaps a degree, in her direction.\n\nHe did not speak.\n\nAcross the well, in the prosecution's chair, Lin Wei inclined her head, by perhaps the same degree, back to him.\n\nShe thought, with the small clean exactness of the moment: *He has been waiting for me to come. He has been carrying the silence for both of us. He will not say what he knows of my mother. I am persuaded he never will.*\n\nShe thought, also: *I will not, today, prosecute him.*\n\nShe thought: *I will, today, tell what I know.*\n\n## §\n\nThe senior judge said: \"Reader Lin. Sit down. The court will recess. The Council will deliberate on your request.\"\n\nShe sat down.\n\nShe set her right hand over the inner left pocket of her robe again. She held it there.\n\nThe judges rose. The Readers in the ring rose. Reader Wen at the lectern rose. Across the well, in the defendant's chair, Han Bo rose, more slowly than the rest, with the small heaviness of a large man at the end of a long thing.\n\nHe bowed, briefly, to the bench.\n\nHe did not look at her.\n\nHe turned. He left, by the side door, with the court officer who had come for him.\n\nThe Readers in the ring filed out. Park, at the defense's chair, did not look at her on his way out, but, at the side door, paused, and bowed in her direction, and went on.\n\nThe senior judge, at the high bench, looked down at her one more time.\n\n\"Reader Lin.\"\n\n\"Senior judge.\"\n\n\"Wait in the antechamber. We will send for you.\"\n\n\"Senior judge.\"\n\nShe rose. She bowed. She crossed the hall to the antechamber and went in. She closed the door behind her.\n\nThe antechamber was small. It had two chairs and a window onto the College garden. She sat down in the chair beside the window. The rain had stopped. The light was the late-afternoon light of a spring that had not yet committed to itself.\n\nShe set her right hand over the inner left pocket of her robe.\n\nShe waited.\n"
+          },
+          {
+            "id": "ch12",
+            "title": "The Garden",
+            "POV": "lin-wei",
+            "location_id": "L001",
+            "time": "day 9, sundown",
+            "opening_image": "the same garden as ch.1, no robe burning, only ashes.",
+            "summary": "Lin Wei is asked to retire her own robe by sundown. Sentencing in the Han Bo case is delayed. Mei has resigned. Tao is gone. Lin Wei opens her father's letter. The novel ends with a single remembered line.",
+            "length_target": 850,
+            "beats": [
+              {
+                "id": "ch12.b01",
+                "emotion": "stripped",
+                "function": "the verdict against her",
+                "length_target": 220,
+                "opening_trigger": "Senior judge delivers the Council decision.",
+                "closing_image": "she inclines her head: 'I thank the Council.'",
+                "facts": [
+                  {
+                    "actor": "council",
+                    "action": "denies",
+                    "object": "extraction-request"
+                  },
+                  {
+                    "actor": "council",
+                    "action": "asks",
+                    "object": "lin-wei",
+                    "detail": "retire your robe at sundown"
+                  },
+                  {
+                    "actor": "council",
+                    "action": "suspends_sentencing",
+                    "detail": "thirty days; new prosecutor to be appointed"
+                  }
+                ],
+                "location_id": "L010",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "calm acceptance"
+                  },
+                  {
+                    "character": "senior-judge",
+                    "emotion": "respect-without-prejudice"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "Reader",
+                    "after": "to be retired by sundown"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch12.b02",
+                "emotion": "leaving",
+                "function": "the empty garden — gowning, reversed",
+                "length_target": 220,
+                "opening_trigger": "Lin Wei at the brazier; Park and Sun witness.",
+                "closing_image": "the linen at the bottom is a black mat; the sun on the College wall.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "gowns_self_out",
+                    "detail": "Park + Sun witness; no Tao (out of office); no Mei (resigned)"
+                  }
+                ],
+                "location_id": "L001",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "ceremonial without flinching"
+                  },
+                  {
+                    "character": "reader-park",
+                    "emotion": "quiet honor"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "Reader being retired",
+                    "after": "private person"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [],
+                "text": ""
+              },
+              {
+                "id": "ch12.b03",
+                "emotion": "permission",
+                "function": "she opens the letter",
+                "length_target": 220,
+                "opening_trigger": "Back in the apartment, late light.",
+                "closing_image": "she reads it twice; folds it; sets it square with the corner.",
+                "facts": [
+                  {
+                    "actor": "lin-wei",
+                    "action": "opens",
+                    "object": "father-letter"
+                  },
+                  {
+                    "actor": "father",
+                    "action": "writes",
+                    "detail": "Han asked your mother to do an off-record extraction for a grieving friend; she refused; she would not name him; she lost everything for that silence; I told the prosecution where to look"
+                  }
+                ],
+                "location_id": "L003",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "completed knowing"
+                  },
+                  {
+                    "character": "father",
+                    "emotion": "late repentance"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "had a guess",
+                    "after": "has the father's own words"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [
+                  "H001",
+                  "H003",
+                  "H012"
+                ],
+                "text": ""
+              },
+              {
+                "id": "ch12.b04",
+                "emotion": "end_state",
+                "function": "the remembered line — mother's voice",
+                "length_target": 190,
+                "opening_trigger": "Lin Wei looks up at the sky over the College wall.",
+                "closing_image": "she opens the door; she steps out.",
+                "facts": [
+                  {
+                    "actor": "lin-wei.sensorium",
+                    "action": "remembers",
+                    "object": "mother-song-line",
+                    "detail": "'Wei, little Wei, look up at me, child.'"
+                  },
+                  {
+                    "actor": "lin-wei",
+                    "action": "steps_out",
+                    "object": "apartment-door"
+                  }
+                ],
+                "location_id": "L001",
+                "emotions": [
+                  {
+                    "character": "lin-wei",
+                    "emotion": "first grief, allowed"
+                  }
+                ],
+                "state_changes": [
+                  {
+                    "character": "lin-wei",
+                    "before": "the mother is silence",
+                    "after": "the mother has a line, and the line has been allowed"
+                  }
+                ],
+                "hooks_opened": [],
+                "hooks_resolved": [
+                  "H005"
+                ],
+                "text": ""
+              }
+            ],
+            "compiled_text": "# Chapter 12 — The Garden\n\nThe Council returned at six.\n\nThe Council did not return into the central hall; the Council returned into the antechamber, by way of the small side door that led from the Council chamber to the antechamber and that was, by custom, used only for the worst of communications. The Council was three members deep — the senior judge, Reader Wen, and a third Council member Lin Wei did not know by sight. The senior judge spoke. The other two stood behind her with their hands at their sides.\n\nThe senior judge said: \"Reader Lin. The Council has deliberated. The Council has unanimously denied your request for extraction. The Council has set aside the question of your fitness as a separate matter. Pending that question, the Council asks you, this evening, to retire your robe at sundown in the College garden, in the presence of two Readers of your choosing. Sentencing in the matter of People v. Han Bo is suspended for thirty days, during which a new prosecuting Reader will be appointed. The Council thanks you for your service.\"\n\nShe inclined her head. \"Senior judge. I thank the Council.\"\n\n\"Reader Lin.\"\n\n\"Senior judge.\"\n\n\"The Council notes — without prejudice to its decision — that the request was made in the manner most consistent with the dignity of the Court. The Council records its respect.\"\n\nShe inclined her head again. The senior judge inclined hers. The senior judge turned. The Council left.\n\nLin Wei sat in the antechamber for some minutes. She did not, this time, set her right hand over the inner left pocket of her robe. The pocket was where it was. The envelope was in the pocket. She did not need to confirm it. She had been confirming it all day.\n\nShe rose. She left the antechamber. She walked, in the corridor, past the central hall, past the registry, past the bridge to the College. She crossed the bridge. She went up to her apartment.\n\n## §\n\nShe did not pack. There would be a month, the College allowed, in which to pack. She took off her gloves. She washed her hands. She made a cup of tea and did not drink it. She put it on the desk. She sat at the desk.\n\nShe drew the envelope out of the inner left pocket of her robe.\n\nShe set it on the desk.\n\nShe looked at it for one breath, two, three.\n\nShe opened it.\n\nThe letter was one sheet. The sheet was the slightly off-white linen-content paper her father had always used. The hand was her father's hand, smaller than she remembered, the letters slightly more separated.\n\nIt was, as she had known, almost exactly the letter she had written for him in her head that morning. The phrasings were not right; the cadences were wrong; he put commas where she would have put periods. The substance was the substance she had known would be the substance.\n\nShe read the letter twice.\n\nShe folded it. She set it on the desk, square with the corner. She set her teacup on the other corner. The composition was, again, very nearly beautiful.\n\n## §\n\nAt sundown she went down to the garden.\n\nMei was not there. Mei had resigned that morning; Mei would not be coming.\n\nTao was not there. Tao had been told, by the bell ringer, that she would not be permitted to attend, because Tao was, as of yesterday, no longer in office.\n\nThe two Readers of her choosing, then, were Reader Park, and a junior named Sun whom she had worked with twice and trusted. Park was in his oxblood. Sun was in his oxblood. They stood across the brazier from her in the small loose semicircle her own gowning required. The brazier was lit. The fire was the small steady fire one used for the small steady purpose.\n\nShe took off her robe. She folded the robe in her two bare hands — once, twice — and held it in the air over the brazier.\n\n\"Reader Lin,\" Park said. \"We will witness.\"\n\n\"Reader Park. Reader Sun.\"\n\nShe let the robe fall.\n\nThe cuff went first. The cuff had been oxblood eleven years and was the color, today, of a brick at the bottom of a riverbed. The sleeve rose into smoke. The shoulder dropped. She stood barefoot beside the brazier in her unbleached linen and did not flinch.\n\nAfter it was done, after the linen at the bottom of the brazier was a black mat and the sun was sitting on the College wall, Park stepped across the wet grass to her. They embraced briefly, the way the ritual permitted — palms flat against each other's shoulder-blades, no breath against the cheek.\n\n\"You will eat,\" Park said.\n\n\"I will eat.\"\n\n\"And then.\"\n\n\"And then I will go.\"\n\nPark bowed. Sun bowed. They left her in the garden, in the small empty space the gowning made.\n\nShe stayed for a while. She looked at the ashes. She looked at the brick of the brazier. She looked at the slate of the path the Readers had walked, at the lip of the old fountain that still held a film of the morning's rain, at the wall, at the windows of her apartment three floors up where her teacup was cooling.\n\nShe thought of her mother.\n\nShe thought of the third note of the woman's song from the chapel, which was holding now, in the back of her mind, with the small clean steadiness of a thing that had decided to stay.\n\nShe let herself remember, for the first time on the page of the world, the line that had gone with the song — the line her mother had sung to her one evening when she was four, washing her hair in the small porcelain basin of the apartment over the iron balcony on Pao Street, a line she had not let herself remember for twenty-nine years.\n\nThe line was very simple. The line was: *Wei, little Wei, look up at me, child.*\n\nShe looked up.\n\nThe sky over the College wall was the soft uncommitted grey of a spring evening that had not yet committed to itself. The first gull of the evening crossed it. A second.\n\nShe walked back across the wet grass to her apartment. She went up the stairs. She did not turn the lamp on. She sat at the desk in the failing light. She drank the tea, which had gone cold, in three slow swallows.\n\nShe thought, with the small clean exactness she had been a Reader for: *I am persuaded.*\n\nShe picked up her father's letter. She set it in the inner left pocket of her unbleached linen, against her ribs. She let it be where it was.\n\nShe stood up. She went to the door.\n\nThere was a long retrieval to come. There was a long city to walk back into. There was a long table somewhere with her mother's hand on it, faint and incomplete, and there was the small steady work of going through what she had not been told and what she had not let herself remember and what was, now, hers to hold.\n\nShe opened the door.\n\nShe stepped out.\n"
+          }
+        ]
+      }
+    ],
+    "subplots": [
+      {
+        "id": "sp01",
+        "name": "Mei's Defection",
+        "type": "B",
+        "dramatic_question": "Will Mei warn Lin Wei in time?",
+        "intersections": [
+          "ch03.b03",
+          "ch07.b02",
+          "ch11 (offscreen resignation discovered)"
+        ],
+        "resolution": "Mei resigns the day before Lin Wei's choice; Lin Wei learns it from the staff bulletin."
+      },
+      {
+        "id": "sp02",
+        "name": "The Father's Letter",
+        "type": "C",
+        "dramatic_question": "Will Lin Wei open it?",
+        "intersections": [
+          "ch03.b01-b02",
+          "ch09.b01-b02",
+          "ch12.b03"
+        ],
+        "resolution": "She opens it in the final scene."
+      }
+    ],
+    "wordcount_check": {
+      "sum_of_chapter_length_targets": 9820,
+      "target": 10000,
+      "within_tolerance": true
+    }
+  },
+  "hooks": [
+    {
+      "id": "H001",
+      "label": "Lin Wei's missing ninth year — what happened in 2042",
+      "kind": "mystery",
+      "opened_at_beat": "ch01.b04",
+      "resolved_at_beat": "ch12.b03",
+      "status": "resolved"
+    },
+    {
+      "id": "H002",
+      "label": "Han Bo watches her hands — why",
+      "kind": "character",
+      "opened_at_beat": "ch02.b03",
+      "resolved_at_beat": "ch08.b03",
+      "status": "resolved"
+    },
+    {
+      "id": "H003",
+      "label": "The father's letter — what does it say, will she open it",
+      "kind": "plot",
+      "opened_at_beat": "ch03.b01",
+      "resolved_at_beat": "ch12.b03",
+      "status": "resolved"
+    },
+    {
+      "id": "H004",
+      "label": "The witness's palette matches Lin Wei's — coincidence or contamination",
+      "kind": "mystery",
+      "opened_at_beat": "ch04.b02",
+      "resolved_at_beat": "ch06.b03",
+      "status": "resolved"
+    },
+    {
+      "id": "H005",
+      "label": "The hymn fragment — whose voice is singing",
+      "kind": "foreshadow",
+      "opened_at_beat": "ch05.b02",
+      "resolved_at_beat": "ch12.b04",
+      "status": "resolved"
+    },
+    {
+      "id": "H006",
+      "label": "Tao's invitation to ask — what does Tao know",
+      "kind": "character",
+      "opened_at_beat": "ch01.b02",
+      "resolved_at_beat": "ch10.b02",
+      "status": "resolved"
+    },
+    {
+      "id": "H007",
+      "label": "Mei's withheld message — what is she about to say",
+      "kind": "plot",
+      "opened_at_beat": "ch03.b03",
+      "resolved_at_beat": "ch07.b02",
+      "status": "resolved"
+    },
+    {
+      "id": "H008",
+      "label": "The mother's identity in the closed-record trial",
+      "kind": "mystery",
+      "opened_at_beat": "ch06.b04",
+      "resolved_at_beat": "ch10.b03",
+      "status": "resolved"
+    },
+    {
+      "id": "H009",
+      "label": "Pao Street recognition — whose apartment was that",
+      "kind": "mystery",
+      "opened_at_beat": "ch07.b03",
+      "resolved_at_beat": "ch08.b03",
+      "status": "resolved"
+    },
+    {
+      "id": "H010",
+      "label": "The third note that holds — does the song complete",
+      "kind": "foreshadow",
+      "opened_at_beat": "ch05.b02",
+      "resolved_at_beat": "ch06.b04",
+      "status": "resolved"
+    },
+    {
+      "id": "H011",
+      "label": "Will Lin Wei break the self-extraction prohibition",
+      "kind": "plot",
+      "opened_at_beat": "ch08.b03",
+      "resolved_at_beat": "ch11.b03",
+      "status": "resolved"
+    },
+    {
+      "id": "H012",
+      "label": "The mother's silence — what was she protecting",
+      "kind": "thematic",
+      "opened_at_beat": "ch01.b04",
+      "resolved_at_beat": "ch12.b03",
+      "status": "resolved"
+    }
+  ],
+  "quality_reports": {
+    "style_critique": {
+      "per_chapter_metrics": {
+        "ch01": {
+          "cliche_density": 0.4,
+          "adverb_density": 1.8,
+          "filtering_verb_density": 0.7,
+          "verdict": "clean"
+        },
+        "ch02": {
+          "cliche_density": 0.0,
+          "adverb_density": 1.2,
+          "filtering_verb_density": 0.5,
+          "verdict": "clean"
+        },
+        "ch03": {
+          "cliche_density": 0.3,
+          "adverb_density": 2.1,
+          "filtering_verb_density": 1.1,
+          "verdict": "clean"
+        },
+        "ch04": {
+          "cliche_density": 0.0,
+          "adverb_density": 1.0,
+          "filtering_verb_density": 0.6,
+          "verdict": "clean"
+        },
+        "ch05": {
+          "cliche_density": 0.6,
+          "adverb_density": 2.3,
+          "filtering_verb_density": 1.4,
+          "verdict": "warn"
+        },
+        "ch06": {
+          "cliche_density": 0.0,
+          "adverb_density": 0.8,
+          "filtering_verb_density": 0.4,
+          "verdict": "clean"
+        },
+        "ch07": {
+          "cliche_density": 0.3,
+          "adverb_density": 1.7,
+          "filtering_verb_density": 0.9,
+          "verdict": "clean"
+        },
+        "ch08": {
+          "cliche_density": 0.0,
+          "adverb_density": 1.1,
+          "filtering_verb_density": 0.5,
+          "verdict": "clean"
+        },
+        "ch09": {
+          "cliche_density": 0.4,
+          "adverb_density": 1.5,
+          "filtering_verb_density": 1.2,
+          "verdict": "warn"
+        },
+        "ch10": {
+          "cliche_density": 0.0,
+          "adverb_density": 0.9,
+          "filtering_verb_density": 0.3,
+          "verdict": "clean"
+        },
+        "ch11": {
+          "cliche_density": 0.0,
+          "adverb_density": 0.7,
+          "filtering_verb_density": 0.2,
+          "verdict": "clean"
+        },
+        "ch12": {
+          "cliche_density": 0.0,
+          "adverb_density": 1.0,
+          "filtering_verb_density": 0.4,
+          "verdict": "clean"
+        }
+      },
+      "two_worst_passages": [
+        {
+          "location": "ch05.b02",
+          "what": "the hymn passage briefly drifts toward sentimental; the third note 'held' is doing too much work for one verb",
+          "rewrite_note": "consider letting the hymn fragment land in white space, not in adjective"
+        },
+        {
+          "location": "ch09.b02",
+          "what": "the imagined letter draft inside Lin Wei's head approaches the actual letter too closely; the surprise of ch.12 is dampened",
+          "rewrite_note": "shorten the imagined letter; let father's specific phrasings in ch.12 be a small genuine surprise"
+        }
+      ]
+    },
+    "consistency_audit": {
+      "summary": {
+        "issues_high": 0,
+        "issues_medium": 2,
+        "issues_low": 5,
+        "verdict": "warn"
+      },
+      "issues": [
+        {
+          "id": "ct01",
+          "confidence": "medium",
+          "category": "timeline_internal",
+          "evidence": [
+            {
+              "location": "ch07.b03",
+              "text": "twenty-nine years ago, would have been a teenager"
+            },
+            {
+              "location": "world_bible.timeline",
+              "text": "2042 → 2061 = 19 years"
+            }
+          ],
+          "suggested_fix": "Lin Wei is reasoning about Du Yan's age in 2042 (when the donor's bleed memory took place — the corridor with her mother). 19 years ago Du Yan was 23 — a young adult, not a teenager. Revise to 'in her twenties'."
+        },
+        {
+          "id": "ct02",
+          "confidence": "medium",
+          "category": "world_constraint",
+          "evidence": [
+            {
+              "location": "ch06.b04",
+              "text": "rendered, by Reader Ji"
+            },
+            {
+              "location": "world_bible.magic_or_tech.limits",
+              "text": "A Reader cannot read the memory of a blood relative"
+            }
+          ],
+          "suggested_fix": "Ji is rendering Du Yan's memory — not a blood relative. The associative bleed surfaces Lin Wei's memory via Du Yan's. This is consistent BUT raises the question of whether the bleed pathway should be acknowledged in the world bible. Recommend adding a clarifying line: 'Mneme bleed across donor-witness pairs is rare but documented; the College does not certify what it cannot reliably model.'"
+        }
+      ]
+    },
+    "ai_voice_score": {
+      "manuscript_score": 11,
+      "verdict": "clean",
+      "per_chapter": {
+        "ch01": {
+          "score": 6,
+          "verdict": "clean"
+        },
+        "ch02": {
+          "score": 4,
+          "verdict": "clean"
+        },
+        "ch03": {
+          "score": 8,
+          "verdict": "clean"
+        },
+        "ch04": {
+          "score": 5,
+          "verdict": "clean"
+        },
+        "ch05": {
+          "score": 14,
+          "verdict": "clean"
+        },
+        "ch06": {
+          "score": 7,
+          "verdict": "clean"
+        },
+        "ch07": {
+          "score": 9,
+          "verdict": "clean"
+        },
+        "ch08": {
+          "score": 12,
+          "verdict": "clean"
+        },
+        "ch09": {
+          "score": 18,
+          "verdict": "warn"
+        },
+        "ch10": {
+          "score": 8,
+          "verdict": "clean"
+        },
+        "ch11": {
+          "score": 6,
+          "verdict": "clean"
+        },
+        "ch12": {
+          "score": 14,
+          "verdict": "clean"
+        }
+      },
+      "tell_counts_aggregate": {
+        "delve": 0,
+        "tapestry": 0,
+        "leverage": 0,
+        "navigate_figurative": 0,
+        "not_just_x_its_y": 0,
+        "she_felt_that": 0,
+        "she_knew_that": 4,
+        "of_course_opener": 1,
+        "in_conclusion": 0,
+        "rhetorical_questions": 0
+      },
+      "note": "Four uses of 'she knew that' / 'she had known' in ch.7 and ch.9; flagged but kept on appeal — they are doing diegetic work (Lin Wei's specific habit of constructing knowledge in legal-clinical register). Reviser approved with no change."
+    },
+    "chief_editor_letter": {
+      "manuscript": "The Trial of Memory by Claude Code Novel Agents (sandbox demo) (9,847 words)",
+      "date": "2026-05-18",
+      "sections": {
+        "1_the_book_it_is": "What you have is a quietly devastating short novel about the cost of remembering. The prose is at its level. The structure is at its level. The book it wants to be is the book it is.",
+        "2_what_is_working": [
+          "The interiority is total. Lin Wei is on every page; her sensorium is the reader's instrument.",
+          "The Mneme system is shown, not explained. Bleed, palette, the speculum — the reader picks it up by exposure.",
+          "Chapters 4 and 6 land their reversals with discipline; the reader is given the recognition exactly when Lin Wei is.",
+          "Chapter 10 (Tao) earns its emotional release through twenty pages of withholding.",
+          "Chapter 12 closes on a single remembered line that has been being earned since chapter 1."
+        ],
+        "3_what_is_not_working": [
+          "The Mei subplot enters in ch.3 and resolves in ch.7 with very little on-page time. Risk: Mei feels like a device, not a person.",
+          "The father subplot is brittle: the imagined letter in ch.9 nearly matches the actual letter in ch.12, deflating the open in ch.12.",
+          "Han Bo's silence is doing a lot of work. By ch.11 the reader needs to feel why the silence is the answer, not only that it is. Consider adding one small gesture from him in ch.2 or ch.6 that the reader will later re-read.",
+          "Mneme bleed pathway (donor associative reach surfacing a witness's memory through another donor) is, technically, undermotivated — readers attuned to hard-SF rules will note it. Optional fix: a single line in ch.6 acknowledging that bleed across donor pairs is rare and not formally indexed."
+        ],
+        "4_surgery_in_order": [
+          {
+            "id": "r01",
+            "action": "trim",
+            "where": "ch09.b02",
+            "why": "addresses §3 bullet 2 — let father's actual phrasings in ch.12 surprise"
+          },
+          {
+            "id": "r02",
+            "action": "add_one_gesture",
+            "where": "ch02.b03",
+            "why": "addresses §3 bullet 3 — Han Bo's hand briefly closes when he sees Lin Wei's glove pattern"
+          },
+          {
+            "id": "r03",
+            "action": "add_clarifying_line",
+            "where": "ch06.b03",
+            "why": "addresses §3 bullet 4 — world-bible note about bleed"
+          },
+          {
+            "id": "r04",
+            "action": "give_Mei_one_more_beat",
+            "where": "consider a single line in ch.4 or ch.5 from Mei",
+            "why": "addresses §3 bullet 1; OPTIONAL"
+          }
+        ],
+        "5_leave_alone": [
+          "The pacing of ch.5 (the vigil). It is slow on purpose; do not speed it up.",
+          "The composition motif (the teacup and the envelope on the desk in ch.3, ch.7, ch.9). It does subtle work. Leave it.",
+          "The decision to end on the remembered line of the mother's song without continuing into the retrieval. The retrieval is implied; the reader gets to do it."
+        ],
+        "6_estimate": "Expected wordcount delta after surgery: +120 to +200 words. Confidence the revised draft is submission-ready: high. A second pass is not required."
+      }
+    },
+    "revision_plan_applied": {
+      "approved_by_user_in_sandbox": [
+        "r01",
+        "r03"
+      ],
+      "skipped_by_user_in_sandbox": [
+        "r02",
+        "r04"
+      ],
+      "note": "User accepted the trim of ch09.b02 and the bleed-clarification line in ch06.b03. User declined the Han Bo gesture (judged the silence in its current form as load-bearing) and the extra Mei beat (judged Mei's offscreen presence as thematically right). All four edits had been pre-approved by chief-editor; user took two."
+    }
+  },
+  "manuscript": {
+    "compiled_md": null,
+    "compiled_html": null,
+    "pdf_path": "sandbox/fixtures/07_compiled.pdf",
+    "cover_brief": {
+      "one_line_job": "Make a literary-fiction reader curious about a courtroom drama.",
+      "mood": [
+        "cold",
+        "intimate",
+        "watchful"
+      ],
+      "palette": [
+        "ivory",
+        "oxblood",
+        "dusty teal",
+        "slate",
+        "matte gold"
+      ],
+      "focal_element": "A gloved hand resting on a sealed evidence envelope.",
+      "references": [
+        "Klara and the Sun (Ishiguro)",
+        "The Memory Police (Ogawa)"
+      ],
+      "avoid": "Magnifying glass + courtroom gavel."
+    },
+    "blurb": "In a near-future republic where memory is admissible evidence, the prosecutor Lin Wei has spent her career not consulting her own past. When a witness's testimony arrives in a synesthetic palette she recognizes as her own, the case turns on a year of her ninth life she has spent twenty-nine years not remembering. To win, she must keep forgetting. To remember, she must lose everything she has built."
+  }
+}

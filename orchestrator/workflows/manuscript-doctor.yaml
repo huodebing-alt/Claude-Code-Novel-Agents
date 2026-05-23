@@ -1,0 +1,20 @@
+name: manuscript-doctor
+description: Diagnostic only — identifies which phase is broken
+mode_default: full
+steps:
+  - id: inspect
+    skill: project-stage-detect
+  - id: score
+    skill: critique-style
+    params: {scope: macro_only}
+    depends_on: [inspect]
+  - id: consistency
+    skill: check-consistency
+    depends_on: [inspect]
+  - id: ai_voice
+    skill: detect-ai-voice
+    depends_on: [inspect]
+  - id: recommend
+    skill: developmental-edit
+    params: {scope: diagnostic, output: workflow_recommendation}
+    depends_on: [score, consistency, ai_voice]

@@ -1,0 +1,28 @@
+name: chapter-revision
+description: Per-chapter revision loop
+mode_default: semi
+max_iterations: 3
+steps:
+  - id: write
+    skill: write-chapter
+  - id: q_style
+    skill: critique-style
+    depends_on: [write]
+  - id: q_ai
+    skill: detect-ai-voice
+    depends_on: [write]
+  - id: q_voice
+    skill: audit-character-voice
+    depends_on: [write]
+  - id: q_consistency
+    skill: check-consistency
+    depends_on: [write]
+  - id: edit_decision
+    skill: developmental-edit
+    params: {scope: single_chapter}
+    depends_on: [q_style, q_ai, q_voice, q_consistency]
+  - id: revise
+    skill: revise-from-notes
+    depends_on: [edit_decision]
+    loop_back_to: q_style
+    loop_condition: "ai_voice_score > 25 or high_severity_issues > 0"

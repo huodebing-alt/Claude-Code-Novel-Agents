@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{TITLE}}</title>
+  <meta name="author" content="{{AUTHOR}}" />
+  <link rel="stylesheet" href="styles/manuscript.css" />
+</head>
+<body>
+
+<!-- Front cover -->
+<section class="cover">
+  <div class="meta">{{GENRE}}</div>
+  <h1>{{TITLE}}</h1>
+  {{#TITLE_ZH}}<div class="title-zh">{{TITLE_ZH}}</div>{{/TITLE_ZH}}
+  <div class="rule"></div>
+  <div class="author">by {{AUTHOR}}</div>
+</section>
+
+<!-- Copyright page -->
+<section class="copyright">
+  <p>{{TITLE}}<br/>
+  Copyright © {{YEAR}} {{AUTHOR}}.</p>
+  <p>All rights reserved. No part of this book may be reproduced in any form without permission of the author, except for brief quotations in critical review.</p>
+  <p>This is a work of fiction. Any resemblance to real persons or events is coincidental.</p>
+  <p>Composed in Cormorant Garamond, Noto Serif SC, and Inter.<br/>
+  Manuscript prepared by the Claude Code Novel Agents atelier.</p>
+</section>
+
+<!-- Table of contents -->
+<section class="toc">
+  <h2>Contents</h2>
+  <ol>
+    {{#CHAPTERS}}
+    <li><span>{{TITLE}}</span></li>
+    {{/CHAPTERS}}
+  </ol>
+</section>
+
+<!-- Body -->
+<main>
+  {{#CHAPTERS}}
+  <article class="chapter">
+    <h1><span class="num">Chapter {{NUM}}</span>{{TITLE}}</h1>
+    {{BODY}}
+  </article>
+  {{/CHAPTERS}}
+</main>
+
+<!-- Back matter -->
+<section class="blurb">
+  <h2>About the book</h2>
+  <p>{{BLURB}}</p>
+</section>
+
+<section class="acknowledgments">
+  <h2>Acknowledgments</h2>
+  <p>{{ACKNOWLEDGMENTS}}</p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+name: outline-only
+description: Phases 1-3, stops before writing
+mode_default: semi
+steps:
+  - id: ideation_themes
+    skill: brainstorm-themes
+  - id: ideation_logline
+    skill: write-logline
+    depends_on: [ideation_themes]
+  - id: ideation_dq
+    skill: draft-dramatic-question
+    depends_on: [ideation_logline]
+  - id: ideation_style
+    skill: set-stylistic-direction
+    depends_on: [ideation_dq]
+  - id: world
+    skill: build-world-bible
+    depends_on: [ideation_style]
+  - id: char_protagonist
+    skill: design-protagonist
+    depends_on: [ideation_style]
+  - id: char_antagonist
+    skill: design-antagonist
+    depends_on: [char_protagonist]
+  - id: char_supporting
+    skill: design-supporting-cast
+    depends_on: [char_antagonist]
+  - id: outline
+    skill: draft-outline
+    depends_on: [world, char_supporting]
+  - id: beats
+    skill: plan-chapter-beats
+    fan_out: per_chapter
+    depends_on: [outline]

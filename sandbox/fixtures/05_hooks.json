@@ -1,0 +1,28 @@
+{
+  "hooks": [
+    {"id": "H001", "label": "Lin Wei's missing ninth year — what happened in 2042",
+     "kind": "mystery", "opened_at_beat": "ch01.b04", "resolved_at_beat": "ch12.b03", "status": "resolved"},
+    {"id": "H002", "label": "Han Bo watches her hands — why",
+     "kind": "character", "opened_at_beat": "ch02.b03", "resolved_at_beat": "ch08.b03", "status": "resolved"},
+    {"id": "H003", "label": "The father's letter — what does it say, will she open it",
+     "kind": "plot", "opened_at_beat": "ch03.b01", "resolved_at_beat": "ch12.b03", "status": "resolved"},
+    {"id": "H004", "label": "The witness's palette matches Lin Wei's — coincidence or contamination",
+     "kind": "mystery", "opened_at_beat": "ch04.b02", "resolved_at_beat": "ch06.b03", "status": "resolved"},
+    {"id": "H005", "label": "The hymn fragment — whose voice is singing",
+     "kind": "foreshadow", "opened_at_beat": "ch05.b02", "resolved_at_beat": "ch12.b04", "status": "resolved"},
+    {"id": "H006", "label": "Tao's invitation to ask — what does Tao know",
+     "kind": "character", "opened_at_beat": "ch01.b02", "resolved_at_beat": "ch10.b02", "status": "resolved"},
+    {"id": "H007", "label": "Mei's withheld message — what is she about to say",
+     "kind": "plot", "opened_at_beat": "ch03.b03", "resolved_at_beat": "ch07.b02", "status": "resolved"},
+    {"id": "H008", "label": "The mother's identity in the closed-record trial",
+     "kind": "mystery", "opened_at_beat": "ch06.b04", "resolved_at_beat": "ch10.b03", "status": "resolved"},
+    {"id": "H009", "label": "Pao Street recognition — whose apartment was that",
+     "kind": "mystery", "opened_at_beat": "ch07.b03", "resolved_at_beat": "ch08.b03", "status": "resolved"},
+    {"id": "H010", "label": "The third note that holds — does the song complete",
+     "kind": "foreshadow", "opened_at_beat": "ch05.b02", "resolved_at_beat": "ch06.b04", "status": "resolved"},
+    {"id": "H011", "label": "Will Lin Wei break the self-extraction prohibition",
+     "kind": "plot", "opened_at_beat": "ch08.b03", "resolved_at_beat": "ch11.b03", "status": "resolved"},
+    {"id": "H012", "label": "The mother's silence — what was she protecting",
+     "kind": "thematic", "opened_at_beat": "ch01.b04", "resolved_at_beat": "ch12.b03", "status": "resolved"}
+  ]
+}

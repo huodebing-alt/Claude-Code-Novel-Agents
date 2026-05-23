@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Outline Reviewer · Claude Code Novel Agents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+<style>
+  :root {
+    --ivory:#f7f2e7; --ivory2:#efe7d3;
+    --oxblood:#7a1f1f; --oxblood2:#5e1717;
+    --gold:#c9a96b; --gold2:#a8884f;
+    --charcoal:#2c2c2c; --slate:#6b7280;
+    --green:#3a6b3a; --red:#9b1c1c; --amber:#b8740b;
+  }
+  html,body{margin:0;background:var(--ivory);color:var(--charcoal);font-family:"Cormorant Garamond",Georgia,"Noto Serif SC",serif;font-size:15px}
+  *{box-sizing:border-box}
+  .sans{font-family:"Inter",sans-serif}
+  .uc{text-transform:uppercase;letter-spacing:.16em;font-size:10px}
+  button,input,textarea,select{font-family:inherit;font-size:14px}
+  button{cursor:pointer}
+
+  /* Layout */
+  header{position:sticky;top:0;z-index:20;background:rgba(247,242,231,.96);backdrop-filter:blur(6px);border-bottom:1px solid rgba(122,31,31,.25);padding:.6rem 1.2rem;display:flex;align-items:center;gap:1rem}
+  header h1{font-size:1.1rem;color:var(--oxblood);margin:0;letter-spacing:.01em}
+  header .badge{font-family:"Inter",sans-serif;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;background:rgba(201,169,107,.3);color:var(--oxblood2);padding:2px 8px;border-radius:4px}
+  header .spacer{flex:1}
+  .saveBtn,.doneBtn,.auditBtn{padding:.45rem .9rem;border-radius:4px;border:1px solid var(--oxblood);font-family:"Inter",sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+  .saveBtn{background:var(--ivory);color:var(--oxblood)}
+  .saveBtn:hover{background:var(--ivory2)}
+  .doneBtn{background:var(--oxblood);color:var(--ivory);border-color:var(--oxblood)}
+  .doneBtn:hover{background:var(--oxblood2)}
+  .auditBtn{background:transparent;color:var(--charcoal);border-color:rgba(122,31,31,.4)}
+  .dirty{color:var(--amber);font-style:italic;font-size:12px;font-family:"Inter",sans-serif}
+
+  main{display:grid;grid-template-columns:340px 1fr;min-height:calc(100vh - 60px)}
+
+  /* Sidebar (hooks) */
+  aside.hooks{border-right:1px solid rgba(122,31,31,.15);background:rgba(239,231,211,.4);padding:1rem;position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto}
+  aside h2{font-family:"Inter",sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--oxblood);margin:0 0 .8rem 0}
+  .auditSummary{font-family:"Inter",sans-serif;font-size:11px;color:var(--charcoal);margin-bottom:.8rem;padding:.5rem;border-radius:4px;background:rgba(255,255,255,.5);border:1px solid rgba(122,31,31,.1)}
+  .auditSummary div{display:flex;justify-content:space-between;padding:2px 0}
+  .auditSummary b{font-weight:600}
+  .v-clean{color:var(--green);font-weight:600}
+  .v-warn{color:var(--amber);font-weight:600}
+  .v-block{color:var(--red);font-weight:600}
+  .hook{padding:.5rem;border-left:3px solid var(--gold);background:rgba(255,255,255,.55);margin-bottom:.5rem;font-size:13px;border-radius:0 4px 4px 0}
+  .hook.resolved{border-left-color:var(--green)}
+  .hook.open{border-left-color:var(--amber)}
+  .hook.dangling{border-left-color:var(--red)}
+  .hook .id{font-family:"Inter",sans-serif;font-size:10px;color:var(--oxblood);letter-spacing:.12em}
+  .hook .lbl{display:block;margin:.15rem 0 .25rem 0;color:var(--charcoal)}
+  .hook .meta{font-family:"Inter",sans-serif;font-size:10px;color:var(--slate)}
+
+  /* Outline area */
+  section.outline{padding:1rem 1.4rem;overflow-x:hidden}
+  .act{margin-bottom:1.4rem;border:1px solid rgba(122,31,31,.18);border-radius:6px;background:rgba(255,255,255,.5)}
+  .act > .actHead{display:flex;align-items:center;padding:.6rem .9rem;border-bottom:1px solid rgba(122,31,31,.12);background:rgba(239,231,211,.5);cursor:pointer;border-radius:6px 6px 0 0}
+  .act > .actHead h3{margin:0;font-size:1.05rem;color:var(--oxblood);font-style:italic;font-weight:500}
+  .act > .actHead .meta{margin-left:auto;font-family:"Inter",sans-serif;font-size:10.5px;color:var(--slate);text-transform:uppercase;letter-spacing:.14em}
+  .chapter{margin:.5rem .9rem;border-left:3px solid var(--gold);padding:0 0 0 .8rem;background:rgba(255,255,255,.4);border-radius:0 4px 4px 0}
+  .chapter > .chapHead{display:flex;align-items:center;padding:.4rem 0;cursor:pointer;gap:.5rem}
+  .chapter > .chapHead h4{margin:0;font-size:1rem;color:var(--charcoal);font-weight:600}
+  .chapter > .chapHead .num{font-family:"Inter",sans-serif;font-size:10px;color:var(--oxblood2);letter-spacing:.18em;padding:1px 5px;border:1px solid rgba(122,31,31,.18);border-radius:3px}
+  .chapter > .chapHead .meta{margin-left:auto;font-family:"Inter",sans-serif;font-size:10px;color:var(--slate)}
+  .chapMeta{display:grid;grid-template-columns:9rem 1fr;gap:.2rem .8rem;padding:.3rem .2rem .5rem 0;font-size:12.5px}
+  .chapMeta dt{font-family:"Inter",sans-serif;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);align-self:center}
+  .chapMeta dd{margin:0}
+  .chapMeta input,.chapMeta select,.chapMeta textarea{width:100%;padding:.3rem;border:1px solid rgba(122,31,31,.18);background:rgba(255,255,255,.7);border-radius:3px}
+
+  .beats{margin:.3rem 0 .8rem 0;border-top:1px dashed rgba(122,31,31,.15);padding-top:.3rem}
+  .beat{padding:.5rem .6rem;margin:.35rem 0;background:rgba(255,255,255,.7);border:1px solid rgba(122,31,31,.13);border-radius:4px;cursor:default}
+  .beat.dragging{opacity:.4}
+  .beat .beatHead{display:flex;gap:.5rem;align-items:center;cursor:grab;font-size:13px}
+  .beat .beatHead:active{cursor:grabbing}
+  .beat .handle{color:var(--gold);font-size:1.2rem;line-height:1}
+  .beat .beatId{font-family:"Inter",sans-serif;font-size:9.5px;letter-spacing:.16em;color:var(--oxblood);padding:1px 5px;border:1px solid rgba(122,31,31,.15);border-radius:3px}
+  .beat .beatTitle{font-style:italic;color:var(--charcoal);flex:1}
+  .beat .beatLen{font-family:"Inter",sans-serif;font-size:10px;color:var(--slate)}
+  .beat .toggle{background:transparent;border:none;color:var(--charcoal);padding:0 4px;font-size:14px}
+  .beat .del{background:transparent;border:none;color:var(--red);padding:0 4px;font-size:13px;opacity:.6}
+  .beat .del:hover{opacity:1}
+
+  .beatForm{display:none;padding:.6rem .2rem .2rem .2rem;border-top:1px dashed rgba(122,31,31,.1);margin-top:.4rem}
+  .beat.open .beatForm{display:block}
+  .beat.open .toggle{transform:rotate(90deg)}
+  .field{display:grid;grid-template-columns:9rem 1fr;gap:.2rem .8rem;margin-bottom:.4rem;align-items:start}
+  .field > label{font-family:"Inter",sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);padding-top:.35rem}
+  .field input,.field textarea,.field select{width:100%;padding:.3rem;border:1px solid rgba(122,31,31,.15);background:rgba(255,255,255,.85);border-radius:3px;font-size:13px}
+  .field textarea{font-family:"Cormorant Garamond",serif;min-height:2rem;resize:vertical}
+  .smallBtn{padding:.15rem .45rem;font-family:"Inter",sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--oxblood);background:transparent;border:1px solid rgba(122,31,31,.25);border-radius:3px;margin-left:.3rem}
+  .smallBtn:hover{background:rgba(201,169,107,.15)}
+
+  table.subtable{width:100%;border-collapse:collapse;margin-top:.25rem}
+  table.subtable th{font-family:"Inter",sans-serif;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);padding:.25rem .35rem;text-align:left;border-bottom:1px solid rgba(122,31,31,.12)}
+  table.subtable td{padding:.18rem .35rem;vertical-align:top}
+  table.subtable input{width:100%;padding:.2rem;border:1px solid rgba(122,31,31,.12);background:rgba(255,255,255,.8);border-radius:3px;font-size:12.5px}
+  table.subtable .x{color:var(--red);background:transparent;border:none;font-size:13px;cursor:pointer;opacity:.5}
+  table.subtable .x:hover{opacity:1}
+  .chipInput{display:flex;flex-wrap:wrap;gap:.3rem;padding:.2rem;border:1px solid rgba(122,31,31,.15);border-radius:3px;background:rgba(255,255,255,.8);min-height:1.85rem}
+  .chip{font-family:"Inter",sans-serif;font-size:11px;background:rgba(201,169,107,.25);color:var(--oxblood);padding:1px 8px;border-radius:10px;display:inline-flex;align-items:center;gap:.3rem}
+  .chip .x{background:transparent;border:none;color:var(--oxblood);font-size:13px;cursor:pointer;padding:0 0 0 2px}
+  .chipInput input{flex:1;min-width:5rem;border:none;background:transparent;font-size:12px;padding:0 4px;font-family:"Inter",sans-serif}
+  .chipInput input:focus{outline:none}
+
+  .actAdd, .beatAdd, .chapAdd{font-family:"Inter",sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--oxblood);background:transparent;border:1px dashed rgba(122,31,31,.3);padding:.35rem .7rem;border-radius:3px;margin:.4rem 0}
+  .actAdd:hover, .beatAdd:hover, .chapAdd:hover{background:rgba(201,169,107,.1)}
+
+  .modal{position:fixed;inset:0;background:rgba(44,44,44,.5);display:none;align-items:center;justify-content:center;z-index:30}
+  .modal.show{display:flex}
+  .modal .card{background:var(--ivory);padding:1.5rem 1.8rem;border-radius:6px;max-width:480px;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+  .modal h3{margin:0 0 .8rem 0;color:var(--oxblood);font-size:1.1rem}
+  .modal p{font-size:14px;line-height:1.5;margin:.4rem 0}
+  .modal .actions{margin-top:1rem;display:flex;gap:.5rem;justify-content:flex-end}
+
+  hr.hairline{border:none;border-top:1px solid rgba(122,31,31,.15);margin:1rem 0}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Outline Reviewer</h1>
+  <span class="badge" id="title">loading…</span>
+  <span class="badge" id="wcCount">0 / 0 words</span>
+  <span class="spacer"></span>
+  <span class="dirty" id="dirty"></span>
+  <button class="auditBtn" id="reauditBtn">Re-audit hooks</button>
+  <button class="saveBtn" id="saveBtn">Save</button>
+  <button class="doneBtn" id="doneBtn">Done — continue pipeline</button>
+</header>
+
+<main>
+  <aside class="hooks">
+    <h2>Hook ledger</h2>
+    <div class="auditSummary" id="auditSummary">loading…</div>
+    <div id="hookList"></div>
+    <hr class="hairline"/>
+    <h2>Legend</h2>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;line-height:1.7;color:var(--slate)">
+      <div><span style="color:var(--green)">●</span> resolved — opened & paid off</div>
+      <div><span style="color:var(--amber)">●</span> open — opened but not yet resolved</div>
+      <div><span style="color:var(--red)">●</span> dangling — referenced but inconsistent</div>
+    </div>
+    <hr class="hairline"/>
+    <div style="font-family:'Inter',sans-serif;font-size:11px;line-height:1.6;color:var(--slate)">
+      Editing tips:<br/>
+      • Drag the ◆ handle to reorder beats<br/>
+      • Click a beat row to expand its fields<br/>
+      • Press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>S</kbd> to save<br/>
+      • Click Done when satisfied — server stops and pipeline continues
+    </div>
+  </aside>
+
+  <section class="outline" id="outline">
+    <p style="color:var(--slate)">Loading outline…</p>
+  </section>
+</main>
+
+<!-- Confirm-done modal -->
+<div class="modal" id="doneModal">
+  <div class="card">
+    <h3>Continue the pipeline?</h3>
+    <p>This shuts down the reviewer and lets the workflow advance to Phase 4 (parallel chapter writing).</p>
+    <p id="doneStats" style="font-family:'Inter',sans-serif;font-size:12px;color:var(--slate)"></p>
+    <div class="actions">
+      <button class="saveBtn" onclick="closeDone()">Cancel</button>
+      <button class="doneBtn" onclick="confirmDone()">Confirm — done</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let TREE = null;
+let DIRTY = false;
+const $ = (sel, root=document) => root.querySelector(sel);
+const el = (tag, opts={}) => {
+  const e = document.createElement(tag);
+  if (opts.className) e.className = opts.className;
+  if (opts.text != null) e.textContent = opts.text;
+  if (opts.html != null) e.innerHTML = opts.html;
+  if (opts.attrs) for (const k in opts.attrs) e.setAttribute(k, opts.attrs[k]);
+  if (opts.events) for (const k in opts.events) e.addEventListener(k, opts.events[k]);
+  return e;
+};
+const markDirty = () => { DIRTY = true; $('#dirty').textContent = '● unsaved changes'; };
+const markClean = () => { DIRTY = false; $('#dirty').textContent = ''; };
+
+// ---------- Load ----------
+async function load() {
+  const r = await fetch('/api/novel'); TREE = await r.json();
+  $('#title').textContent = (TREE.metadata && TREE.metadata.title) || 'novel';
+  render();
+  renderHooks();
+}
+async function reaudit() {
+  const r = await fetch('/api/audit'); const a = await r.json();
+  renderAudit(a);
+}
+load().then(reaudit);
+
+// ---------- Render outline ----------
+function render() {
+  const root = $('#outline'); root.innerHTML = '';
+  const acts = (TREE.outline && TREE.outline.acts) || [];
+  const totalWc = countWords();
+  const tgt = (TREE.metadata && TREE.metadata.target_wordcount) || 0;
+  $('#wcCount').textContent = `${totalWc.toLocaleString()} / ${tgt.toLocaleString()} words`;
+
+  acts.forEach((act, ai) => root.appendChild(renderAct(act, ai)));
+
+  const addActBtn = el('button', {
+    className:'actAdd', text:'+ Add act',
+    events:{click: () => { acts.push({id:'act'+(acts.length+1), name:'New act', summary:'', chapters:[]}); markDirty(); render(); }}
+  });
+  root.appendChild(addActBtn);
+}
+
+function renderAct(act, ai) {
+  const wrap = el('div', {className:'act'});
+  const head = el('div', {className:'actHead'});
+  head.appendChild(el('h3', {text: act.name || `Act ${ai+1}`}));
+  const meta = el('span', {className:'meta', text: `${(act.chapters || []).length} chapters · ${countActWords(act).toLocaleString()} words`});
+  head.appendChild(meta);
+  wrap.appendChild(head);
+
+  const body = el('div', {className:'actBody'});
+  (act.chapters || []).forEach((ch, ci) => body.appendChild(renderChapter(ch, act, ai, ci)));
+  const addChap = el('button', {
+    className:'chapAdd', text:'+ Add chapter',
+    events:{click: () => {
+      const n = (act.chapters || []).length;
+      const newCh = { id:`${act.id}-ch${n+1}`, title:'New chapter', POV:'', location_id:'', time:'',
+                     opening_image:'', summary:'', length_target:0, beats:[] };
+      (act.chapters = act.chapters || []).push(newCh); markDirty(); render();
+    }}
+  });
+  body.appendChild(addChap);
+  wrap.appendChild(body);
+  return wrap;
+}
+
+function renderChapter(ch, act, ai, ci) {
+  const wrap = el('div', {className:'chapter'});
+  const head = el('div', {className:'chapHead'});
+  head.appendChild(el('span', {className:'num', text:`Ch ${ci+1}`}));
+  const title = el('input', {attrs:{value: ch.title || ''}});
+  title.style.cssText = 'flex:1;background:transparent;border:none;font-size:1rem;color:var(--charcoal);font-weight:600;font-family:inherit';
+  title.addEventListener('input', e => { ch.title = e.target.value; markDirty(); });
+  head.appendChild(title);
+  head.appendChild(el('span', {className:'meta', text:`${(ch.beats||[]).length} beats · ${ch.length_target||0} w`}));
+  wrap.appendChild(head);
+
+  // Chapter metadata (collapsed dl)
+  const dl = el('dl', {className:'chapMeta'});
+  const metaFields = [
+    ['id','id','text'], ['POV','POV','text'], ['location_id','location_id','locationDropdown'],
+    ['time','time','text'], ['opening_image','opening_image','text'],
+    ['length_target','length_target','number'], ['summary','summary','textarea'],
+  ];
+  metaFields.forEach(([label, key, type]) => {
+    dl.appendChild(el('dt', {text: label}));
+    const dd = el('dd');
+    let inp;
+    if (type === 'textarea') {
+      inp = el('textarea', {attrs:{rows:2}}); inp.value = ch[key] || '';
+    } else if (type === 'locationDropdown') {
+      inp = locationSelect(ch[key] || '');
+    } else {
+      inp = el('input', {attrs:{type: type === 'number' ? 'number' : 'text'}});
+      inp.value = ch[key] != null ? ch[key] : '';
+    }
+    inp.addEventListener('input', e => { ch[key] = type==='number' ? Number(e.target.value)||0 : e.target.value; markDirty(); });
+    dd.appendChild(inp);
+    dl.appendChild(dd);
+  });
+  wrap.appendChild(dl);
+
+  // Beats
+  const beatsWrap = el('div', {className:'beats', attrs:{'data-chapter':ch.id}});
+  (ch.beats || []).forEach((b, bi) => beatsWrap.appendChild(renderBeat(b, ch, bi)));
+  wrap.appendChild(beatsWrap);
+
+  // Sortable on beats
+  new Sortable(beatsWrap, {
+    handle: '.beatHead', animation: 150, ghostClass: 'dragging',
+    onEnd: (evt) => {
+      const a = ch.beats.splice(evt.oldIndex, 1)[0];
+      ch.beats.splice(evt.newIndex, 0, a);
+      markDirty();
+    },
+  });
+
+  const addBeat = el('button', {
+    className:'beatAdd', text:'+ Add beat',
+    events:{click: () => {
+      const n = (ch.beats || []).length;
+      ch.beats = ch.beats || [];
+      ch.beats.push({
+        id:`${ch.id}.b${String(n+1).padStart(2,'0')}`, emotion:'', function:'', length_target:0,
+        opening_trigger:'', closing_image:'',
+        facts:[], location_id:ch.location_id||'', emotions:[], state_changes:[],
+        hooks_opened:[], hooks_resolved:[], text:''
+      });
+      markDirty(); render();
+    }}
+  });
+  wrap.appendChild(addBeat);
+
+  return wrap;
+}
+
+function renderBeat(b, ch, bi) {
+  const wrap = el('div', {className:'beat'});
+  const head = el('div', {className:'beatHead'});
+  head.appendChild(el('span', {className:'handle', html:'◆'}));
+  head.appendChild(el('span', {className:'beatId', text: b.id || `${ch.id}.b${bi+1}`}));
+  head.appendChild(el('span', {className:'beatTitle', text: b.function || b.emotion || '(beat)'}));
+  head.appendChild(el('span', {className:'beatLen', text: `${b.length_target||0} w`}));
+  head.appendChild(el('button', {className:'toggle', text:'▸', events:{click: e => { e.stopPropagation(); wrap.classList.toggle('open'); e.target.textContent = wrap.classList.contains('open') ? '▾':'▸'; }}}));
+  head.appendChild(el('button', {className:'del', text:'×', attrs:{title:'Delete beat'}, events:{click: e => {
+    e.stopPropagation();
+    if (!confirm(`Delete beat ${b.id}?`)) return;
+    ch.beats.splice(bi, 1); markDirty(); render();
+  }}}));
+  wrap.appendChild(head);
+
+  // Form
+  const form = el('div', {className:'beatForm'});
+  const txtFields = [
+    ['id','id','text'], ['emotion','emotion','text'], ['function','function','text'],
+    ['length_target','length_target','number'], ['opening_trigger','opening_trigger','text'],
+    ['closing_image','closing_image','text'], ['location_id','location_id','locationDropdown'],
+  ];
+  txtFields.forEach(([lbl, key, type]) => {
+    const row = el('div', {className:'field'});
+    row.appendChild(el('label', {text:lbl}));
+    let inp;
+    if (type === 'locationDropdown') inp = locationSelect(b[key]||'');
+    else { inp = el('input', {attrs:{type: type === 'number' ? 'number' : 'text'}}); inp.value = b[key] != null ? b[key] : ''; }
+    inp.addEventListener('input', e => { b[key] = type==='number' ? Number(e.target.value)||0 : e.target.value; markDirty(); refreshBeatHead(head, b); });
+    row.appendChild(inp); form.appendChild(row);
+  });
+
+  // facts[]
+  form.appendChild(arrayOfObjectsEditor('facts', 'Facts', b, 'facts',
+    [{k:'actor',w:'8rem'}, {k:'action',w:'10rem'}, {k:'object',w:'10rem'}, {k:'detail',w:'auto'}]));
+  // emotions[]
+  form.appendChild(arrayOfObjectsEditor('emotions', 'Emotions', b, 'emotions',
+    [{k:'character',w:'10rem'}, {k:'emotion',w:'auto'}]));
+  // state_changes[]
+  form.appendChild(arrayOfObjectsEditor('state_changes', 'State changes', b, 'state_changes',
+    [{k:'character',w:'9rem'}, {k:'before',w:'auto'}, {k:'after',w:'auto'}]));
+  // hooks_opened[]
+  form.appendChild(chipsField('Hooks opened', b, 'hooks_opened'));
+  // hooks_resolved[]
+  form.appendChild(chipsField('Hooks resolved', b, 'hooks_resolved'));
+
+  wrap.appendChild(form);
+  return wrap;
+}
+
+function refreshBeatHead(head, b) {
+  head.querySelector('.beatId').textContent = b.id;
+  head.querySelector('.beatTitle').textContent = b.function || b.emotion || '(beat)';
+  head.querySelector('.beatLen').textContent = `${b.length_target||0} w`;
+}
+
+function locationSelect(currentId) {
+  const sel = el('select');
+  const locs = (TREE.world_bible && TREE.world_bible.locations) || [];
+  sel.appendChild(el('option', {attrs:{value:''}, text:'(none)'}));
+  locs.forEach(l => {
+    const opt = el('option', {attrs:{value: l.id}, text: `${l.id} — ${l.name}`});
+    if (l.id === currentId) opt.selected = true;
+    sel.appendChild(opt);
+  });
+  return sel;
+}
+
+function arrayOfObjectsEditor(name, label, obj, key, cols) {
+  obj[key] = obj[key] || [];
+  const row = el('div', {className:'field'});
+  row.appendChild(el('label', {text:label}));
+  const cell = el('div');
+  const tbl = el('table', {className:'subtable'});
+  const head = el('tr');
+  cols.forEach(c => head.appendChild(el('th', {text:c.k})));
+  head.appendChild(el('th',{}));
+  tbl.appendChild(head);
+  obj[key].forEach((item, i) => tbl.appendChild(makeRow(item, i)));
+  cell.appendChild(tbl);
+  cell.appendChild(el('button', {className:'smallBtn', text:'+ add', events:{click: e=>{ e.preventDefault(); const newObj={}; cols.forEach(c=>newObj[c.k]=''); obj[key].push(newObj); markDirty(); render(); }}}));
+  row.appendChild(cell);
+
+  function makeRow(item, i) {
+    const tr = el('tr');
+    cols.forEach(c => {
+      const td = el('td');
+      const inp = el('input', {attrs:{type:'text', value: item[c.k] != null ? item[c.k] : ''}});
+      if (c.w !== 'auto') td.style.width = c.w;
+      inp.addEventListener('input', e => { item[c.k] = e.target.value; markDirty(); });
+      td.appendChild(inp); tr.appendChild(td);
+    });
+    const xtd = el('td'); xtd.style.width = '1.6rem';
+    xtd.appendChild(el('button', {className:'x', text:'×', events:{click: e=>{ e.preventDefault(); obj[key].splice(i,1); markDirty(); render(); }}}));
+    tr.appendChild(xtd);
+    return tr;
+  }
+  return row;
+}
+
+function chipsField(label, obj, key) {
+  obj[key] = obj[key] || [];
+  const row = el('div', {className:'field'});
+  row.appendChild(el('label', {text:label}));
+  const box = el('div', {className:'chipInput'});
+  obj[key].forEach((h, i) => box.appendChild(chip(h, () => { obj[key].splice(i,1); markDirty(); render(); })));
+  const inp = el('input', {attrs:{placeholder:'add H### then Enter'}});
+  inp.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && inp.value.trim()) {
+      e.preventDefault();
+      obj[key].push(inp.value.trim());
+      inp.value = '';
+      markDirty(); render();
+    }
+  });
+  box.appendChild(inp); row.appendChild(box);
+  return row;
+}
+function chip(text, onRemove) {
+  const c = el('span', {className:'chip'});
+  c.appendChild(el('span', {text}));
+  c.appendChild(el('button', {className:'x', text:'×', events:{click: e=>{ e.preventDefault(); onRemove(); }}}));
+  return c;
+}
+
+// ---------- Hooks panel ----------
+function renderHooks() {
+  const list = $('#hookList'); list.innerHTML = '';
+  const hooks = TREE.hooks || [];
+  if (!hooks.length) {
+    list.appendChild(el('p', {text:'No hooks registered yet. Beats can declare hooks_opened/hooks_resolved and beat-planner will append entries here.', attrs:{style:'font-size:12px;color:var(--slate);font-family:Inter,sans-serif'}}));
+    return;
+  }
+  hooks.forEach(h => {
+    const d = el('div', {className:'hook ' + (h.status || 'open')});
+    d.appendChild(el('span', {className:'id', text:h.id || '?'}));
+    d.appendChild(el('span', {className:'lbl', text:h.label || '(no label)'}));
+    d.appendChild(el('span', {className:'meta', text: `${h.kind||'?'} · ${h.status||'open'} · opens ${h.opened_at_beat||'—'} → resolves ${h.resolved_at_beat||'—'}`}));
+    list.appendChild(d);
+  });
+}
+function renderAudit(audit) {
+  const s = audit.summary || {};
+  const v = s.verdict || 'warn';
+  const cls = v === 'clean' ? 'v-clean' : (v === 'block' ? 'v-block' : 'v-warn');
+  $('#auditSummary').innerHTML = `
+    <div><b>Verdict</b><span class="${cls}">${v.toUpperCase()}</span></div>
+    <div><span>registered</span><span>${s.registered||0}</span></div>
+    <div><span>resolved</span><span style="color:var(--green)">${s.resolved||0}</span></div>
+    <div><span>open</span><span style="color:var(--amber)">${s.open||0}</span></div>
+    <div><span>dangling</span><span style="color:var(--red)">${s.dangling||0}</span></div>
+  `;
+}
+
+// ---------- Utilities ----------
+function countWords() { let n=0; (TREE.outline?.acts||[]).forEach(a => n += countActWords(a)); return n; }
+function countActWords(act) { let n=0; (act.chapters||[]).forEach(c => n += (c.length_target||0)); return n; }
+
+// ---------- Save / Done ----------
+async function save() {
+  const r = await fetch('/api/save', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify(TREE)});
+  const data = await r.json();
+  if (data.saved) { markClean(); await reaudit(); renderHooks(); render(); }
+  else { alert('Save failed: ' + data.error); }
+}
+$('#saveBtn').addEventListener('click', save);
+$('#reauditBtn').addEventListener('click', reaudit);
+document.addEventListener('keydown', e => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); save(); }
+});
+
+function openDone() {
+  // Refresh audit before showing modal
+  reaudit().then(() => {
+    fetch('/api/audit').then(r => r.json()).then(audit => {
+      const s = audit.summary || {};
+      const totalBeats = (TREE.outline?.acts||[]).reduce((n,a) => n + (a.chapters||[]).reduce((m,c) => m + (c.beats||[]).length, 0), 0);
+      $('#doneStats').innerHTML = `${(TREE.outline?.acts||[]).length} acts · ${(TREE.outline?.acts||[]).reduce((n,a)=>n+(a.chapters||[]).length,0)} chapters · ${totalBeats} beats · hooks: <b class="${s.verdict==='clean'?'v-clean':(s.verdict==='block'?'v-block':'v-warn')}">${(s.verdict||'warn').toUpperCase()}</b> (${s.resolved||0}/${s.registered||0} resolved)`;
+      if (DIRTY) {
+        $('#doneStats').innerHTML += '<br/><span style="color:var(--amber)">You have unsaved changes. Save first?</span>';
+      }
+      $('#doneModal').classList.add('show');
+    });
+  });
+}
+function closeDone() { $('#doneModal').classList.remove('show'); }
+async function confirmDone() {
+  if (DIRTY) await save();
+  await fetch('/api/done', {method:'POST'});
+  $('#doneModal').classList.remove('show');
+  document.body.innerHTML = '<div style="font-family:Cormorant Garamond,serif;text-align:center;padding:6rem 2rem;color:var(--oxblood);font-size:1.4rem;font-style:italic">Reviewer closed. The pipeline will continue.<br/><br/><span style="font-size:.9rem;color:var(--slate);font-family:Inter,sans-serif">You can close this tab.</span></div>';
+}
+$('#doneBtn').addEventListener('click', openDone);
+</script>
+</body>
+</html>

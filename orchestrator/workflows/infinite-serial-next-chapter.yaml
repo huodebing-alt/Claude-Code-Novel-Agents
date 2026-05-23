@@ -1,0 +1,80 @@
+name: infinite-serial-next-chapter
+description: (infinite_serial mode) Plan + write the next chapter; auto-compresses memory when needed
+mode_default: semi
+steps:
+  # 0. Auto-check: should we compress old chapters first?
+  - id: compress_check
+    action: serial_compaction_check
+    params:
+      # Triggers compression if:
+      #  - estimated planner context > metadata.serial.context_threshold_tokens, OR
+      #  - current_chapter_count % chapters_per_compression_check == 0
+      policy: from_config
+
+  # 1. Plan the next chapter shell (no beats yet)
+  - id: plan
+    skill: plan-next-chapter
+    depends_on: [compress_check]
+
+  # 2. Spawn / balance hooks
+  - id: spawn
+    skill: spawn-hooks
+    depends_on: [plan]
+
+  # 3. Fill the beat plan
+  - id: beats
+    skill: plan-chapter-beats
+    params: {chapter_id: from_plan}
+    depends_on: [spawn]
+
+  # 4. Run hook audit before user review
+  - id: hook_audit_pre
+    skill: audit-hooks
+    depends_on: [beats]
+
+  # 5. USER REVIEW (this chapter only)
+  - id: review_outline
+    action: wait_for_review
+    params: {port: 7878, open_browser: true, scope: this_chapter_only}
+    depends_on: [hook_audit_pre]
+
+  # 6. Write the chapter
+  - id: write
+    skill: write-chapter
+    params: {chapter_id: from_plan}
+    depends_on: [review_outline]
+
+  # 7. Quality on this chapter
+  - id: q_style
+    skill: critique-style
+    params: {chapter_id: from_plan}
+    depends_on: [write]
+  - id: q_ai_voice
+    skill: detect-ai-voice
+    params: {chapter_id: from_plan}
+    depends_on: [write]
+  - id: q_consistency
+    skill: check-consistency
+    params: {chapter_id: from_plan}
+    depends_on: [write]
+  - id: hook_audit_post
+    skill: audit-hooks
+    depends_on: [write]
+
+  # 8. Apply any chief-editor notes
+  - id: revise
+    skill: revise-from-notes
+    params: {scope: this_chapter}
+    depends_on: [q_style, q_ai_voice, q_consistency, hook_audit_post]
+
+  # 9. Done — report
+  - id: report
+    action: print
+    params:
+      message: |
+        ✓ Chapter complete.
+        - Word count, open-hook count, and any compression that happened are
+          logged in this run's summary.
+        - To publish/export: python3 output/pdf_compositor.py --novel novel.json
+        - To write the next chapter: /next-chapter
+    depends_on: [revise]

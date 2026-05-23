@@ -1,0 +1,55 @@
+{
+  "theme": {
+    "primary": "memory and complicity",
+    "secondary": ["the law as a substitute for self-knowledge", "inheritance of silence between mothers and daughters"],
+    "tension_statement": "To remember is to become responsible for what you remembered."
+  },
+  "logline": "In a republic where memory is admissible evidence, a synesthete prosecutor discovers her own missing year is the key to the case she's prosecuting.",
+  "dramatic_question": "Will Lin Wei choose to remember — knowing the cost of remembering?",
+  "yes_outcome": "She submits her own memory to the court, loses the case, and begins the long retrieval of her mother.",
+  "no_outcome": "She destroys the record, wins her seat on the Reader Council, and lives as her mother lived — by what she will not say.",
+  "midpoint_pivot": "A witness's testimony arrives in a synesthetic palette Lin Wei recognizes as her own.",
+  "stylistic_direction": {
+    "pov": "close third",
+    "tense": "past",
+    "register": "literary, clinical, with synesthete lapses into sensory inventory",
+    "sentence_rhythm": "short to medium; bursts of color/texture/sound when the protagonist's sensorium spikes",
+    "density": "medium",
+    "voice_anchors": {
+      "primary": "Han Kang",
+      "secondary": ["Kazuo Ishiguro", "Anne Carson", "Yoko Ogawa"]
+    },
+    "genre_conventions_honored": [
+      "near-future tech is shown, not explained",
+      "courtroom procedure is real, not made up",
+      "the speculative element constrains every plot beat"
+    ],
+    "genre_conventions_broken": [
+      "first-person interior allowed during testimony scenes",
+      "no chapter from antagonist's POV — held entirely in protagonist's frame"
+    ],
+    "banned": [
+      "she felt that",
+      "she knew that",
+      "in conclusion",
+      "rhetorical questions",
+      "delve",
+      "tapestry",
+      "navigate (figurative)"
+    ],
+    "encouraged": [
+      "sensory inventory in lieu of explanation",
+      "period over comma",
+      "one unusual word per paragraph",
+      "color/texture/sound as proxy for emotion"
+    ]
+  },
+  "creative_brief_signed_by_director": {
+    "premise_sentence": "A prosecutor who reads memory as color discovers she is the missing year in her own case.",
+    "central_promise": "The reader is being asked to sit with a woman who learned not to remember, and to watch the law she trusted reach back into her.",
+    "audience": "literary readers who liked The Memory Police, The Vegetarian, Klara and the Sun",
+    "comp_titles": ["The Memory Police — Yoko Ogawa", "Klara and the Sun — Kazuo Ishiguro"],
+    "what_to_protect": "Lin Wei's interiority. The reader stays in her head; she is not narrated from outside.",
+    "what_to_avoid": "The neuro-thriller cliché — chase scenes, conspiracies, evil neuroscientists. This is a domestic novel that happens in a courtroom."
+  }
+}

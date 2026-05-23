@@ -1,0 +1,229 @@
+/* manuscript.css — print-ready styling for novel PDFs.
+ *
+ * Designed for use with:
+ *   - pandoc --css manuscript.css (HTML5 standalone)
+ *   - wkhtmltopdf --enable-local-file-access
+ *   - browser "Print to PDF" (Chrome/Firefox/Safari)
+ *   - WeasyPrint
+ *
+ * Palette:
+ *   ivory  #f7f2e7
+ *   oxblood #7a1f1f
+ *   gold   #c9a96b
+ *   charcoal #2c2c2c
+ *
+ * Trim:
+ *   5.5x8.5 (default for indie literary trim)
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600&display=swap");
+
+/* ---------- Page geometry ---------- */
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.75in 0.6in 0.85in 0.6in;
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 9pt;
+    color: #6b7280;
+  }
+
+  @top-center {
+    content: string(chapter-title);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 9pt;
+    color: #7a1f1f;
+  }
+}
+
+@page:left  { margin-left: 0.5in; margin-right: 0.7in; }
+@page:right { margin-left: 0.7in; margin-right: 0.5in; }
+@page front-matter { @top-center { content: none; } @bottom-center { content: none; } }
+
+/* ---------- Body ---------- */
+html, body {
+  background: #f7f2e7;
+  color: #2c2c2c;
+  font-family: "Cormorant Garamond", Georgia, "Noto Serif SC", serif;
+  font-size: 11pt;
+  line-height: 1.55;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* CJK paragraphs (heuristic — if you want) */
+.cjk { font-family: "Noto Serif SC", "Cormorant Garamond", serif; }
+
+/* ---------- Front matter ---------- */
+.cover, .copyright, .toc {
+  page: front-matter;
+  page-break-after: always;
+}
+
+.cover {
+  height: 7.5in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.5in;
+  background: #f7f2e7;
+}
+.cover .meta {
+  font-family: "Inter", sans-serif;
+  font-size: 9pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7a1f1f;
+  margin-bottom: 1.4in;
+}
+.cover h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 38pt;
+  line-height: 1.05;
+  color: #7a1f1f;
+  margin: 0;
+}
+.cover .title-zh {
+  font-family: "Noto Serif SC", serif;
+  font-size: 22pt;
+  color: #7a1f1f;
+  margin-top: 0.15in;
+  font-weight: 500;
+}
+.cover .author {
+  margin-top: 0.7in;
+  font-style: italic;
+  font-size: 13pt;
+  color: #2c2c2c;
+}
+.cover .rule {
+  width: 1.5in;
+  height: 1px;
+  background: #c9a96b;
+  margin: 0.25in auto;
+}
+
+.copyright {
+  font-size: 9pt;
+  color: #4a4a4a;
+  line-height: 1.6;
+  padding-top: 5in;
+  text-align: center;
+}
+
+.toc h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22pt;
+  color: #7a1f1f;
+  text-align: center;
+  margin-top: 1in;
+  margin-bottom: 0.4in;
+}
+.toc ol {
+  list-style: none;
+  counter-reset: ch;
+  padding: 0;
+  max-width: 4in;
+  margin: 0 auto;
+}
+.toc li {
+  counter-increment: ch;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 11pt;
+  padding: 4pt 0;
+  border-bottom: 1px dotted rgba(122, 31, 31, 0.2);
+}
+.toc li::before {
+  content: counter(ch, decimal) ". ";
+  color: #c9a96b;
+  font-style: italic;
+  margin-right: 0.3em;
+}
+
+/* ---------- Chapters ---------- */
+.chapter {
+  page-break-before: right;
+}
+.chapter h1 {
+  string-set: chapter-title content();
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 22pt;
+  color: #7a1f1f;
+  text-align: center;
+  margin: 1.2in 0 0.6in 0;
+}
+.chapter h1 .num {
+  display: block;
+  font-style: normal;
+  font-size: 10pt;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #c9a96b;
+  margin-bottom: 0.4em;
+}
+
+.chapter p {
+  text-indent: 1.4em;
+  margin: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+.chapter p:first-of-type {
+  text-indent: 0;
+}
+.chapter p:first-of-type::first-letter {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 3.4em;
+  line-height: 0.9;
+  float: left;
+  padding: 0.05em 0.08em 0 0;
+  color: #7a1f1f;
+}
+
+.chapter .scenebreak {
+  text-align: center;
+  margin: 1.2em 0;
+  font-size: 1.2em;
+  color: #c9a96b;
+  letter-spacing: 0.6em;
+}
+
+/* ---------- Back matter ---------- */
+.blurb, .acknowledgments {
+  page-break-before: always;
+  padding: 1in 0.3in;
+}
+.blurb h2, .acknowledgments h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 9pt;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #7a1f1f;
+  margin-bottom: 0.4in;
+  text-align: center;
+}
+.blurb p, .acknowledgments p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 12pt;
+  line-height: 1.65;
+  text-align: justify;
+  max-width: 4in;
+  margin: 0 auto 1em;
+}
+
+/* ---------- Screen preview ---------- */
+@media screen {
+  body { background: #2c2c2c; padding: 2rem 0; }
+  .page-wrap { background: #f7f2e7; max-width: 5.5in; margin: 0 auto 1rem; padding: 0.75in 0.6in; box-shadow: 0 2px 24px rgba(0,0,0,0.25); }
+}

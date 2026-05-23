@@ -1,0 +1,144 @@
+{
+  "locations": [
+    {
+      "id": "L001",
+      "name": "Reader College, dawn garden",
+      "description": "A walled garden in the College compound, formerly the cloister of a Carthusian monastery. Used for the retirement gowning of jurists. Wet brick paths, an old fountain, ash on the flagstones from the brazier.",
+      "sensory_anchors": {
+        "sight": "oxblood robe taking the fire; sun sitting on the College wall",
+        "sound": "gulls beyond the wall; the small wet sound of candle wax",
+        "smell": "wool smoke; rain-on-stone; thin green tea from the refectory",
+        "touch": "wet grass through thin sandals; cold flagstones at the brazier",
+        "taste": "the green tea, allowed to grow cold"
+      },
+      "parent_region": "the old quarter",
+      "first_appearance_chapter": "ch01"
+    },
+    {
+      "id": "L002",
+      "name": "Reader College, refectory",
+      "description": "Long oak table, a row of small white bowls, the morning routine. Mei sits across from Lin Wei.",
+      "sensory_anchors": {
+        "sight": "Mei's pushed-back hair; the small tin of dried plums",
+        "sound": "spoons against bowls; the radiator behind",
+        "smell": "sweet rice porridge; the iron of green tea",
+        "touch": "the lacquered table edge; the warm bowl",
+        "taste": "porridge that tastes of nothing on a vigil morning"
+      },
+      "parent_region": "Reader College",
+      "first_appearance_chapter": "ch01"
+    },
+    {
+      "id": "L003",
+      "name": "Lin Wei's apartment in the College",
+      "description": "A spare room above the College garden: oak desk, small grey mirror, a porcelain sink in the corner, a radiator that ticks. The garden window faces east.",
+      "sensory_anchors": {
+        "sight": "the grey mirror; the desk lamp; the envelope square with the corner",
+        "sound": "the radiator's tick; the distant tram bell (decommissioned line)",
+        "smell": "linen towels; the lamp's warm tungsten",
+        "touch": "the desk's grain; the bone-china teacup; the file's oxblood ribbon",
+        "taste": "third tea of the night, gone cold"
+      },
+      "parent_region": "Reader College",
+      "first_appearance_chapter": "ch01"
+    },
+    {
+      "id": "L004",
+      "name": "Court of Mneme, intake chamber",
+      "description": "Small windowless square. Lit from above. Two oak chairs across a narrow table. Pale grey acoustic felt on the walls. The recording bead in the center of the table.",
+      "sensory_anchors": {
+        "sight": "the soft white panel overhead; Han Bo's spread fingers",
+        "sound": "the silence the felt makes against the door; the single click of the bead",
+        "smell": "the cool absence of smell, kept that way on purpose",
+        "touch": "the unbleached linen of new gloves drawn over the knuckles",
+        "taste": "—"
+      },
+      "parent_region": "the Court complex",
+      "first_appearance_chapter": "ch02"
+    },
+    {
+      "id": "L005",
+      "name": "Court of Mneme, depositions chamber",
+      "description": "Long oval, paneled in pale oak. Two facing benches; the witness chair at one curved end under a single low light. No public gallery.",
+      "sensory_anchors": {
+        "sight": "brown-gold field of the wood paneling at the periphery",
+        "sound": "the low ringing of a struck wineglass, persistent",
+        "smell": "old oak; the iron under the cold tea on the deposition tray",
+        "touch": "the pad of the pen against the page",
+        "taste": "cold green tea at the back of the mouth"
+      },
+      "parent_region": "the Court complex",
+      "first_appearance_chapter": "ch04"
+    },
+    {
+      "id": "L006",
+      "name": "College chapel (vigil)",
+      "description": "Norman vaulting, narrow windows, black slate floor worn shallow in two long lines. The grey-faced clock at the back stops ticking at vigil and starts again to end it.",
+      "sensory_anchors": {
+        "sight": "candle wax shifting in the iron holder; Tao's hood up across the aisle",
+        "sound": "the chapel clock stopping; the wax's small wet sound; her own pulse in her ears",
+        "smell": "old stone; melted wax; the trace smell of incense never used in this century",
+        "touch": "the worn slate underfoot; the wood of the second-row bench",
+        "taste": "—"
+      },
+      "parent_region": "Reader College",
+      "first_appearance_chapter": "ch05"
+    },
+    {
+      "id": "L007",
+      "name": "Court of Mneme, central hall (with the speculum)",
+      "description": "A perfectly circular oak-paneled hall. The pale stone floor spirals down six gentle steps into the speculum: a basin of still dim water colored by the day's extract. A dark drape hangs above.",
+      "sensory_anchors": {
+        "sight": "the dim water; the drape shifting in the small air",
+        "sound": "forty Readers breathing in the ring; the thin door at the south",
+        "smell": "wax, old oak, the trace of the extract in the water",
+        "touch": "the cold of the speculum step under bare feet",
+        "taste": "the cup of clear water Reader Ji drinks before rendering"
+      },
+      "parent_region": "the Court complex",
+      "first_appearance_chapter": "ch06"
+    },
+    {
+      "id": "L008",
+      "name": "The Eastern Quarter — old tram line + Pao Street",
+      "description": "Working-class district across the canal. The tram line was decommissioned in 2041; the pale brick of the old roadbed remains. Pao Street: a row of yellowed brick houses; the third from the canal end has a green-painted door and a small black iron balcony.",
+      "sensory_anchors": {
+        "sight": "the pale brick of the old tram roadbed; the gull on the warehouse eaves; pale teal of the door",
+        "sound": "gulls; the tram bell that is not a tram bell anymore",
+        "smell": "the canal's flat green smell; bread from a pao shop; cement of the fish market",
+        "touch": "the cobble's slight unevenness; the cold brass of the bell-plate",
+        "taste": "the salt the gulls carry inland"
+      },
+      "parent_region": "the eastern quarter",
+      "first_appearance_chapter": "ch07"
+    },
+    {
+      "id": "L009",
+      "name": "Judge Tao's office on retirement morning",
+      "description": "Third floor of the College's east wing. Long oak table at the window, a small bone-handled letter knife being packed into a flat box. The room mostly empty.",
+      "sensory_anchors": {
+        "sight": "the bone-handled letter knife; Tao's silver hair down to her collarbone; the box on the table",
+        "sound": "rain making uneven runs across the window; the door's well-oiled click",
+        "smell": "old paper; the dust of an emptied office",
+        "touch": "the table edge as a wall",
+        "taste": "—"
+      },
+      "parent_region": "Reader College, east wing",
+      "first_appearance_chapter": "ch10"
+    },
+    {
+      "id": "L010",
+      "name": "Court of Mneme, antechamber + corridor",
+      "description": "Small antechamber off the central hall, two chairs, one window facing the College garden. Connected by the corridor for the Court (not the public).",
+      "sensory_anchors": {
+        "sight": "the late-afternoon light on the garden; the senior judge framed in the doorway",
+        "sound": "the door's click; the corridor's silence",
+        "smell": "the trace of speculum extract carried out of the central hall",
+        "touch": "the chair's wooden arm under her palm",
+        "taste": "—"
+      },
+      "parent_region": "the Court complex",
+      "first_appearance_chapter": "ch11"
+    }
+  ]
+}

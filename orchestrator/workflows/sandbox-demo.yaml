@@ -1,0 +1,22 @@
+name: sandbox-demo
+description: Load The Trial of Memory and walk through every phase output
+mode_default: full
+steps:
+  - id: enable_sandbox
+    skill: setup-novel
+    params: {sandbox: true, source: sandbox/demo_novel.json}
+  - id: report
+    action: print
+    params:
+      message: |
+        Sandbox demo loaded — The Trial of Memory.
+        Inspect:
+          sandbox/fixtures/01_ideation.json
+          sandbox/fixtures/02_world_bible.md
+          sandbox/fixtures/03_characters.json
+          sandbox/fixtures/04_outline.json
+          sandbox/fixtures/05_chapters/ch*.md
+          sandbox/fixtures/06_editorial.json
+          sandbox/fixtures/07_compiled.pdf
+        Re-render PDF: python output/pdf_compositor.py --novel sandbox/demo_novel.json
+    depends_on: [enable_sandbox]

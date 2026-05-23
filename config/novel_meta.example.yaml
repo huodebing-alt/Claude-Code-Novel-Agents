@@ -1,0 +1,71 @@
+# Novel metadata — copy to config/novel_meta.yaml and edit
+title: "Untitled"
+author: "Anonymous"
+genre: "literary fiction"               # sci-fi | fantasy | mystery | thriller | romance | literary | YA | MG | horror
+subgenre: ""
+target_audience: "adult"                # adult | YA | MG | picture
+target_wordcount: 80000                 # short story: 3000-15000 | novella: 17500-40000 | novel: 50000-120000
+target_pages: 320
+trim_size: "5.5x8.5"                    # 5x8 | 5.5x8.5 | 6x9
+chapters_target: 30
+
+# Style anchors (informs style-director and chapter-writer)
+style:
+  pov: "close third"                    # first | close third | omniscient third | second
+  tense: "past"                         # past | present
+  register: "literary commercial"
+  reference_authors:
+    - "Kazuo Ishiguro"
+    - "Ursula K. Le Guin"
+  reference_novels:
+    - "Klara and the Sun"
+    - "The Left Hand of Darkness"
+  prose_density: "medium"               # spare | medium | lush
+  dialogue_proportion: 0.35
+
+# Per-step mode overrides (default for unspecified: semi)
+# Modes: full | semi | manual | skip
+mode_overrides:
+  ideation_themes: semi
+  ideation_logline: semi
+  ideation_dramatic_question: semi
+  world_bible: full
+  character_protagonist: semi
+  character_antagonist: full
+  character_supporting: full
+  outline: semi
+  beats: semi
+  chapters: semi                        # applies to ALL chapter-writing steps
+  quality: full
+  revision: semi
+  compile_pdf: full
+
+# Per-chapter overrides (override the global chapters mode)
+chapter_mode_overrides:
+  ch01: full                            # let agent write the opening end-to-end
+  ch06: manual                          # midpoint — you write it yourself
+  ch12: semi                            # climax — you collaborate
+
+# Skip flags (true → skip the step, load existing node from tree)
+skip:
+  world_bible: false
+  character_phase: false
+  outline: false
+  quality_pass: false
+
+# Output preferences
+output:
+  pdf:
+    cover: true
+    copyright_page: true
+    toc: true
+    drop_caps: true
+    chapter_break: "right_page"         # right_page | next_page | run_in
+    fonts:
+      body: "Cormorant Garamond"
+      body_cjk: "Noto Serif SC"
+      headings: "Cormorant Garamond"
+      meta: "Inter"
+  manuscript_md:
+    smart_quotes: true
+    em_dash: "unicode"

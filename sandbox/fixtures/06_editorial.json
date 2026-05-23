@@ -1,0 +1,123 @@
+{
+  "style_critique": {
+    "per_chapter_metrics": {
+      "ch01": {"cliche_density": 0.4, "adverb_density": 1.8, "filtering_verb_density": 0.7, "verdict": "clean"},
+      "ch02": {"cliche_density": 0.0, "adverb_density": 1.2, "filtering_verb_density": 0.5, "verdict": "clean"},
+      "ch03": {"cliche_density": 0.3, "adverb_density": 2.1, "filtering_verb_density": 1.1, "verdict": "clean"},
+      "ch04": {"cliche_density": 0.0, "adverb_density": 1.0, "filtering_verb_density": 0.6, "verdict": "clean"},
+      "ch05": {"cliche_density": 0.6, "adverb_density": 2.3, "filtering_verb_density": 1.4, "verdict": "warn"},
+      "ch06": {"cliche_density": 0.0, "adverb_density": 0.8, "filtering_verb_density": 0.4, "verdict": "clean"},
+      "ch07": {"cliche_density": 0.3, "adverb_density": 1.7, "filtering_verb_density": 0.9, "verdict": "clean"},
+      "ch08": {"cliche_density": 0.0, "adverb_density": 1.1, "filtering_verb_density": 0.5, "verdict": "clean"},
+      "ch09": {"cliche_density": 0.4, "adverb_density": 1.5, "filtering_verb_density": 1.2, "verdict": "warn"},
+      "ch10": {"cliche_density": 0.0, "adverb_density": 0.9, "filtering_verb_density": 0.3, "verdict": "clean"},
+      "ch11": {"cliche_density": 0.0, "adverb_density": 0.7, "filtering_verb_density": 0.2, "verdict": "clean"},
+      "ch12": {"cliche_density": 0.0, "adverb_density": 1.0, "filtering_verb_density": 0.4, "verdict": "clean"}
+    },
+    "two_worst_passages": [
+      {
+        "location": "ch05.b02",
+        "what": "the hymn passage briefly drifts toward sentimental; the third note 'held' is doing too much work for one verb",
+        "rewrite_note": "consider letting the hymn fragment land in white space, not in adjective"
+      },
+      {
+        "location": "ch09.b02",
+        "what": "the imagined letter draft inside Lin Wei's head approaches the actual letter too closely; the surprise of ch.12 is dampened",
+        "rewrite_note": "shorten the imagined letter; let father's specific phrasings in ch.12 be a small genuine surprise"
+      }
+    ]
+  },
+  "consistency_audit": {
+    "summary": {"issues_high": 0, "issues_medium": 2, "issues_low": 5, "verdict": "warn"},
+    "issues": [
+      {
+        "id": "ct01",
+        "confidence": "medium",
+        "category": "timeline_internal",
+        "evidence": [
+          {"location": "ch07.b03", "text": "twenty-nine years ago, would have been a teenager"},
+          {"location": "world_bible.timeline", "text": "2042 → 2061 = 19 years"}
+        ],
+        "suggested_fix": "Lin Wei is reasoning about Du Yan's age in 2042 (when the donor's bleed memory took place — the corridor with her mother). 19 years ago Du Yan was 23 — a young adult, not a teenager. Revise to 'in her twenties'."
+      },
+      {
+        "id": "ct02",
+        "confidence": "medium",
+        "category": "world_constraint",
+        "evidence": [
+          {"location": "ch06.b04", "text": "rendered, by Reader Ji"},
+          {"location": "world_bible.magic_or_tech.limits", "text": "A Reader cannot read the memory of a blood relative"}
+        ],
+        "suggested_fix": "Ji is rendering Du Yan's memory — not a blood relative. The associative bleed surfaces Lin Wei's memory via Du Yan's. This is consistent BUT raises the question of whether the bleed pathway should be acknowledged in the world bible. Recommend adding a clarifying line: 'Mneme bleed across donor-witness pairs is rare but documented; the College does not certify what it cannot reliably model.'"
+      }
+    ]
+  },
+  "ai_voice_score": {
+    "manuscript_score": 11,
+    "verdict": "clean",
+    "per_chapter": {
+      "ch01": {"score": 6, "verdict": "clean"},
+      "ch02": {"score": 4, "verdict": "clean"},
+      "ch03": {"score": 8, "verdict": "clean"},
+      "ch04": {"score": 5, "verdict": "clean"},
+      "ch05": {"score": 14, "verdict": "clean"},
+      "ch06": {"score": 7, "verdict": "clean"},
+      "ch07": {"score": 9, "verdict": "clean"},
+      "ch08": {"score": 12, "verdict": "clean"},
+      "ch09": {"score": 18, "verdict": "warn"},
+      "ch10": {"score": 8, "verdict": "clean"},
+      "ch11": {"score": 6, "verdict": "clean"},
+      "ch12": {"score": 14, "verdict": "clean"}
+    },
+    "tell_counts_aggregate": {
+      "delve": 0,
+      "tapestry": 0,
+      "leverage": 0,
+      "navigate_figurative": 0,
+      "not_just_x_its_y": 0,
+      "she_felt_that": 0,
+      "she_knew_that": 4,
+      "of_course_opener": 1,
+      "in_conclusion": 0,
+      "rhetorical_questions": 0
+    },
+    "note": "Four uses of 'she knew that' / 'she had known' in ch.7 and ch.9; flagged but kept on appeal — they are doing diegetic work (Lin Wei's specific habit of constructing knowledge in legal-clinical register). Reviser approved with no change."
+  },
+  "chief_editor_letter": {
+    "manuscript": "The Trial of Memory by Claude Code Novel Agents (sandbox demo) (9,847 words)",
+    "date": "2026-05-18",
+    "sections": {
+      "1_the_book_it_is": "What you have is a quietly devastating short novel about the cost of remembering. The prose is at its level. The structure is at its level. The book it wants to be is the book it is.",
+      "2_what_is_working": [
+        "The interiority is total. Lin Wei is on every page; her sensorium is the reader's instrument.",
+        "The Mneme system is shown, not explained. Bleed, palette, the speculum — the reader picks it up by exposure.",
+        "Chapters 4 and 6 land their reversals with discipline; the reader is given the recognition exactly when Lin Wei is.",
+        "Chapter 10 (Tao) earns its emotional release through twenty pages of withholding.",
+        "Chapter 12 closes on a single remembered line that has been being earned since chapter 1."
+      ],
+      "3_what_is_not_working": [
+        "The Mei subplot enters in ch.3 and resolves in ch.7 with very little on-page time. Risk: Mei feels like a device, not a person.",
+        "The father subplot is brittle: the imagined letter in ch.9 nearly matches the actual letter in ch.12, deflating the open in ch.12.",
+        "Han Bo's silence is doing a lot of work. By ch.11 the reader needs to feel why the silence is the answer, not only that it is. Consider adding one small gesture from him in ch.2 or ch.6 that the reader will later re-read.",
+        "Mneme bleed pathway (donor associative reach surfacing a witness's memory through another donor) is, technically, undermotivated — readers attuned to hard-SF rules will note it. Optional fix: a single line in ch.6 acknowledging that bleed across donor pairs is rare and not formally indexed."
+      ],
+      "4_surgery_in_order": [
+        {"id": "r01", "action": "trim", "where": "ch09.b02", "why": "addresses §3 bullet 2 — let father's actual phrasings in ch.12 surprise"},
+        {"id": "r02", "action": "add_one_gesture", "where": "ch02.b03", "why": "addresses §3 bullet 3 — Han Bo's hand briefly closes when he sees Lin Wei's glove pattern"},
+        {"id": "r03", "action": "add_clarifying_line", "where": "ch06.b03", "why": "addresses §3 bullet 4 — world-bible note about bleed"},
+        {"id": "r04", "action": "give_Mei_one_more_beat", "where": "consider a single line in ch.4 or ch.5 from Mei", "why": "addresses §3 bullet 1; OPTIONAL"}
+      ],
+      "5_leave_alone": [
+        "The pacing of ch.5 (the vigil). It is slow on purpose; do not speed it up.",
+        "The composition motif (the teacup and the envelope on the desk in ch.3, ch.7, ch.9). It does subtle work. Leave it.",
+        "The decision to end on the remembered line of the mother's song without continuing into the retrieval. The retrieval is implied; the reader gets to do it."
+      ],
+      "6_estimate": "Expected wordcount delta after surgery: +120 to +200 words. Confidence the revised draft is submission-ready: high. A second pass is not required."
+    }
+  },
+  "revision_plan_applied": {
+    "approved_by_user_in_sandbox": ["r01", "r03"],
+    "skipped_by_user_in_sandbox": ["r02", "r04"],
+    "note": "User accepted the trim of ch09.b02 and the bleed-clarification line in ch06.b03. User declined the Han Bo gesture (judged the silence in its current form as load-bearing) and the extra Mei beat (judged Mei's offscreen presence as thematically right). All four edits had been pre-approved by chief-editor; user took two."
+  }
+}

@@ -1,0 +1,93 @@
+name: infinite-serial-bootstrap
+description: Bootstrap an infinite-serial novel — minimal seed only, no pre-planned structure
+mode_default: semi
+steps:
+  # Phase 1 — Ideation (same as the finite pipeline)
+  - id: ideation_themes
+    skill: brainstorm-themes
+  - id: ideation_logline
+    skill: write-logline
+    depends_on: [ideation_themes]
+  - id: ideation_dq
+    skill: draft-dramatic-question
+    depends_on: [ideation_logline]
+  - id: ideation_style
+    skill: set-stylistic-direction
+    depends_on: [ideation_dq]
+
+  # Phase 2 — Minimal world + minimal characters
+  - id: world_minimal
+    skill: build-world-bible
+    params: {scope: minimal_for_chapter_1}
+    depends_on: [ideation_style]
+  - id: locations_minimal
+    skill: build-location-bible
+    params: {count_target: 3}
+    depends_on: [world_minimal]
+  - id: char_protagonist
+    skill: design-protagonist
+    depends_on: [ideation_style]
+  - id: char_voice
+    skill: calibrate-voice
+    fan_out: per_speaking_character
+    depends_on: [char_protagonist]
+
+  # Phase 3 — Initial hooks (no full outline, no full beat plan beyond ch1)
+  # We hand a synthetic "next_chapter_shell" representing chapter 1 to the
+  # hook-spawner so it can plant 3-5 bait hooks before chapter 1 is written.
+  - id: seed_hooks
+    skill: spawn-hooks
+    params: {bootstrap: true, seed_count: 5}
+    depends_on: [char_voice, locations_minimal]
+
+  # Phase 3.1 — Plan chapter 1 specifically
+  - id: plan_ch1
+    skill: plan-next-chapter
+    depends_on: [seed_hooks]
+  - id: beats_ch1
+    skill: plan-chapter-beats
+    params: {chapter_id: ch001}
+    depends_on: [plan_ch1]
+  - id: hook_audit_pre
+    skill: audit-hooks
+    depends_on: [beats_ch1]
+
+  # === USER REVIEW (chapter 1's detailed beats) ===
+  - id: review_outline
+    action: wait_for_review
+    params: {port: 7878, open_browser: true, scope: chapter_1_only}
+    depends_on: [hook_audit_pre]
+
+  # Phase 4 — Write chapter 1
+  - id: write_ch1
+    skill: write-chapter
+    params: {chapter_id: ch001}
+    depends_on: [review_outline]
+
+  # Phase 5 — Quality on chapter 1
+  - id: q_style
+    skill: critique-style
+    params: {chapter_id: ch001}
+    depends_on: [write_ch1]
+  - id: q_ai_voice
+    skill: detect-ai-voice
+    params: {chapter_id: ch001}
+    depends_on: [write_ch1]
+  - id: q_consistency
+    skill: check-consistency
+    params: {chapter_id: ch001}
+    depends_on: [write_ch1]
+
+  # Done — instruct user
+  - id: report
+    action: print
+    params:
+      message: |
+        ✓ Serial bootstrap complete.
+        - Ideation, minimal bible, protagonist, and chapter 1 are ready.
+        - 5 seed hooks are open; reader has bait.
+        - To write chapter 2: /next-chapter
+        - To inspect the outline: /review-outline
+        - To compress old chapters into memory: /compress-memory
+        - The system will auto-prompt for /compress-memory when context grows.
+    depends_on: [q_style, q_ai_voice, q_consistency]

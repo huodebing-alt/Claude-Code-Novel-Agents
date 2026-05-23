@@ -1,0 +1,690 @@
+{
+  "grammar": "three_act_with_stc_beats",
+  "acts": [
+    {
+      "id": "act1",
+      "name": "Setup",
+      "summary": "Lin Wei accepts the Han Bo case. Old life established; first hairline crack appears.",
+      "central_image": "the mentor's burning robe at dawn",
+      "stc_beats": ["opening_image", "theme_stated", "setup", "catalyst", "debate", "break_into_2"],
+      "wordcount_target": 2400,
+      "chapters": [
+        {
+          "id": "ch01",
+          "title": "The Gowning",
+          "POV": "lin-wei",
+          "location_id": "L001",
+          "time": "spring 2061, day 1, dawn",
+          "opening_image": "the mentor's burning robe",
+          "summary": "Lin Wei watches Judge Tao's retirement gowning at dawn. Receives the Han Bo case file at breakfast. Notices, but does not register, that the case is older than she has been told.",
+          "length_target": 850,
+          "stc_beats_in_chapter": ["opening_image", "theme_stated"],
+          "beats": [
+            {
+              "id": "ch01.b01", "emotion": "ceremony", "function": "opening_image", "length_target": 220,
+              "opening_trigger": "Lin Wei stands at the brazier in the dawn garden.",
+              "closing_image": "the sleeve rises into smoke; the shoulder drops.",
+              "facts": [
+                {"actor": "judge-tao", "action": "stands_at_brazier", "detail": "barefoot, does not flinch"},
+                {"actor": "lin-wei", "action": "watches", "object": "judge-tao", "detail": "hood pulled up for an hour"}
+              ],
+              "location_id": "L001",
+              "emotions": [{"character": "lin-wei", "emotion": "ceremonial restraint"}, {"character": "judge-tao", "emotion": "discipline"}],
+              "state_changes": [{"character": "judge-tao", "before": "in office", "after": "retired (the robe is fire)"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch01.b02", "emotion": "anticipation", "function": "introduces protagonist's want", "length_target": 200,
+              "opening_trigger": "Tao crosses the wet grass; brief embrace.",
+              "closing_image": "Lin Wei steps inside the College, carrying Tao's last in-office words.",
+              "facts": [
+                {"actor": "judge-tao", "action": "embraces", "object": "lin-wei", "detail": "ritual palms-flat at shoulder-blades"},
+                {"actor": "judge-tao", "action": "warns", "object": "lin-wei", "detail": "'Carry it carefully. It is older than you have been told.'"}
+              ],
+              "location_id": "L001",
+              "emotions": [{"character": "judge-tao", "emotion": "warning kindness"}, {"character": "lin-wei", "emotion": "duty"}],
+              "state_changes": [{"character": "lin-wei", "before": "expects an ordinary case", "after": "carries an unread warning"}],
+              "hooks_opened": ["H006"], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch01.b03", "emotion": "duty", "function": "delivers the case", "length_target": 220,
+              "opening_trigger": "Refectory. Mei across the table; the case file on her own desk later.",
+              "closing_image": "the black sleeve untied, the contents slid flat.",
+              "facts": [
+                {"actor": "mei", "action": "informs", "object": "lin-wei", "detail": "Han Bo moved to intake at 11"},
+                {"actor": "mei", "action": "offers_out", "object": "lin-wei", "detail": "'The Council would let it go to Park.'"},
+                {"actor": "lin-wei", "action": "declines", "detail": "'I am persuaded that I should take this one.'"}
+              ],
+              "location_id": "L002",
+              "emotions": [{"character": "lin-wei", "emotion": "claimed responsibility"}, {"character": "mei", "emotion": "unembarrassed concern"}],
+              "state_changes": [{"character": "lin-wei", "before": "could decline", "after": "has chosen the case"}],
+              "hooks_opened": ["H007"], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch01.b04", "emotion": "unease", "function": "first crack", "length_target": 210,
+              "opening_trigger": "Lin Wei reads the file cover page.",
+              "closing_image": "she lifts her hand from the page and turns to the next.",
+              "facts": [
+                {"actor": "lin-wei", "action": "reads", "object": "case-cover", "detail": "date of incident: August 14, 2042"},
+                {"actor": "lin-wei", "action": "registers_age", "detail": "she had been nine"}
+              ],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "private vertigo, not yet felt"}],
+              "state_changes": [{"character": "lin-wei", "before": "Han Bo is a defendant", "after": "Han Bo is from her ninth year — but she does not yet let herself know"}],
+              "hooks_opened": ["H001", "H012"], "hooks_resolved": [], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch02",
+          "title": "The Defendant",
+          "POV": "lin-wei",
+          "location_id": "L004",
+          "time": "day 2, late morning",
+          "opening_image": "Han Bo seated, hands palm-down on the bare table.",
+          "summary": "Lin Wei meets Han Bo for the formal intake. He says almost nothing. He has one tic — he watches her hands.",
+          "length_target": 820,
+          "beats": [
+            {
+              "id": "ch02.b01", "emotion": "wariness", "function": "antagonist's first appearance", "length_target": 280,
+              "opening_trigger": "Lin Wei enters the intake chamber.",
+              "closing_image": "she sits across from him; draws gloves on.",
+              "facts": [{"actor": "lin-wei", "action": "enters", "object": "intake-chamber"}, {"actor": "han-bo", "action": "waits", "detail": "already seated"}],
+              "location_id": "L004",
+              "emotions": [{"character": "lin-wei", "emotion": "professional cool"}, {"character": "han-bo", "emotion": "patient waiting"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch02.b02", "emotion": "procedure", "function": "intake ritual", "length_target": 280,
+              "opening_trigger": "Lin Wei reads the rights script; depresses the bead.",
+              "closing_image": "she sets her pen down and asks for a statement.",
+              "facts": [
+                {"actor": "lin-wei", "action": "performs_intake", "detail": "two-party recording; standard sheets"},
+                {"actor": "han-bo", "action": "confirms_park", "detail": "defense Reader nominated"},
+                {"actor": "han-bo", "action": "refuses_extraction", "detail": "stands on right"}
+              ],
+              "location_id": "L004",
+              "emotions": [{"character": "lin-wei", "emotion": "controlled focus"}],
+              "state_changes": [{"character": "case", "before": "filed", "after": "intake closed"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch02.b03", "emotion": "puzzle", "function": "Han Bo's one watch", "length_target": 260,
+              "opening_trigger": "Long silence. Han Bo's eyes settle on her hands.",
+              "closing_image": "the small nod that ends the silence without filling it; she walks the blue corridor.",
+              "facts": [
+                {"actor": "han-bo", "action": "looks_at", "object": "lin-wei.hands", "detail": "the way one looks at something long awaited"},
+                {"actor": "han-bo", "action": "gives_no_statement", "detail": "'No statement, Reader Lin.'"}
+              ],
+              "location_id": "L004",
+              "emotions": [{"character": "han-bo", "emotion": "recognition he will not name"}, {"character": "lin-wei", "emotion": "discounted unease"}],
+              "state_changes": [{"character": "lin-wei", "before": "treats him as defendant", "after": "trained-not-to-think about why he watched her hands"}],
+              "hooks_opened": ["H002"], "hooks_resolved": [], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch03",
+          "title": "The Letter",
+          "POV": "lin-wei",
+          "location_id": "L003",
+          "time": "day 2, evening",
+          "opening_image": "the manila envelope arrives in the second post.",
+          "summary": "A sealed letter arrives from her father, whom she has not seen in three years. He has been moved into hospice. She does not open the letter.",
+          "length_target": 720,
+          "beats": [
+            {
+              "id": "ch03.b01", "emotion": "interruption", "function": "subplot enters (the father)", "length_target": 240,
+              "opening_trigger": "The envelope is set on the desk, square with the corner.",
+              "closing_image": "the composition — envelope, teacup, oak — is very nearly beautiful.",
+              "facts": [
+                {"actor": "post", "action": "delivers", "object": "father-letter", "detail": "manila, single sheet, her father's hand"},
+                {"actor": "lin-wei", "action": "places", "object": "envelope", "detail": "square with desk corner"}
+              ],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "controlled deferral"}],
+              "state_changes": [{"character": "lin-wei", "before": "the past is sealed", "after": "the past is sealed and on the desk"}],
+              "hooks_opened": ["H003"], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch03.b02", "emotion": "suppression", "function": "she chooses not to read", "length_target": 240,
+              "opening_trigger": "She tries to work the file; the envelope moves a quarter inch from each page-turn.",
+              "closing_image": "she lifts the envelope; sets it down; the bell that is not a bell rings.",
+              "facts": [{"actor": "lin-wei", "action": "works", "object": "case-file"}, {"actor": "lin-wei", "action": "refrains_from", "object": "envelope"}],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "displacement onto procedure"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch03.b03", "emotion": "displacement", "function": "Mei calls", "length_target": 240,
+              "opening_trigger": "Console chimes; Mei.",
+              "closing_image": "Mei: 'Friday.' Lin Wei: 'Friday.' The console pip.",
+              "facts": [
+                {"actor": "mei", "action": "calls"},
+                {"actor": "mei", "action": "withholds", "detail": "'I want to tell you something. In person. Friday.'"}
+              ],
+              "location_id": "L003",
+              "emotions": [{"character": "mei", "emotion": "careful gathering"}, {"character": "lin-wei", "emotion": "muted concern"}],
+              "state_changes": [{"character": "mei", "before": "co-prosecutor", "after": "co-prosecutor with a thing to say"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "name": "Confrontation",
+      "summary": "The trial begins. A witness's testimony arrives in a palette Lin Wei recognizes. The midpoint reversal: the case record contains her own memory.",
+      "central_image": "the dim water of the speculum, full of someone's last hour",
+      "stc_beats": ["b_story", "fun_and_games", "midpoint", "bad_guys_close_in", "all_is_lost", "dark_night"],
+      "wordcount_target": 2700,
+      "chapters": [
+        {
+          "id": "ch04",
+          "title": "The Witness's Palette",
+          "POV": "lin-wei",
+          "location_id": "L005",
+          "time": "day 4, morning",
+          "opening_image": "the witness's gloved hand on the deposition table.",
+          "summary": "Lin Wei deposes the prosecution's third witness. The witness's extracted memory, read by Park, comes in colors Lin Wei has tasted before.",
+          "length_target": 880,
+          "beats": [
+            {
+              "id": "ch04.b01", "emotion": "procedure", "function": "deposition opens", "length_target": 200,
+              "opening_trigger": "Du Yan in the witness chair; Park at the lectern; recording bead on.",
+              "closing_image": "Park rises to render.",
+              "facts": [
+                {"actor": "lin-wei", "action": "opens_deposition", "object": "du-yan"},
+                {"actor": "reader-park", "action": "prepares_render", "detail": "rendered in private 3 days prior"}
+              ],
+              "location_id": "L005",
+              "emotions": [{"character": "lin-wei", "emotion": "professional warmth toward Park"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch04.b02", "emotion": "recognition", "function": "the palette match", "length_target": 360,
+              "opening_trigger": "Park renders the donor's sensory palette.",
+              "closing_image": "Lin Wei stops her pen against the page; the page tilts; she does not look up.",
+              "facts": [
+                {"actor": "reader-park", "action": "renders_palette", "detail": "struck wineglass register; cold green tea; brown-gold field"},
+                {"actor": "lin-wei", "action": "writes_then_stops", "detail": "shorthand: struck wineglass; green tea cold; brown-gold field"}
+              ],
+              "location_id": "L005",
+              "emotions": [{"character": "lin-wei", "emotion": "private vertigo without movement"}, {"character": "reader-park", "emotion": "professional concentration"}],
+              "state_changes": [{"character": "lin-wei", "before": "trusts the cross-index that disqualified palette-twins from her cases", "after": "knows the system has missed something — but does not yet act"}],
+              "hooks_opened": ["H004"], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch04.b03", "emotion": "freeze", "function": "first reckoning — Lin Wei registers and does not act", "length_target": 320,
+              "opening_trigger": "Park finishes; expects her examination.",
+              "closing_image": "she writes, in her private shorthand: 'The same palette. Not possible. Possible.'",
+              "facts": [
+                {"actor": "lin-wei", "action": "closes_deposition", "detail": "without conducting examination beyond pro forma"},
+                {"actor": "lin-wei", "action": "records_private_note", "detail": "'The same palette. Not possible. Possible.'"}
+              ],
+              "location_id": "L005",
+              "emotions": [{"character": "lin-wei", "emotion": "freeze + intellectualization"}],
+              "state_changes": [{"character": "lin-wei", "before": "rational gatekeeper", "after": "rational gatekeeper who has registered an irrationality and is still holding the line"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch05",
+          "title": "Vigil",
+          "POV": "lin-wei",
+          "location_id": "L006",
+          "time": "day 4, night",
+          "opening_image": "the chapel clock stops; silence accumulates.",
+          "summary": "Lin Wei attends the College's evening vigil for the first time in nine years. Tao is there. They do not speak. She remembers a hymn she had forgotten.",
+          "length_target": 700,
+          "beats": [
+            {
+              "id": "ch05.b01", "emotion": "stillness", "function": "interior pacing breath", "length_target": 240,
+              "opening_trigger": "She walks across the wet grass to the chapel at the third bell.",
+              "closing_image": "she lets her sensorium empty into the slate and stone.",
+              "facts": [{"actor": "lin-wei", "action": "attends_vigil", "detail": "for the first time in nine years"}],
+              "location_id": "L006",
+              "emotions": [{"character": "lin-wei", "emotion": "permitted stillness"}],
+              "state_changes": [{"character": "lin-wei", "before": "tightly held", "after": "porous to her own sensorium"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch05.b02", "emotion": "recovered memory (small)", "function": "the hymn — a foreshadow", "length_target": 240,
+              "opening_trigger": "A fragment of a hymn surfaces. A woman's voice. Two notes, then stops.",
+              "closing_image": "the woman's voice sings two notes and stops.",
+              "facts": [
+                {"actor": "lin-wei.sensorium", "action": "surfaces", "object": "hymn-fragment", "detail": "a voice not Tao's; lower, warmer, slower"}
+              ],
+              "location_id": "L006",
+              "emotions": [{"character": "lin-wei", "emotion": "involuntary remembering"}],
+              "state_changes": [{"character": "lin-wei", "before": "ninth year is silence", "after": "ninth year has a voice in it"}],
+              "hooks_opened": ["H005", "H010"], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch05.b03", "emotion": "near-confession", "function": "Tao gives an opening; Lin Wei doesn't take it", "length_target": 220,
+              "opening_trigger": "Tao crosses, sits beside her.",
+              "closing_image": "Tao stands; lays her hand briefly on Lin Wei's shoulder; leaves.",
+              "facts": [
+                {"actor": "judge-tao", "action": "offers_audience", "object": "lin-wei", "detail": "'If there is a thing you would like to ask me before tomorrow, you may ask it tonight.'"},
+                {"actor": "lin-wei", "action": "stays_silent"}
+              ],
+              "location_id": "L006",
+              "emotions": [{"character": "judge-tao", "emotion": "patient invitation"}, {"character": "lin-wei", "emotion": "refusal in the body"}],
+              "state_changes": [{"character": "lin-wei", "before": "could have asked", "after": "did not ask — but knows she could have"}],
+              "hooks_opened": ["H006"], "hooks_resolved": [], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch06",
+          "title": "The Speculum",
+          "POV": "lin-wei",
+          "location_id": "L007",
+          "time": "day 6",
+          "opening_image": "the dim water of the speculum.",
+          "summary": "The midpoint. Reader Ji renders Du Yan's record in open court. Within the rendered memory: a corridor, a soup smell, a child watching from the gallery. Lin Wei recognizes the child as herself.",
+          "length_target": 950,
+          "beats": [
+            {
+              "id": "ch06.b01", "emotion": "anticipation", "function": "the central courtroom scene begins", "length_target": 220,
+              "opening_trigger": "Lin Wei takes the prosecution chair; Mei beside her; Park across the well.",
+              "closing_image": "Reader Ji begins the descent.",
+              "facts": [
+                {"actor": "reader-ji", "action": "descends", "object": "speculum", "detail": "barefoot, by protocol"}
+              ],
+              "location_id": "L007",
+              "emotions": [{"character": "lin-wei", "emotion": "held breath"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch06.b02", "emotion": "attention", "function": "the Reader begins the rendering", "length_target": 240,
+              "opening_trigger": "Ji rises, walks to the lectern, drinks the cup of clear water.",
+              "closing_image": "the donor's mind, the rendering says, was 'elsewhere — partially in the building of childhood.'",
+              "facts": [{"actor": "reader-ji", "action": "renders", "object": "du-yan.memory"}],
+              "location_id": "L007",
+              "emotions": [{"character": "lin-wei", "emotion": "professional concentration over private alarm"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch06.b03", "emotion": "vertigo", "function": "the child in the gallery", "length_target": 240,
+              "opening_trigger": "Ji renders: 'the donor's left hand held the wrist of a child.'",
+              "closing_image": "Lin Wei lifts her gloved hand to the level of her jaw; holds it there.",
+              "facts": [
+                {"actor": "reader-ji", "action": "renders_detail", "detail": "'the donor's left hand held the wrist of a child'"},
+                {"actor": "lin-wei", "action": "registers", "detail": "the corridor is the corridor she stood in at nine"}
+              ],
+              "location_id": "L007",
+              "emotions": [{"character": "lin-wei", "emotion": "interior collapse held flat"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": ["H004"], "text": ""
+            },
+            {
+              "id": "ch06.b04", "emotion": "shock_freeze", "function": "midpoint reversal — Lin Wei recognizes herself", "length_target": 250,
+              "opening_trigger": "Ji concludes. He bows.",
+              "closing_image": "she says, in the voice of the rebuttal: 'I am persuaded that the rendering is complete.' The third note holds in the back of her mind.",
+              "facts": [
+                {"actor": "lin-wei", "action": "registers_self_as_child", "detail": "the wrist scar; the man's hand; her aunt's tea cup"},
+                {"actor": "lin-wei", "action": "speaks_publicly", "detail": "'I am persuaded that the rendering is complete.'"},
+                {"actor": "court", "action": "adjourns", "detail": "for one hour"}
+              ],
+              "location_id": "L007",
+              "emotions": [{"character": "lin-wei", "emotion": "midpoint break held inside professional containment"}],
+              "state_changes": [{"character": "lin-wei", "before": "knows the rendering matches her sensorium", "after": "knows the rendering IS her sensorium — and the child is her"}],
+              "hooks_opened": ["H008"], "hooks_resolved": ["H010"], "text": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "name": "Resolution",
+      "summary": "Lin Wei retrieves enough of her ninth year to understand what the record means. She makes the choice. She loses. The novel ends with her opening her father's letter.",
+      "central_image": "the speculum refilled, dimmer than before; the climax look across the well",
+      "stc_beats": ["break_into_3", "finale", "final_image"],
+      "wordcount_target": 4700,
+      "chapters": [
+        {
+          "id": "ch07",
+          "title": "The Eastern Quarter",
+          "POV": "lin-wei",
+          "location_id": "L008",
+          "time": "day 7",
+          "opening_image": "the pale brick of the old tram roadbed.",
+          "summary": "Lin Wei takes a half-day leave. She walks the disused tram route. She reaches to push a door she does not consciously remember.",
+          "length_target": 780,
+          "beats": [
+            {
+              "id": "ch07.b01", "emotion": "permission", "function": "she allows herself a deviation", "length_target": 240,
+              "opening_trigger": "She crosses the bridge over the canal and walks east.",
+              "closing_image": "her shoes register the give of the old tram-bed brick.",
+              "facts": [{"actor": "lin-wei", "action": "takes_leave", "detail": "half-day"}, {"actor": "lin-wei", "action": "walks", "object": "eastern-quarter"}],
+              "location_id": "L008",
+              "emotions": [{"character": "lin-wei", "emotion": "permitted curiosity"}],
+              "state_changes": [{"character": "lin-wei", "before": "treats the quarter as forbidden", "after": "allows herself the route"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch07.b02", "emotion": "subplot (Mei)", "function": "Mei's resignation surfaces", "length_target": 240,
+              "opening_trigger": "Console chime: Mei.",
+              "closing_image": "the gull lifts and is gone; Lin Wei walks on.",
+              "facts": [
+                {"actor": "mei", "action": "calls"},
+                {"actor": "mei", "action": "announces_resignation", "detail": "bulletin at 4 PM; for the reform office"},
+                {"actor": "mei", "action": "warns", "object": "lin-wei", "detail": "'Don't go through this alone. Take Park's offer.'"}
+              ],
+              "location_id": "L008",
+              "emotions": [{"character": "mei", "emotion": "regret without revision"}, {"character": "lin-wei", "emotion": "non-response"}],
+              "state_changes": [{"character": "mei", "before": "co-prosecutor", "after": "resigned (to be discovered offscreen by ch.11)"}],
+              "hooks_opened": [], "hooks_resolved": ["H007"], "text": ""
+            },
+            {
+              "id": "ch07.b03", "emotion": "bodily memory", "function": "midpoint collision via place — Han Bo's old apartment door", "length_target": 300,
+              "opening_trigger": "She arrives at Pao Street; her hand rises toward the unnamed button.",
+              "closing_image": "the man's name had been Han. She lowers her hand. She walks back.",
+              "facts": [
+                {"actor": "lin-wei", "action": "arrives", "object": "pao-street-3", "detail": "she did not know how she had come"},
+                {"actor": "lin-wei", "action": "remembers", "detail": "a man with a workman's hand carried her up; gave her cold green tea in a white cup; the man's name was Han"},
+                {"actor": "lin-wei", "action": "lowers_hand", "detail": "does not press the button"}
+              ],
+              "location_id": "L008",
+              "emotions": [{"character": "lin-wei", "emotion": "bodily-knowing without naming"}],
+              "state_changes": [{"character": "lin-wei", "before": "Han Bo is the defendant", "after": "Han Bo is the man who once carried her — but she has only the body's knowing"}],
+              "hooks_opened": ["H009"], "hooks_resolved": [], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch08",
+          "title": "A Reader Reads Herself",
+          "POV": "lin-wei",
+          "location_id": "L003",
+          "time": "day 7, night",
+          "opening_image": "the desk lamp at three in the morning.",
+          "summary": "Lin Wei reads the rendered transcript alone — looking for the parts a Reader doesn't render because they aren't admissible. Through the gaps she reconstructs.",
+          "length_target": 820,
+          "beats": [
+            {
+              "id": "ch08.b01", "emotion": "preparation", "function": "the room, the gloves off, the record on the table", "length_target": 240,
+              "opening_trigger": "She breaks the Council seal at 3:12 AM.",
+              "closing_image": "she begins to read for the gaps, not the rendering.",
+              "facts": [{"actor": "lin-wei", "action": "breaks_seal", "object": "transcript-folder"}, {"actor": "lin-wei", "action": "removes_gloves"}],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "controlled transgression"}],
+              "state_changes": [{"character": "lin-wei", "before": "Reader bound by chain-of-custody", "after": "Reader reading her own case in private — a soft transgression"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch08.b02", "emotion": "reading", "function": "the unrendered gaps; the second sound under the wineglass", "length_target": 320,
+              "opening_trigger": "She finds the gap on the second page.",
+              "closing_image": "the third note holds; she does not name the voice; she lets the brown-gold field stand.",
+              "facts": [
+                {"actor": "lin-wei", "action": "identifies_associative_bleed", "detail": "beneath the wineglass tone: a woman singing two notes"},
+                {"actor": "lin-wei", "action": "matches_song_to_chapel"}
+              ],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "naming refused, knowing accumulated"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch08.b03", "emotion": "knowing", "function": "the name 'Han' attached to the hand", "length_target": 260,
+              "opening_trigger": "She finds the second gap: the donor's thumb on a child's wrist scar.",
+              "closing_image": "she looks at the inside of her own left wrist; the ringed scar is there.",
+              "facts": [
+                {"actor": "lin-wei", "action": "confirms_wrist_scar", "detail": "the small ringed scar she has had since three"},
+                {"actor": "lin-wei", "action": "names", "object": "han-bo", "detail": "the man on the stairwell — Han"}
+              ],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "private certainty"}],
+              "state_changes": [{"character": "lin-wei", "before": "body-knew", "after": "knows in language: Han = Han Bo, the defendant"}],
+              "hooks_opened": ["H011"], "hooks_resolved": ["H002", "H009"], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch09",
+          "title": "The Father's Letter",
+          "POV": "lin-wei",
+          "location_id": "L003",
+          "time": "day 8, dawn",
+          "opening_image": "the envelope in her hand at the apartment window.",
+          "summary": "She does not open the letter. She brings it to court instead. She knows what it says without opening it.",
+          "length_target": 700,
+          "beats": [
+            {
+              "id": "ch09.b01", "emotion": "deferral", "function": "she still does not open it", "length_target": 230,
+              "opening_trigger": "She holds the envelope for eleven minutes.",
+              "closing_image": "she sets it back, square with the corner.",
+              "facts": [{"actor": "lin-wei", "action": "holds", "object": "envelope", "detail": "11 minutes"}, {"actor": "lin-wei", "action": "does_not_open"}],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "principled withholding"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch09.b02", "emotion": "decision_prelude", "function": "she chooses what to carry into court", "length_target": 230,
+              "opening_trigger": "She slides the envelope into the inner pocket of her robe.",
+              "closing_image": "she walks the long blue corridor with the file and the envelope.",
+              "facts": [
+                {"actor": "lin-wei", "action": "pockets", "object": "envelope", "detail": "left inner pocket of robe"}
+              ],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "carrying-without-using"}],
+              "state_changes": [{"character": "lin-wei", "before": "letter is on the desk", "after": "letter is against her ribs"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch09.b03", "emotion": "approach", "function": "the walk to court; the city in dawn", "length_target": 240,
+              "opening_trigger": "She crosses the bridge to the Court.",
+              "closing_image": "she steps into the central hall.",
+              "facts": [{"actor": "lin-wei", "action": "approaches", "object": "court-of-mneme"}],
+              "location_id": "L007",
+              "emotions": [{"character": "lin-wei", "emotion": "internal alignment"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch10",
+          "title": "Tao",
+          "POV": "lin-wei",
+          "location_id": "L009",
+          "time": "day 8, morning",
+          "opening_image": "Tao's almost-empty office on the morning of the verdict day.",
+          "summary": "Lin Wei finds Tao packing. She asks the question she has never asked. Tao gives one short answer. Lin Wei says 'Mother' for the first time on the page.",
+          "length_target": 700,
+          "beats": [
+            {
+              "id": "ch10.b01", "emotion": "approach", "function": "the empty room", "length_target": 230,
+              "opening_trigger": "Lin Wei knocks on the open door.",
+              "closing_image": "Tao turns; silver hair down; bare feet in sandals.",
+              "facts": [{"actor": "lin-wei", "action": "enters", "object": "tao-office"}, {"actor": "judge-tao", "action": "packs_letter_knife"}],
+              "location_id": "L009",
+              "emotions": [{"character": "lin-wei", "emotion": "permission asked at the door"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch10.b02", "emotion": "question", "function": "Lin Wei asks", "length_target": 230,
+              "opening_trigger": "Tao: 'Ask me, child.'",
+              "closing_image": "'The trial in 2042. What was it about.'",
+              "facts": [
+                {"actor": "judge-tao", "action": "calls", "object": "lin-wei", "detail": "'child' — first use"},
+                {"actor": "lin-wei", "action": "asks", "detail": "'What was the 2042 trial about.'"}
+              ],
+              "location_id": "L009",
+              "emotions": [{"character": "judge-tao", "emotion": "open release"}, {"character": "lin-wei", "emotion": "asked-aloud"}],
+              "state_changes": [{"character": "lin-wei", "before": "carried the question alone for 29 years", "after": "has asked it aloud"}],
+              "hooks_opened": [], "hooks_resolved": ["H006"], "text": ""
+            },
+            {
+              "id": "ch10.b03", "emotion": "release", "function": "Tao answers; Lin Wei says 'Mother' for the first time on the page", "length_target": 240,
+              "opening_trigger": "Tao: 'It was about a man named Han.'",
+              "closing_image": "'Mother,' Lin Wei says — first use of the word on the page in 29 years.",
+              "facts": [
+                {"actor": "judge-tao", "action": "answers", "detail": "Lin Yan refused to name Han at her trial; lost her license"},
+                {"actor": "lin-wei", "action": "says_mother", "detail": "first time on the page"}
+              ],
+              "location_id": "L009",
+              "emotions": [{"character": "lin-wei", "emotion": "permission to grieve"}, {"character": "judge-tao", "emotion": "long-held sorrow released"}],
+              "state_changes": [{"character": "lin-wei", "before": "Mother is forbidden word", "after": "Mother is named"}],
+              "hooks_opened": [], "hooks_resolved": ["H008"], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch11",
+          "title": "The Choice",
+          "POV": "lin-wei",
+          "location_id": "L007",
+          "time": "day 8, afternoon",
+          "opening_image": "the speculum refilled, dimmer than before.",
+          "summary": "Climax. The case is going to win. Han Bo refuses a final statement. Lin Wei rises and asks the court to receive her own memory as a witness — procedurally illegal.",
+          "length_target": 1050,
+          "beats": [
+            {
+              "id": "ch11.b01", "emotion": "containment", "function": "she takes her position", "length_target": 250,
+              "opening_trigger": "Han Bo present for the first time; civilian dress; hands on his knees.",
+              "closing_image": "she sets her right hand over the inner left pocket of her robe.",
+              "facts": [
+                {"actor": "han-bo", "action": "attends", "detail": "first appearance in court"},
+                {"actor": "lin-wei", "action": "takes_position", "detail": "right hand over envelope-pocket"}
+              ],
+              "location_id": "L007",
+              "emotions": [{"character": "lin-wei", "emotion": "deliberate containment"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch11.b02", "emotion": "final confrontation", "function": "Han Bo's silence; their look across the well", "length_target": 280,
+              "opening_trigger": "Their eyes meet across the speculum.",
+              "closing_image": "Han Bo inclines his head; he does not speak; she inclines hers back.",
+              "facts": [
+                {"actor": "han-bo", "action": "looks_at", "object": "lin-wei.hands", "detail": "second time in the novel"},
+                {"actor": "lin-wei", "action": "looks_back", "detail": "first time in the novel"},
+                {"actor": "han-bo", "action": "stays_silent", "detail": "the silence the law lets him keep"}
+              ],
+              "location_id": "L007",
+              "emotions": [{"character": "han-bo", "emotion": "long-awaited recognition"}, {"character": "lin-wei", "emotion": "decided answer to his silence"}],
+              "state_changes": [{"character": "lin-wei", "before": "would prosecute", "after": "will not prosecute"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch11.b03", "emotion": "the choice", "function": "Lin Wei makes the request", "length_target": 280,
+              "opening_trigger": "She stands; addresses the senior judge.",
+              "closing_image": "'I am aware, senior judge.'",
+              "facts": [
+                {"actor": "lin-wei", "action": "requests_self_extraction", "detail": "procedurally illegal; from the prosecution chair"},
+                {"actor": "senior-judge", "action": "warns", "detail": "fitness to hold office now in question"}
+              ],
+              "location_id": "L007",
+              "emotions": [{"character": "lin-wei", "emotion": "calm submission to the consequence"}],
+              "state_changes": [{"character": "lin-wei", "before": "still has career", "after": "has submitted her career to the Council"}],
+              "hooks_opened": [], "hooks_resolved": ["H011"], "text": ""
+            },
+            {
+              "id": "ch11.b04", "emotion": "aftermath", "function": "Council recesses; Lin Wei is asked to wait", "length_target": 240,
+              "opening_trigger": "Han Bo bows to the bench, does not look at her, leaves.",
+              "closing_image": "she sits in the antechamber by the window; the rain has stopped.",
+              "facts": [
+                {"actor": "court", "action": "recesses"},
+                {"actor": "han-bo", "action": "departs"},
+                {"actor": "lin-wei", "action": "waits", "object": "antechamber"}
+              ],
+              "location_id": "L010",
+              "emotions": [{"character": "lin-wei", "emotion": "stilled"}],
+              "state_changes": [],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ch12",
+          "title": "The Garden",
+          "POV": "lin-wei",
+          "location_id": "L001",
+          "time": "day 9, sundown",
+          "opening_image": "the same garden as ch.1, no robe burning, only ashes.",
+          "summary": "Lin Wei is asked to retire her own robe by sundown. Sentencing in the Han Bo case is delayed. Mei has resigned. Tao is gone. Lin Wei opens her father's letter. The novel ends with a single remembered line.",
+          "length_target": 850,
+          "beats": [
+            {
+              "id": "ch12.b01", "emotion": "stripped", "function": "the verdict against her", "length_target": 220,
+              "opening_trigger": "Senior judge delivers the Council decision.",
+              "closing_image": "she inclines her head: 'I thank the Council.'",
+              "facts": [
+                {"actor": "council", "action": "denies", "object": "extraction-request"},
+                {"actor": "council", "action": "asks", "object": "lin-wei", "detail": "retire your robe at sundown"},
+                {"actor": "council", "action": "suspends_sentencing", "detail": "thirty days; new prosecutor to be appointed"}
+              ],
+              "location_id": "L010",
+              "emotions": [{"character": "lin-wei", "emotion": "calm acceptance"}, {"character": "senior-judge", "emotion": "respect-without-prejudice"}],
+              "state_changes": [{"character": "lin-wei", "before": "Reader", "after": "to be retired by sundown"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch12.b02", "emotion": "leaving", "function": "the empty garden — gowning, reversed", "length_target": 220,
+              "opening_trigger": "Lin Wei at the brazier; Park and Sun witness.",
+              "closing_image": "the linen at the bottom is a black mat; the sun on the College wall.",
+              "facts": [
+                {"actor": "lin-wei", "action": "gowns_self_out", "detail": "Park + Sun witness; no Tao (out of office); no Mei (resigned)"}
+              ],
+              "location_id": "L001",
+              "emotions": [{"character": "lin-wei", "emotion": "ceremonial without flinching"}, {"character": "reader-park", "emotion": "quiet honor"}],
+              "state_changes": [{"character": "lin-wei", "before": "Reader being retired", "after": "private person"}],
+              "hooks_opened": [], "hooks_resolved": [], "text": ""
+            },
+            {
+              "id": "ch12.b03", "emotion": "permission", "function": "she opens the letter", "length_target": 220,
+              "opening_trigger": "Back in the apartment, late light.",
+              "closing_image": "she reads it twice; folds it; sets it square with the corner.",
+              "facts": [
+                {"actor": "lin-wei", "action": "opens", "object": "father-letter"},
+                {"actor": "father", "action": "writes", "detail": "Han asked your mother to do an off-record extraction for a grieving friend; she refused; she would not name him; she lost everything for that silence; I told the prosecution where to look"}
+              ],
+              "location_id": "L003",
+              "emotions": [{"character": "lin-wei", "emotion": "completed knowing"}, {"character": "father", "emotion": "late repentance"}],
+              "state_changes": [{"character": "lin-wei", "before": "had a guess", "after": "has the father's own words"}],
+              "hooks_opened": [], "hooks_resolved": ["H001", "H003", "H012"], "text": ""
+            },
+            {
+              "id": "ch12.b04", "emotion": "end_state", "function": "the remembered line — mother's voice", "length_target": 190,
+              "opening_trigger": "Lin Wei looks up at the sky over the College wall.",
+              "closing_image": "she opens the door; she steps out.",
+              "facts": [
+                {"actor": "lin-wei.sensorium", "action": "remembers", "object": "mother-song-line", "detail": "'Wei, little Wei, look up at me, child.'"},
+                {"actor": "lin-wei", "action": "steps_out", "object": "apartment-door"}
+              ],
+              "location_id": "L001",
+              "emotions": [{"character": "lin-wei", "emotion": "first grief, allowed"}],
+              "state_changes": [{"character": "lin-wei", "before": "the mother is silence", "after": "the mother has a line, and the line has been allowed"}],
+              "hooks_opened": [], "hooks_resolved": ["H005"], "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subplots": [
+    {"id": "sp01", "name": "Mei's Defection", "type": "B", "dramatic_question": "Will Mei warn Lin Wei in time?",
+     "intersections": ["ch03.b03", "ch07.b02", "ch11 (offscreen resignation discovered)"],
+     "resolution": "Mei resigns the day before Lin Wei's choice; Lin Wei learns it from the staff bulletin."},
+    {"id": "sp02", "name": "The Father's Letter", "type": "C", "dramatic_question": "Will Lin Wei open it?",
+     "intersections": ["ch03.b01-b02", "ch09.b01-b02", "ch12.b03"],
+     "resolution": "She opens it in the final scene."}
+  ],
+  "wordcount_check": {
+    "sum_of_chapter_length_targets": 9820,
+    "target": 10000,
+    "within_tolerance": true
+  }
+}

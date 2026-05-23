@@ -1,0 +1,40 @@
+{
+  "title": "The Trial of Memory",
+  "title_zh": "记忆的审判",
+  "author": "Claude Code Novel Agents (sandbox demo)",
+  "genre": "literary science fiction",
+  "subgenre": "speculative legal",
+  "target_audience": "adult literary",
+  "target_wordcount": 10000,
+  "actual_wordcount": 13123,
+  "target_pages": 42,
+  "actual_pages_estimate": 52,
+  "trim_size": "5.5x8.5",
+  "chapters_target": 12,
+  "generated_at": "2026-05-18T00:00:00Z",
+  "generator": {
+    "system": "claude-code-novel-agents v0.1.0",
+    "models": {
+      "default_preset": "all_opus",
+      "all_agents": "claude-opus-4-7",
+      "note": "Sandbox demo was generated using the all_opus preset (every agent on Opus 4.7). At runtime users can switch to 'balanced' or 'budget' via api-config-agent during /start onboarding."
+    },
+    "total_tokens_estimate": 80000,
+    "total_dollars_estimate": 8.2
+  },
+  "mode_trace": {
+    "ideation": "full",
+    "worldbuilding": "full",
+    "characters": "full",
+    "structure": "full",
+    "chapters_ch01": "full",
+    "chapters_ch02_to_05": "full",
+    "chapters_ch06": "full",
+    "chapters_ch07_to_10": "full",
+    "chapters_ch11": "full",
+    "chapters_ch12": "full",
+    "quality": "full",
+    "revision": "semi (user-approved 4 of 9 suggested revisions)",
+    "output": "full"
+  }
+}

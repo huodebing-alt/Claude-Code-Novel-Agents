@@ -1,0 +1,126 @@
+name: full-novel-pipeline
+description: All 6 phases end-to-end with detailed beat planning + user review checkpoint
+mode_default: semi
+steps:
+  # Phase 1: Ideation
+  - id: ideation_themes
+    skill: brainstorm-themes
+  - id: ideation_logline
+    skill: write-logline
+    depends_on: [ideation_themes]
+  - id: ideation_dq
+    skill: draft-dramatic-question
+    depends_on: [ideation_logline]
+  - id: ideation_style
+    skill: set-stylistic-direction
+    depends_on: [ideation_dq]
+
+  # Phase 2: World + Characters (parallel after ideation)
+  - id: world
+    skill: build-world-bible
+    depends_on: [ideation_style]
+  - id: locations
+    skill: build-location-bible
+    depends_on: [world]                     # locations attach to geographic regions
+
+  - id: char_protagonist
+    skill: design-protagonist
+    depends_on: [ideation_style]
+  - id: char_antagonist
+    skill: design-antagonist
+    depends_on: [char_protagonist]
+  - id: char_supporting
+    skill: design-supporting-cast
+    depends_on: [char_protagonist, char_antagonist]
+  - id: char_backstories
+    skill: write-backstory
+    fan_out: per_character
+    depends_on: [char_supporting]
+  - id: char_psych
+    skill: profile-psychology
+    fan_out: per_principal_character
+    depends_on: [char_backstories]
+  - id: char_voice
+    skill: calibrate-voice
+    fan_out: per_speaking_character
+    depends_on: [char_psych]
+
+  # Phase 3: Structure — three-pass (act-level → chapter-level → detailed beats)
+  - id: outline_acts
+    skill: draft-outline
+    params: {mode: act_level}
+    depends_on: [locations, char_voice]
+  - id: outline_chapters
+    skill: draft-outline
+    params: {mode: chapter_level}
+    depends_on: [outline_acts]
+  - id: subplot
+    skill: weave-subplot
+    depends_on: [outline_chapters]
+  - id: beats
+    skill: plan-chapter-beats
+    fan_out: per_chapter
+    depends_on: [subplot]
+
+  # Hook audit at outline level — surfaces hook holes before user review
+  - id: hook_audit_pre
+    skill: audit-hooks
+    depends_on: [beats]
+
+  # === USER REVIEW CHECKPOINT ===
+  # In `full` mode this step is skipped; in `semi` mode the reviewer launches
+  # and blocks until the user clicks Done. In `manual` mode the reviewer
+  # launches with all beats pre-emptied so the user can fill them by hand.
+  - id: review_outline
+    action: wait_for_review
+    params: {port: 7878, open_browser: true}
+    depends_on: [hook_audit_pre]
+
+  # Phase 4: Execution — each chapter as a parallel subagent with strict context isolation
+  - id: chapters
+    skill: write-chapter
+    fan_out: per_chapter
+    parallelism: 4
+    depends_on: [review_outline]
+
+  # Phase 5: Quality (parallel)
+  - id: q_style
+    skill: critique-style
+    depends_on: [chapters]
+  - id: q_consistency
+    skill: check-consistency
+    depends_on: [chapters]
+  - id: q_ai_voice
+    skill: detect-ai-voice
+    depends_on: [chapters]
+  - id: q_pacing
+    skill: review-pacing
+    depends_on: [chapters]
+  - id: q_voice_drift
+    skill: audit-character-voice
+    depends_on: [chapters]
+  - id: hook_audit_post
+    skill: audit-hooks
+    depends_on: [chapters]
+
+  - id: edit_letter
+    skill: developmental-edit
+    depends_on: [q_style, q_consistency, q_ai_voice, q_pacing, q_voice_drift, hook_audit_post]
+  - id: revise
+    skill: revise-from-notes
+    fan_out: per_chapter
+    depends_on: [edit_letter]
+
+  # Phase 6: Output
+  - id: format
+    skill: format-manuscript
+    depends_on: [revise]
+  - id: cover_brief
+    skill: write-cover-brief
+    depends_on: [format]
+  - id: blurb
+    skill: write-blurb
+    depends_on: [format]
+  - id: pdf
+    skill: compile-pdf
+    depends_on: [format, cover_brief, blurb]

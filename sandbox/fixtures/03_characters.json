@@ -1,0 +1,111 @@
+{
+  "roster": [
+    {
+      "id": "lin-wei",
+      "name": "Lin Wei",
+      "name_zh": "林薇",
+      "role": "protagonist",
+      "age": 38,
+      "appearance": "small, narrow shoulders, grey-eyed in cold light and grey-green in warm; close-cropped hair gone early grey; long hands she keeps gloved out of habit",
+      "occupation": "Reader-Prosecutor of the Court of Mneme; candidate for the Reader Council seat vacated by her retiring mentor",
+      "want": "to prosecute Han Bo successfully and secure the Reader Council seat — the seat that protects her from the cross-case inquiry that ends most Reader careers",
+      "need": "to recover the year of her own memory (her ninth year) that she has been suppressing — the year of her mother's testimony",
+      "lie": "the law is a more reliable witness than the self; she is the rational one in the room",
+      "ghost": "she sat in the public gallery of her mother's closed-record trial at age nine; she does not remember sitting there; she has built her entire professional life around being the daughter who became the law her mother failed",
+      "arc": {
+        "start": "She prosecutes by the book. She does not consult her own memory in any case, ever.",
+        "first_reckoning": "A witness's synesthetic palette matches her own — she registers it but does not act.",
+        "midpoint_reversal": "The case record contains a memory she recognizes as her own, rendered from another extracted donor.",
+        "climax_choice": "Submit her memory to the court (illegally — she is the Reader and cannot read herself; she would need to consent to extraction by another Reader, mid-trial) or destroy the record and win.",
+        "end": "She submits. She loses the case. She walks out of the College. She begins, slowly, to remember her mother."
+      },
+      "arc_beat_anchors": {
+        "start": "ch01.b01",
+        "first_reckoning": "ch04.b03",
+        "midpoint_reversal": "ch06.b04",
+        "climax_choice": "ch11.b03",
+        "end": "ch12.b04"
+      },
+      "voice_card": {
+        "sentence_length": "short to medium; bursts of sensory inventory under stress",
+        "register": "legal clinical with synesthete lapses",
+        "verbal_tics": [
+          "says 'I am persuaded that' instead of 'I think'",
+          "converts emotions into colors: 'I felt a flat blue'",
+          "uses present tense for past memory: 'she comes down the stairs'",
+          "ends rebuttals with 'Strike the metaphor. Strike it.'"
+        ],
+        "will_not_say": ["I love you (until ch.12)", "Mother (until ch.10)", "lonely", "afraid"],
+        "example_lines": [
+          "The defendant's testimony tastes of tin.",
+          "I am persuaded that the record is incomplete.",
+          "She comes down the stairs. The bannister is the color of unanswered.",
+          "Procedurally improper. Move on."
+        ]
+      },
+      "psychology": {
+        "attachment": "avoidant",
+        "trauma_response": "freeze",
+        "defenses_in_order": ["intellectualization", "displacement onto procedure", "synesthetic distancing"],
+        "loop": "interpersonal closeness with women her mother's age → becomes clinical, schedules a filing to escape"
+      },
+      "backstory_ref": "backstories/lin-wei.md"
+    },
+    {
+      "id": "han-bo",
+      "name": "Han Bo",
+      "name_zh": "韩博",
+      "role": "antagonist",
+      "age": 51,
+      "appearance": "broad, soft-shouldered, hands the size of a workman's; speaks slowly and only when needed; one of his eyes does not track properly — a side-effect of an unauthorized extraction performed on himself, illegally",
+      "occupation": "former senior Reader, retired in disgrace at thirty-nine; now organizer of the unauthorized memory-trade ring being prosecuted",
+      "wound": "his older sister, also a Reader, retired in disgrace at thirty-nine after cross-case contamination; he watched her lose two years of her own memory in the inquiry hearings",
+      "justification": "the Mneme law steals from Readers and gives to a state that scapegoats them; his ring restores agency by allowing Readers to extract for their own use and for the grief of civilians the state cannot serve",
+      "collision_with_protagonist": "if Lin Wei remembers her ninth year, she will discover that Han Bo was the Reader who once tried to protect her mother in the closed-record trial — that he has known who Lin Wei is the whole time and has, in his way, been waiting for her",
+      "strongest_argument": "You are prosecuting me for the only crime your system permits — being correct in the wrong order.",
+      "scene_anchors": {
+        "first_appearance": "ch02.b01",
+        "midpoint_collision": "ch07.b03",
+        "final_confrontation": "ch11.b02"
+      }
+    },
+    {
+      "id": "mei",
+      "name": "Co-Prosecutor Mei",
+      "role": "ally / complicator / mirror",
+      "age": 34,
+      "voice_card": {
+        "register": "more colloquial than Lin Wei; uses contractions; lapses into humor under pressure",
+        "verbal_tics": ["says 'look' as a softener", "asks questions instead of making statements"]
+      },
+      "function_in_story": "Mei is what Lin Wei would have been if her mother had not been Lin Yan. Younger, less wounded, less brilliant. She is the only person at the College who treats Lin Wei as a person.",
+      "subplot": "Mei is being recruited by the reform movement. She resigns the day before Lin Wei's choice in ch.11; Lin Wei learns of it from the staff bulletin."
+    },
+    {
+      "id": "judge-tao",
+      "name": "Judge Tao",
+      "role": "mentor / moral counterweight",
+      "age": 63,
+      "function_in_story": "Lin Wei's mentor. The retiring Reader whose gowning opens the novel. She is the one who selected Lin Wei from the College's induction cohort at twelve, who knew Lin Yan as a colleague, who has been Lin Wei's wall against the past. She knows what Lin Yan's closed-record trial was about. She has never said.",
+      "voice_card": {
+        "register": "formal, ceremonial; speaks in the cadences of court even off the bench",
+        "verbal_tics": ["addresses Lin Wei as 'Reader Lin' at work, 'child' once, in ch.10"]
+      }
+    },
+    {
+      "id": "lin-yan",
+      "name": "Lin Yan (the ghost)",
+      "name_zh": "林雁",
+      "role": "ghost / backstory anchor",
+      "age_at_death": 49,
+      "function_in_story": "Lin Wei's mother. Dead since Lin Wei was thirteen. A Reader; a public scandal; subject of a closed-record trial in 2043 whose details were sealed. Appears in the novel only as fragments — a hand, a voice, the smell of a particular soup — surfacing through Mneme record bleed.",
+      "what_the_reader_learns": "By ch.12 the reader has gathered (without exposition) that Lin Yan refused to testify against another Reader in her trial, that the refusal cost her the right to read, and that the other Reader was Han Bo."
+    }
+  ],
+  "constellation_audit": {
+    "function_overlaps_found": [],
+    "merges_recommended": [],
+    "cuts_recommended": [],
+    "note": "Five named characters for a 10k-word short novel; well within the per-1k-word load. Each carries a distinct dramatic function."
+  }
+}
